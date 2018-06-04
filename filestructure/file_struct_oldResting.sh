@@ -98,7 +98,7 @@ do
     cp -ipal ${RAWDIR}/${oldfolder}/func/resting/run_01/realign.dat .
 
     # chmod to read only
-    chmod -w *.nii *.dat
+    chmod go-w *.nii *.dat
 
     # list copied files
     cd ..
