@@ -24,9 +24,9 @@
 THISDIR=/nfs/fmri/Analysis/Subjects_oldResting
 RAWDIR=/nfs/fmri/RAW_nopreprocess
 
-echo
-echo "*** This script is for Resting state file structure purpose!! ***"
-echo
+echo "* * * * * * * * * * * * * * * * * * * * * * * * * * *"
+echo "*** Script Resting state file structure purpose!! ***"
+echo "* * * * * * * * * * * * * * * * * * * * * * * * * * *"
 
 # number of files index
 N=0
@@ -111,5 +111,5 @@ do
     echo
   fi
 
-done < MADC_oldResting_test.csv    # test batch
-# done < MADC_oldResting_0604_2018.csv    # 0604_2018 batch for MADC
+# done < MADC_oldResting_test.csv    # test batch
+done < MADC_oldResting_0604_2018.csv    # 0604_2018 batch for MADC
