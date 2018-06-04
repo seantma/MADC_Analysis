@@ -131,4 +131,3 @@ done < MADC_oldResting_0604_2018.csv
 # chmod: cannot access ‘*.dat’: No such file or directory
 ## 1405: wrong T1 (swapped /w T2)
 # cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01405_03782/anatomy/t1mprage_208/t1mprage_208.nii’: No such file or directory
-# cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01487_04682/anatomy/t1mprage_208/t1mprage_208.nii’: No such file or directory
