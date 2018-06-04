@@ -13,7 +13,7 @@
 # - integrate with Makefile for fault tolerance and parallelization
 #
 # - How to run:
-# sh file_struct_oldResting.sh 2>&1 | tee file_struct_oldResting_log_$(date +"%m%d_%Y").txt
+# sh file_struct_oldResting.sh 2>&1 | tee Log_file_struct_oldResting_$(date +"%m%d_%Y").txt
 # - How to check error:
 # grep -i 'no such file' file_struct_oldResting_log_1222_2016.txt
 # - How to generate directory listing for FirstLevel_mc_template.m
