@@ -9,7 +9,7 @@
 # Jul 2017 - upgrade to use cp -ipal for "hardlink" to files
 #
 # TODOs:
-# - !! NEED !! Check if multiple t1mpgrage, t1overlay, exists!
+# - !! NEED !! Check if multiple t1mprage, t1overlay, exists!
 # - integrate with Makefile for fault tolerance and parallelization
 #
 # - How to run:
@@ -19,9 +19,9 @@
 # - How to generate directory listing for FirstLevel_mc_template.m
 # ls -d */ > dir_struct_{$date}.txt
 #
-# TODO(Sean): 1. print out original file directory and file name of t1mpgrage_208
+# TODO(Sean): 1. print out original file directory and file name of t1mprage_208
 
-THISDIR=/nfs/fmri/Analysis/Sean_Working/Subjects_oldResting
+THISDIR=/nfs/fmri/Analysis/Subjects_oldResting
 RAWDIR=/nfs/fmri/RAW_nopreprocess
 
 echo
@@ -53,20 +53,20 @@ do
 
   # copying spgr.nii and linking them for preprocessing
   echo
-  echo "Copying and linking t1mpgrage.nii for Resting state"
+  echo "Copying and linking t1mprage.nii for Resting state"
   echo
 
   # checking if more than 1 file exists; report error if so
   cd anatomy
-  N=$(ls -1 ${RAWDIR}/${oldfolder}/anatomy/t1mpgrage_208/t1mpgrage_208* 2>/dev/null | wc -l)
+  N=$(ls -1 ${RAWDIR}/${oldfolder}/anatomy/t1mprage_208/t1mprage_208* 2>/dev/null | wc -l)
   if ((N >= 2)); then
     echo
-    echo "****** !! Error !! Subject: ${newfolder} has multiple t1mpgrage in /anatomy !! ******"
-    ls -1a ${RAWDIR}/${oldfolder}/anatomy/t1mpgrage_208/t1mpgrage_208*
+    echo "****** !! Error !! Subject: ${newfolder} has multiple t1mprage in /anatomy !! ******"
+    ls -1a ${RAWDIR}/${oldfolder}/anatomy/t1mprage_208/t1mprage_208*
   else
     # previously using cp -ip --> occupying too much space; using hardlinks instead
-    cp -ipal ${RAWDIR}/${oldfolder}/anatomy/t1mpgrage_208/t1mpgrage_208.nii .
-    ln -s t1mpgrage_208.nii t1mpgrage.nii
+    cp -ipal ${RAWDIR}/${oldfolder}/anatomy/t1mprage_208/t1mprage_208.nii .
+    ln -s t1mprage_208.nii t1mprage.nii
   fi
   N=0
 
