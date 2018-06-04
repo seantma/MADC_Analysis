@@ -9,7 +9,7 @@
 # Jul 2017 - upgrade to use cp -ipal for "hardlink" to files
 #
 # TODOs:
-# - !! NEED !! Check if multiple t1spgr, t1overlay, exists!
+# - !! NEED !! Check if multiple t1mpgrage, t1overlay, exists!
 # - integrate with Makefile for fault tolerance and parallelization
 #
 # - How to run:
@@ -19,10 +19,10 @@
 # - How to generate directory listing for FirstLevel_mc_template.m
 # ls -d */ > dir_struct_{$date}.txt
 #
-# TODO(Sean): 1. print out original file directory and file name of t1spgr_156sl
+# TODO(Sean): 1. print out original file directory and file name of t1mpgrage_208
 
-THISDIR=/mnt/psych-bhampstelab/NIMH_PTSD_R21/Sean_Working/Subjects_Resting
-RAWDIR=/mnt/psych-bhampstelab/NIMH_PTSD_R21
+THISDIR=/nfs/fmri/Analysis/Sean_Working/Subjects_oldResting
+RAWDIR=/nfs/fmri/RAW_nopreprocess
 
 echo
 echo "*** This script is for Resting state file structure purpose!! ***"
@@ -53,45 +53,27 @@ do
 
   # copying spgr.nii and linking them for preprocessing
   echo
-  echo "Copying and linking ht1spgr.nii for Resting state"
+  echo "Copying and linking t1mpgrage.nii for Resting state"
   echo
 
   # checking if more than 1 file exists; report error if so
   cd anatomy
-  N=$(ls -1 ${RAWDIR}/${oldfolder}/anatomy/t1spgr_156sl/ht1spgr_156sl* 2>/dev/null | wc -l)
+  N=$(ls -1 ${RAWDIR}/${oldfolder}/anatomy/t1mpgrage_208/t1mpgrage_208* 2>/dev/null | wc -l)
   if ((N >= 2)); then
     echo
-    echo "****** !! Error !! Subject: ${newfolder} has multiple t1spgr in /anatomy !! ******"
-    ls -1a ${RAWDIR}/${oldfolder}/anatomy/t1spgr_156sl/ht1spgr_156sl*
+    echo "****** !! Error !! Subject: ${newfolder} has multiple t1mpgrage in /anatomy !! ******"
+    ls -1a ${RAWDIR}/${oldfolder}/anatomy/t1mpgrage_208/t1mpgrage_208*
   else
     # previously using cp -ip --> occupying too much space; using hardlinks instead
-    cp -ipal ${RAWDIR}/${oldfolder}/anatomy/t1spgr_156sl/ht1spgr_156sl.nii .
-    ln -s ht1spgr_156sl.nii ht1spgr.nii
+    cp -ipal ${RAWDIR}/${oldfolder}/anatomy/t1mpgrage_208/t1mpgrage_208.nii .
+    ln -s t1mpgrage_208.nii t1mpgrage.nii
   fi
   N=0
 
-  # copying overlay.nii and linking them for preprocessing
-  echo
-  echo "Copying and linking ht1overlay.nii for Resting state"
-  echo
-
-  # checking if more than 1 file exists; report error if so
-  N=$(ls -1 ${RAWDIR}/${oldfolder}/anatomy/t1spgr_156sl/ht1overlay_45slresting* 2>/dev/null | wc -l)
-  if ((N >= 2)); then
-    echo
-    echo "****** !! Error !! Subject: ${newfolder} has multiple t1overlay in /anatomy !! ******"
-    ls -1a ${RAWDIR}/${oldfolder}/anatomy/t1spgr_156sl/ht1overlay_45slresting*
-  else
-    # previously using cp -ip --> occupying too much space; using hardlinks instead
-    cp -ipal ${RAWDIR}/${oldfolder}/anatomy/t1overlay_45slresting/ht1overlay_45slresting.nii .
-    ln -s ht1overlay_45slresting.nii ht1overlay.nii
-    ls -la
-  fi
-  N=0
 
   # start copying the functional files
   echo
-  echo "Now copying Resting state functional files: rtprun_01.nii, run_01.nii, realign.dat"
+  echo "Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, realign.dat"
   echo
 
   cd ../func
@@ -102,15 +84,16 @@ do
 
   # checking if more than 1 file exists; report error if so
   mkdir run_01
-  N=$(ls -1 ${RAWDIR}/${oldfolder}/func/resting/run_01/rtprun_01* 2>/dev/null | wc -l)
+  N=$(ls -1 ${RAWDIR}/${oldfolder}/func/resting/run_01/utprun_01* 2>/dev/null | wc -l)
   if ((N >= 2)); then
     echo
-    echo "****** !! Error !! Subject: ${newfolder} has multiple rtprun_01 in /func !! ******"
-    ls -1a ${RAWDIR}/${oldfolder}/func/resting/run_01/rtprun_01*
+    echo "****** !! Error !! Subject: ${newfolder} has multiple utprun_01 in /func !! ******"
+    ls -1a ${RAWDIR}/${oldfolder}/func/resting/run_01/utprun_01*
   else
     cd run_01
     # previously using cp -ip --> occupying too much space; using hardlinks instead
-    cp -ipal ${RAWDIR}/${oldfolder}/func/resting/run_01/rtprun_01.nii .
+    cp -ipal ${RAWDIR}/${oldfolder}/func/resting/run_01/utprun_01.nii .
+    cp -ipal ${RAWDIR}/${oldfolder}/func/resting/run_01/meanutprun_01.nii .
     cp -ipal ${RAWDIR}/${oldfolder}/func/resting/run_01/run_01.nii .
     cp -ipal ${RAWDIR}/${oldfolder}/func/resting/run_01/realign.dat .
     cd ..
@@ -124,5 +107,4 @@ do
     echo
   fi
 
-done < PTSD_forshell_resting_0914.csv    # last batch of subjects for PTSD
-# done < PTSD_forshell_resting_0719.csv    # 1st run for PTSD
+done < MADC_oldResting_0604_2018.csv    # last batch of subjects for PTSD
