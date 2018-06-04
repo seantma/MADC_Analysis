@@ -13,9 +13,9 @@
 # - integrate with Makefile for fault tolerance and parallelization
 #
 # - How to run:
-# sh file_struct_resting.sh 2>&1 | tee file_struct_out_Resting_$(date +"%m%d_%Y").txt
+# sh file_struct_oldResting.sh 2>&1 | tee file_struct_oldResting_log_$(date +"%m%d_%Y").txt
 # - How to check error:
-# grep -i 'no such file' file_struct_out_1222_2016.txt
+# grep -i 'no such file' file_struct_oldResting_log_1222_2016.txt
 # - How to generate directory listing for FirstLevel_mc_template.m
 # ls -d */ > dir_struct_{$date}.txt
 #
@@ -107,4 +107,5 @@ do
     echo
   fi
 
-done < MADC_oldResting_0604_2018.csv    # last batch of subjects for PTSD
+done < MADC_oldResting_test.csv    # test batch
+# done < MADC_oldResting_0604_2018.csv    # 0604_2018 batch for MADC
