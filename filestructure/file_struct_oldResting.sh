@@ -96,8 +96,12 @@ do
     cp -ipal ${RAWDIR}/${oldfolder}/func/resting/run_01/meanutprun_01.nii .
     cp -ipal ${RAWDIR}/${oldfolder}/func/resting/run_01/run_01.nii .
     cp -ipal ${RAWDIR}/${oldfolder}/func/resting/run_01/realign.dat .
-    cd ..
 
+    # chmod to read only
+    chmod -w *.nii *.dat
+
+    # list copied files
+    cd ..
     ls -laR
 
     echo
