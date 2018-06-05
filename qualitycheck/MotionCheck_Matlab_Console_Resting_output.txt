@@ -1,0 +1,576 @@
+
+% spacing
+fprintf(2, '\n');
+
+disp(['======== NEW session!! ==========  ', datestr(clock), '  ==================']);
+======== NEW session!! ==========  05-Jun-2018 13:56:25  ==================
+
+% actual MC command to run
+MotionSummary_mc_central
+-----
+Computing motion summary statistics
+Size of level arm: 50.000000
+Output file: /nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/Scott_CPM_scrub_MotionSummary_FD_0.5.csv
+Subjects:
+
+SubjDir = 
+
+    'madc0732_scan1'    [1]    [1]
+    'madc0768_scan1'    [1]    [1]
+    'madc0773_scan1'    [1]    [1]
+    'madc0775_scan1'    [1]    [1]
+    'madc0833_scan1'    [1]    [1]
+    'madc0960_scan1'    [1]    [1]
+    'madc1066_scan1'    [1]    [1]
+    'madc1174_scan1'    [1]    [1]
+    'madc1179_scan1'    [1]    [1]
+    'madc1220_scan1'    [1]    [1]
+    'madc1227_scan1'    [1]    [1]
+    'madc1228_scan1'    [1]    [1]
+    'madc1241_scan1'    [1]    [1]
+    'madc1243_scan1'    [1]    [1]
+    'madc1250_scan1'    [1]    [1]
+    'madc1254_scan1'    [1]    [1]
+    'madc1259_scan1'    [1]    [1]
+    'madc1260_scan1'    [1]    [1]
+    'madc1263_scan1'    [1]    [1]
+    'madc1268_scan1'    [1]    [1]
+    'madc1271_scan1'    [1]    [1]
+    'madc1276_scan1'    [1]    [1]
+    'madc1294_scan1'    [1]    [1]
+    'madc1299_scan1'    [1]    [1]
+    'madc1307_scan1'    [1]    [1]
+    'madc1314_scan1'    [1]    [1]
+    'madc1315_scan1'    [1]    [1]
+    'madc1338_scan1'    [1]    [1]
+    'madc1340_scan1'    [1]    [1]
+    'madc1341_scan1'    [1]    [1]
+    'madc1346_scan1'    [1]    [1]
+    'madc1348_scan1'    [1]    [1]
+    'madc1353_scan1'    [1]    [1]
+    'madc1356_scan1'    [1]    [1]
+    'madc1358_scan1'    [1]    [1]
+    'madc1359_scan1'    [1]    [1]
+    'madc1360_scan1'    [1]    [1]
+    'madc1362_scan1'    [1]    [1]
+    'madc1364_scan1'    [1]    [1]
+    'madc1367_scan1'    [1]    [1]
+    'madc1368_scan1'    [1]    [1]
+    'madc1372_scan1'    [1]    [1]
+    'madc1377_scan1'    [1]    [1]
+    'madc1378_scan1'    [1]    [1]
+    'madc1378_scan2'    [1]    [1]
+    'madc1379_scan1'    [1]    [1]
+    'madc1380_scan1'    [1]    [1]
+    'madc1382_scan1'    [1]    [1]
+    'madc1384_scan1'    [1]    [1]
+    'madc1388_scan1'    [1]    [1]
+    'madc1389_scan1'    [1]    [1]
+    'madc1393_scan1'    [1]    [1]
+    'madc1394_scan1'    [1]    [1]
+    'madc1395_scan1'    [1]    [1]
+    'madc1396_scan1'    [1]    [1]
+    'madc1398_scan1'    [1]    [1]
+    'madc1401_scan1'    [1]    [1]
+    'madc1402_scan1'    [1]    [1]
+    'madc1403_scan1'    [1]    [1]
+    'madc1404_scan1'    [1]    [1]
+    'madc1407_scan1'    [1]    [1]
+    'madc1408_scan1'    [1]    [1]
+    'madc1409_scan1'    [1]    [1]
+    'madc1410_scan1'    [1]    [1]
+    'madc1411_scan1'    [1]    [1]
+    'madc1412_scan1'    [1]    [1]
+    'madc1413_scan1'    [1]    [1]
+    'madc1415_scan1'    [1]    [1]
+    'madc1419_scan1'    [1]    [1]
+    'madc1420_scan1'    [1]    [1]
+    'madc1422_scan1'    [1]    [1]
+    'madc1424_scan1'    [1]    [1]
+    'madc1425_scan1'    [1]    [1]
+    'madc1426_scan1'    [1]    [1]
+    'madc1430_scan1'    [1]    [1]
+    'madc1434_scan1'    [1]    [1]
+    'madc1437_scan1'    [1]    [1]
+    'madc1438_scan1'    [1]    [1]
+    'madc1439_scan1'    [1]    [1]
+    'madc1440_scan1'    [1]    [1]
+    'madc1442_scan1'    [1]    [1]
+    'madc1444_scan1'    [1]    [1]
+    'madc1445_scan1'    [1]    [1]
+    'madc1446_scan1'    [1]    [1]
+    'madc1447_scan1'    [1]    [1]
+    'madc1448_scan1'    [1]    [1]
+    'madc1449_scan1'    [1]    [1]
+    'madc1453_scan1'    [1]    [1]
+    'madc1454_scan1'    [1]    [1]
+    'madc1457_scan1'    [1]    [1]
+    'madc1458_scan1'    [1]    [1]
+    'madc1459_scan1'    [1]    [1]
+    'madc1461_scan1'    [1]    [1]
+    'madc1462_scan1'    [1]    [1]
+    'madc1463_scan1'    [1]    [1]
+    'madc1473_scan1'    [1]    [1]
+    'madc1480_scan1'    [1]    [1]
+    'madc1482_scan1'    [1]    [1]
+    'madc1484_scan1'    [1]    [1]
+    'madc1487_scan1'    [1]    [1]
+    'madc1489_scan1'    [1]    [1]
+    'madc1493_scan1'    [1]    [1]
+    'madc1507_scan1'    [1]    [1]
+
+-----
+Create motion PDF plot for subject madc0732_scan1[Warning: MATLAB has disabled some advanced graphics rendering features by
+switching to software OpenGL. For more information, click <a
+href="matlab:opengl('problems')">here</a>.] 
+:/nfs/fmri/Analysis/Subjects_oldResting/madc0732_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc0768_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc0768_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc0773_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc0773_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc0775_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc0775_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc0833_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc0833_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc0960_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc0960_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1066_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1066_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1174_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1174_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1179_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1179_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1220_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1220_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1227_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1227_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1228_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1228_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1241_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1241_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1243_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1243_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1250_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1250_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1254_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1254_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1259_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1259_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1260_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1260_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1263_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1263_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1268_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1268_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1271_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1271_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1276_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1276_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1294_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1294_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1299_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1299_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1307_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1307_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1314_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1314_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1315_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1315_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1338_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1338_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1340_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1340_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1341_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1341_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1346_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1346_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1348_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1348_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1353_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1353_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1356_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1356_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1358_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1358_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1359_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1359_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1360_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1360_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1362_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1362_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1364_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1364_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1367_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1367_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1368_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1368_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1372_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1372_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1377_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1377_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1378_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1378_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1378_scan2:/nfs/fmri/Analysis/Subjects_oldResting/madc1378_scan2/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1379_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1379_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1380_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1380_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1382_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1382_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1384_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1384_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1388_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1388_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1389_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1389_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1393_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1393_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1394_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1394_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1395_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1395_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1396_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1396_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1398_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1398_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1401_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1401_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1402_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1402_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1403_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1403_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1404_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1404_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1407_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1407_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1408_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1408_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1409_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1409_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1410_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1410_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1411_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1411_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1412_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1412_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1413_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1413_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1415_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1415_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1419_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1419_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1420_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1420_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1422_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1422_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1424_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1424_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1425_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1425_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1426_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1426_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1430_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1430_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1434_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1434_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1437_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1437_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1438_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1438_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1439_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1439_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1440_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1440_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1442_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1442_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1444_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1444_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1445_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1445_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1446_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1446_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1447_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1447_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1448_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1448_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1449_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1449_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1453_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1453_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1454_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1454_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1457_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1457_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1458_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1458_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1459_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1459_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1461_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1461_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1462_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1462_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1463_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1463_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1473_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1473_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1480_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1480_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1482_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1482_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1484_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1484_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1487_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1487_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1489_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1489_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1493_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1493_scan1/func/MotionSummary_Plot.pdf
+Create motion PDF plot for subject madc1507_scan1:/nfs/fmri/Analysis/Subjects_oldResting/madc1507_scan1/func/MotionSummary_Plot.pdf
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+Unable to make dir /opt/apps/MCore2/.Usage
+All Done!
+
+% adding spacing dividers
+fprintf(2, '\n');
+
+
+% Copying output pdfs to git folder
+for iSubject = 1:size(SubjDir,1)
+
+    % setting up subject and subject file path
+    Subject = SubjDir{iSubject, 1};
+    out_path = mc_GenPath(OutputPlotPath);
+    dest_path = mc_GenPath('[Exp]/Sean_Working/Git_MADC/qualitycheck');
+
+    % setting up destination file path
+    out_filepath = fullfile(out_path, strcat(OutputPlotFile, '.pdf'));
+    dest_filepath = fullfile(dest_path, strcat(Subject, '_', OutputPlotFile, '.pdf'));
+
+    % copy output pdf to git folder
+    try
+      [status, msg] = copyfile(out_filepath, dest_filepath);
+      if (status == 1)
+        fprintf('Success!! Copied to -\n');
+        fprintf('%s\n', dest_filepath);
+      end
+    catch
+      warning('Error finding MotionSummary_Plot.pdf !!')
+    end
+
+end
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc0732_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc0768_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc0773_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc0775_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc0833_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc0960_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1066_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1174_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1179_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1220_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1227_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1228_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1241_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1243_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1250_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1254_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1259_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1260_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1263_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1268_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1271_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1276_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1294_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1299_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1307_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1314_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1315_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1338_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1340_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1341_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1346_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1348_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1353_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1356_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1358_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1359_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1360_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1362_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1364_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1367_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1368_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1372_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1377_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1378_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1378_scan2_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1379_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1380_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1382_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1384_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1388_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1389_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1393_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1394_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1395_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1396_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1398_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1401_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1402_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1403_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1404_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1407_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1408_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1409_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1410_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1411_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1412_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1413_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1415_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1419_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1420_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1422_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1424_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1425_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1426_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1430_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1434_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1437_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1438_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1439_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1440_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1442_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1444_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1445_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1446_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1447_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1448_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1449_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1453_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1454_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1457_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1458_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1459_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1461_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1462_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1463_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1473_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1480_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1482_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1484_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1487_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1489_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1493_scan1_MotionSummary_Plot.pdf
+Success!! Copied to -
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/qualitycheck/madc1507_scan1_MotionSummary_Plot.pdf
+
+% adding spacing dividers
+fprintf(2, '\n');
+
+disp(['======== Session ENDED!! ==========  ', datestr(clock), '  ==================']);
+======== Session ENDED!! ==========  05-Jun-2018 13:58:46  ==================
+
+% shut off diary
+diary off
