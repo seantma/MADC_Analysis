@@ -1,0 +1,86 @@
+
+Initializing spm8 Batch
+
+Checking for vbm8HiRes.options ...not present.
+Parsing commands:
+
+
+Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
+
+
+Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
+
+
+ vbm8HiRes
+
+  Will set up vbm8HiRes batch jobs using the following parameters
+
+ anatomy path             : func/coReg
+ name of hisres image     : t1mprage
+ directory to vbm8        : func/coReg/vbm8/
+ all(1) or biasfield(0)   : 1
+ prepending name          : vbm8_w3mm_
+ Erosion Last flag        : 1
+
+
+ functional images path    : ./
+ Subject directory         : ../../../Subjects_oldResting
+
+ Back(1)/fore(0)ground     : 0
+
+ spm8 is located in        : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8/spm8_with_R6313
+ spm8Batch is located in   : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch
+ spm8 patch is located in  : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/matlabScripts
+ auxiliary matlab path     : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/spm8_patch
+ matlab options file       : 
+
+ User                      : NOMAIL
+ MATLAB                    : /opt/bin/matlab
+
+ SANDBOXHOST               : madcbrain
+ SANDBOX                   : /madcbrain/sandbox/
+ SANDBOXPID                : 
+
+ UMSTREAM_STATUS_FILE      : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/madc1487_scan1_validation_umstream_status_file
+
+ Copyright Robert C. Welsh, 2005-2018, Version 1.0/2012-03-05
+
+
+
+  And will perform vbm8HiRes on the following subjects:
+
+      madc1487_scan1
+
+
+ Building scripts...
+
+  UMBatchMaster=/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess
+
+   Script will live in : spm8Batch/vbm8HiRes/2018_06
+
+    2) building in first part of matlab script
+    3) building list of subjects
+
+    4) finalizing matlab scripts
+    5) building shell script
+
+
+Calling erodeMask with :
+
+erodeMask -E 2 1 -w func/coReg/vbm8  -v vbm8_w3mm_ -h t1mprage -m "-s 5 -sub 0.333" -M ../../../Subjects_oldResting -n eroMask_    [list of subjects] (see shell script file: /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_06/vbm8HiRes_180604_22_43_48_961_tehsheng_madcbrai.sh)
+
+ Script name(s):
+
+
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_06/vbm8HiRes_180604_22_43_48_961_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_06/vbm8HiRes_180604_22_43_48_961_tehsheng_madcbrai.sh
+
+
+   Launching script into foreground.
+
+
+   vbm8HiRes Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_06/vbm8HiRes_180604_22_43_48_961_tehsheng_madcbrai.sh is finished
+   vbm8HiRes Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_06/vbm8HiRes_180604_22_43_48_961_tehsheng_madcbrai.log
+
+
+

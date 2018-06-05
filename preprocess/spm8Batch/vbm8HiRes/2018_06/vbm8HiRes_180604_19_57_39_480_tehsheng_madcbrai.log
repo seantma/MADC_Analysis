@@ -1,0 +1,167 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.556344) 64-bit (glnxa64)
+                               March 27, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> Coregistation Script Created on 180604_19_57_39_480
+>> >> >> >> >> >> [Warning: Name is nonexistent or not a directory:
+/Users/rcwelsh/matlabScripts/WELLES/mfiles] 
+[> In path (line 109)
+  In addpath (line 86)] 
+>> >> >> >> >> 
+UMBatchJobName =
+
+    'vbm8HiRes_180604_19_57_39_480_tehsheng_madcbrai'
+
+>> 
+UMBatchProcessName =
+
+    'vbm8HiRes'
+
+>> >> Initializing the job manager in SPM8
+
+Warping images using UMBatchVBM8
+Looping on the subjects now
+
+Working on madc1227_scan1
+
+ans =
+
+     1
+
+Entering UMBatchVBM8 V2.0 SPM8 Compatible
+
+
+------------------------------------------------------------------------
+Running job #1
+------------------------------------------------------------------------
+Running 'VBM8: Estimate & Write'
+Initial Coarse Affine Registration..
+Fine Affine Registration..
+VBM8 r435: /nfs/fmri/Analysis/Subjects_oldResting/madc1227_scan1/func/coReg/vbm8/t1mprage.nii
+NLM-Filter with multi-threading
+Using 8 processors
+Skull-stripping using graph-cut
+Amap with Kmeans
+Nu correction
+iters:  1 error:   92.79
+Nu correction
+iters:  1 error:  116.91
+MRF priors: alpha 0.287 0.361 0.352 	 beta 1.097
+iters:  1 log-likelihood: 2.70790iters:  2 log-likelihood: 2.70505iters:  3 log-likelihood: 2.70378iters:  4 log-likelihood: 2.70325
+Final Mean*Std: 218.462*86.907  520.294*61.757  761.906*68.357  
+Weighted MRF beta 0.165
+ICM: 1 relative change: 13.9195ICM: 2 relative change: 3.5460ICM: 3 relative change: 1.3634ICM: 4 relative change: 0.5916ICM: 5 relative change: 0.2765ICM: 6 relative change: 0.1497ICM: 7 relative change: 0.0835
+Final masking
+Dartel normalization...
+1 	473832	0	473832	244.136
+2 	416908	18243	435151	109.162
+3 	410359	22078	432437	44.1277
+4 	406046	11711.7	417758	101.9
+5 	384825	26513.5	411339	42.7226
+6 	382760	28167.8	410928	29.3258
+7 	379545	14480.1	394025	84.1465
+8 	358516	29136.7	387653	30.2541
+9 	356729	30484.9	387214	20.7116
+10 	352368	15681.7	368049	73.6525
+11 	331516	30210.7	361727	27.7829
+12 	329862	31296.4	361158	16.7655
+13 	326717	16234.9	342952	71.3207
+14 	306212	30135.4	336347	29.4083
+15 	305224	30356	335580	17.9351
+16 	354565	31987.9	386553	81.3957
+17 	342130	37956.8	380087	45.6129
+18 	344862	34199	379061	32.887
+.......................................................................................................................
+Done    'VBM8: Estimate & Write'
+Done
+
+Entering UMBatchWarpVBM8 V2.0 SPM8 Compatible
+Using deformation field 
+    /nfs/fmri/Analysis/Subjects_oldResting/madc1227_scan1/func/coReg/vbm8/y_rt1mprage.nii
+Warping 7 images like /nfs/fmri/Analysis/Subjects_oldResting/madc1227_scan1/func/coReg/vbm8/t1mprage.nii,1 to space of /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8/spm8_with_R6313/templates/r3mm_avg152T1.nii,1
+
+
+------------------------------------------------------------------------
+Running job #1
+------------------------------------------------------------------------
+Running 'Deformations'
+Done    'Deformations'
+Done
+
+Deformation applied and finished in 18.082109 seconds
+Deformation finished in 1026.082143 seconds
+
+All done with warpingVBM8 processing of High Resolution image.
+>> >> 
+Initializing spm8 Batch
+
+Checking for erodeMask.options ...not present.
+Parsing commands:
+
+
+Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
+
+
+ erodeMask
+
+  Will set up erodeMask batch jobs using the following parameters
+
+ directory to vbm8                         : func/coReg/vbm8/
+ hiresolution name to look for             : t1mprage/
+ prepending name                           : eroMask_
+ WM and CSF Erosion iteration factors      : 2 1
+ Erosion Last flag                         : 1
+
+ functional images path    : func/
+ Subject directory         : ../../../Subjects_oldResting
+
+ Back(1)/fore(0)ground     : 0
+
+ spm8 is located in        : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8/spm8_with_R6313
+ spm8Batch is located in   : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch
+ spm8 patch is located in  : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/matlabScripts
+ auxiliary matlab path     : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/spm8_patch
+ matlab options file       : 
+
+ User                      : tehsheng
+ MATLAB                    : /opt/bin/matlab
+
+ SANDBOXHOST               : madcbrain
+ SANDBOX                   : /madcbrain/sandbox/
+ SANDBOXPID                : 
+
+ UMSTREAM_STATUS_FILE      : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/madc1227_scan1_validation_umstream_status_file
+
+ Copyright Robert C. Welsh, 2005-2018, Version 1.1/2012-12-21
+
+
+
+  And will perform erodeMask on the following subjects:
+
+      madc1227_scan1
+
+
+WM erosion factor  :  -ero -ero
+
+CSF erosion factor :  -ero
+
+Eroding the final segments.
+Working on subject madc1227_scan1
+    WM vbm8_w3mm_p2t1mprage
+    CSF vbm8_w3mm_p3t1mprage
+
+
+No sandbox specified
+
+
+
+Start   : Mon Jun  4 19:57:41 EDT 2018
+Finish  : Mon Jun  4 20:15:50 EDT 2018
+
+

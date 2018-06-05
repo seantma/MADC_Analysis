@@ -1,0 +1,97 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.556344) 64-bit (glnxa64)
+                               March 27, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> Coregistation Script Created on 180604_20_33_35_851
+>> >> >> >> >> >> [Warning: Name is nonexistent or not a directory:
+/Users/rcwelsh/matlabScripts/WELLES/mfiles] 
+[> In path (line 109)
+  In addpath (line 86)] 
+>> >> >> >> >> 
+UMBatchJobName =
+
+    'coregOverlay_180604_20_33_35_851_tehsheng_madcbrai'
+
+>> 
+UMBatchProcessName =
+
+    'coregOverlay'
+
+>> >> Initializing the job manager in SPM8
+
+UMReSlice =
+
+     0
+
+
+
+Calling UMBatchCoReg with:
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/../../../Subjects_oldResting/madc1463_scan1/func//run_01/utprun_01.nii
+/nfs/fmri/Analysis/Subjects_oldResting/madc1463_scan1/func/coReg/t1mprage.nii
+UMReSlice:0
+Entering UMBatchCoReg V2.0 for SPM8
+Coreging /nfs/fmri/Analysis/Subjects_oldResting/madc1463_scan1/func/coReg/t1mprage.nii to
+         /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/../../../Subjects_oldResting/madc1463_scan1/func//run_01/utprun_01.nii
+
+
+------------------------------------------------------------------------
+Running job #1
+------------------------------------------------------------------------
+Running 'Coregister: Estimate'
+iteration 1...
+-1.979   0        0        0        0        0        | -1.0493
+-1.979   1.808    0        0        0        0        | -1.05
+-1.979   1.808    -1.848   0        0        0        | -1.0507
+-1.979   1.808    -1.848   0        0        0        | -1.0507
+-1.979   1.808    -1.848   0        0.001675 0        | -1.0508
+-1.979   1.808    -1.848   0        0.001675 0        | -1.0508
+iteration 2...
+-1.969   1.808    -1.848   0        0.001675 0        | -1.0508
+-1.969   1.808    -1.848   0        0.001675 0        | -1.0508
+-1.969   1.808    -1.831   0        0.001675 0        | -1.0508
+-1.969   1.808    -1.831   0        0.001675 0        | -1.0508
+-1.969   1.808    -1.831   0        0.001675 0        | -1.0508
+-1.969   1.808    -1.831   0        0.001675 0        | -1.0508
+iteration 1...
+-2.108   1.808    -1.831   0        0.001675 0        | -1.0509
+-2.108   2.035    -1.831   0        0.001675 0        | -1.0509
+-2.108   2.035    -2.196   0        0.001675 0        | -1.0509
+-2.108   2.035    -2.196   -0.0007068 0.001675 0        | -1.051
+-2.108   2.035    -2.196   -0.0007068 0.006615 0        | -1.051
+-2.108   2.035    -2.196   -0.0007068 0.006615 -0.0006345 | -1.051
+iteration 2...
+-2.108   2.035    -2.196   -0.0007068 0.006615 -0.0006345 | -1.051
+-2.108   2.09     -2.196   -0.0007068 0.006615 -0.0006345 | -1.051
+-2.108   2.09     -2.156   -0.0007068 0.006615 -0.0006345 | -1.051
+-2.108   2.09     -2.156   -0.001816 0.006615 -0.0006345 | -1.051
+-2.108   2.09     -2.156   -0.001816 0.006615 -0.0006345 | -1.051
+-2.108   2.09     -2.156   -0.001816 0.006615 -0.0006345 | -1.051
+-2.108   2.146    -2.116   -0.002925 0.006615 -0.0006345 | -1.051
+iteration 3...
+-2.108   2.146    -2.116   -0.002925 0.006615 -0.0006345 | -1.051
+-2.108   2.145    -2.116   -0.002925 0.006615 -0.0006345 | -1.051
+-2.108   2.145    -2.127   -0.002925 0.006615 -0.0006345 | -1.051
+-2.108   2.148    -2.125   -0.00298 0.006615 -0.0006345 | -1.051
+-2.108   2.148    -2.125   -0.00298 0.006615 -0.0006345 | -1.051
+-2.108   2.148    -2.125   -0.00298 0.006615 -0.0006345 | -1.051
+Done    'Coregister: Estimate'
+Done
+
+CoReg Done in 22.548296 seconds
+
+All done with coregistration.
+>> >> 
+No sandbox specified
+
+
+
+Start   : Mon Jun  4 20:33:38 EDT 2018
+Finish  : Mon Jun  4 20:34:37 EDT 2018
+
+

@@ -1,0 +1,59 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2017 The MathWorks, Inc.
+                   R2017a (9.2.0.556344) 64-bit (glnxa64)
+                               March 27, 2017
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>>  /opt/bin/matlab -nodisplay <<EOF 
+ |
+{Error: Unexpected MATLAB operator.
+} 
+>> >> >> >> >> >> >> Coregistation Script Created on 180604_21_27_42_932
+>> Coregistation Script Created on 180604_21_27_42_932
+>> >> >> >> >> >> >> >> >> >> >> [Warning: Name is nonexistent or not a directory:
+/Users/rcwelsh/matlabScripts/WELLES/mfiles] 
+[> In path (line 109)
+  In addpath (line 86)] 
+>> [Warning: Name is nonexistent or not a directory:
+/Users/rcwelsh/matlabScripts/WELLES/mfiles] 
+[> In path (line 109)
+  In addpath (line 86)] 
+>> >> >> >> >> >> >> >> >> 
+UMBatchJobName =
+
+    'vbm8HiRes_180604_21_27_42_932_tehsheng_madcbrai'
+
+>> 
+UMBatchJobName =
+
+    'vbm8HiRes_180604_21_27_42_932_tehsheng_madcbrai'
+
+>> 
+UMBatchProcessName =
+
+    'vbm8HiRes'
+
+>> 
+UMBatchProcessName =
+
+    'vbm8HiRes'
+
+>> >> >> {Error: File:
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_06/vbm8HiRes_180604_21_27_42_932_tehsheng_madcbrai.m
+Line: 103 Column: 15
+The expression to the left of the equals sign is not a valid target for an
+assignment.
+} 
+>> {Error: File:
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_06/vbm8HiRes_180604_21_27_42_932_tehsheng_madcbrai.m
+Line: 103 Column: 15
+The expression to the left of the equals sign is not a valid target for an
+assignment.
+} 
+>> >> >> /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_06/vbm8HiRes_180604_21_27_42_932_tehsheng_madcbrai.sh: line 133: EOF: command not found
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_06/vbm8HiRes_180604_21_27_42_932_tehsheng_madcbrai.sh: line 162: syntax error near unexpected token `else'
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_06/vbm8HiRes_180604_21_27_42_932_tehsheng_madcbrai.sh: line 162: `else'
