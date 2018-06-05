@@ -26,14 +26,15 @@
 # Does not contain filtered out subjects from QC check
 
 subjIDs=(
-# === subject that had issues
+# === subject that had issues: attempted on 6/4/2018
 # madc1339_scan1
 # madc1343_scan1
 # madc1355_scan1
 # madc1405_scan1
-# === Test subject
+# === Test subject: 1st wave 6/4/2018
 madc0732_scan1
-# === Remaining subjects
+# === Remaining subjects: 1st wave 6/4/2018
+# issues /w 1357, 1479 with failed VBM - `grep -i 'abort' madc*_validation*`
 # madc0768_scan1
 # madc0773_scan1
 # madc0775_scan1
