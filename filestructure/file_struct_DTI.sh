@@ -109,3 +109,13 @@ do
   fi
 
 done < MADC_DTI_0614_2018.csv
+
+# ERROR from Log
+# [tehsheng@madcbrain filestructure]$ grep 'cannot' Log_file_struct_DTI_0614_2018.txt
+# cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01339_03384/anatomy/t1mprage_208/t1mprage_208.nii’: No such file or directory
+# cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01405_03782/anatomy/t1mprage_208/t1mprage_208.nii’: No such file or directory
+# SOLVED by `cp -ipal` directly
+# cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/bmh17umm01337_03349/DTI/dti_96_2000/run_01/run_01.nii’: No such file or directory
+# chmod: cannot access ‘*.nii’: No such file or directory
+# cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/bmh17umm01342_03350/DTI/dti_96_2000/run_01/run_01.nii’: No such file or directory
+# chmod: cannot access ‘*.nii’: No such file or directory
