@@ -110,6 +110,9 @@ do
 
 done < MADC_DTI_0614_2018.csv
 
+# change access for Scott
+# find . -type d -exec chmod 775 {} \;
+
 # ERROR from Log
 # [tehsheng@madcbrain filestructure]$ grep 'cannot' Log_file_struct_DTI_0614_2018.txt
 # cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01339_03384/anatomy/t1mprage_208/t1mprage_208.nii’: No such file or directory
