@@ -92,7 +92,7 @@ do
   else
     cd run_01
     # previously using cp -ip --> occupying too much space; using hardlinks instead
-    cp -ipal ${RAWDIR}/${oldfolder}/func/resting/run_01/run_01.nii .
+    cp -ipal ${RAWDIR}/${oldfolder}/DTI/dti_96_2000/run_01/run_01.nii .
 
     # chmod to read only
     chmod go-w *.nii
