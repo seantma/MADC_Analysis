@@ -13,7 +13,7 @@
 # - integrate with Makefile for fault tolerance and parallelization
 #
 # - How to run:
-# sh file_struct_oldResting.sh 2>&1 | tee Log_file_struct_oldResting_$(date +"%m%d_%Y").txt
+# sh file_struct_DTI.sh 2>&1 | tee Log_file_struct_DTI_$(date +"%m%d_%Y").txt
 # - How to check error:
 # grep -i 'no such file' file_struct_oldResting_log_1222_2016.txt
 # - How to generate directory listing for FirstLevel_mc_template.m
@@ -108,4 +108,4 @@ do
     echo
   fi
 
-done < MADC_MADC_DTI_0614_2018.csv
+done < MADC_DTI_0614_2018.csv
