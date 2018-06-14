@@ -21,7 +21,7 @@
 #
 # TODO(Sean): 1. print out original file directory and file name of t1mprage_208
 
-THISDIR=/nfs/fmri/Analysis/Subjects_DTI
+THISDIR=/nfs/fmri/Analysis/Scott_NODDI_DTI
 RAWDIR=/nfs/fmri/RAW_nopreprocess
 
 echo "* * * * * * * * * * * * * * * * * * *"
