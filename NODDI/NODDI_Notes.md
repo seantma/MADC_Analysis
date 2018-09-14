@@ -3,11 +3,29 @@ Sean Ma
 9/14/2018, 10:20:26 AM
 
 ### UMMAP Protocol
-There should be 96 volumes in the UMMAP NODDI DTI image. The bval/bvec values are posted below. 
+There should be 96 volumes in the UMMAP NODDI DTI image. The bval/bvec values are posted below.
 
 ### Procedures
 1. Strip out initial redundant B0 volumes if existing (derived by `dcm2nii`)
-   `fslroi run_01.nii run_01_noB0.nii 6 96`
+    `fslroi run_01.nii run_01_noB0.nii 6 96`
+2. Eddy correct the DTI image
+    `eddy_correct run_01_noB0.nii eddy_run_01_noB0.nii 0`
+3. Skull extraction with `bet2`
+    ```shell
+    bet2 eddy_run_01_noB0.nii.gz eddy_run_01_noB0_bet -m
+    gunzip eddy_run_01_noB0.nii.gz
+    gunzip eddy_run_01_noB0_bet_mask.nii.gz
+    ```
+4. Call `MATLAB` with `NODDI Toolbox`
+    ```matlab
+    addpath(genpath('/opt/tools/niftimatlib-1.2'))
+    addpath(genpath('/opt/tools/NODDI_toolbox_v1.01'))
+    CreateROI('eddy_run_01_noB0.nii','eddy_run_01_noB0_bet_mask.nii','NODDI_roi.mat')
+    protocol = FSL2Protocol('ummap.bval', 'ummap.bvec');
+    noddi = MakeModel('WatsonSHStickTortIsoV_B0');
+    batch_fitting('NODDI_roi.mat', protocol, noddi, 'FittedParams.mat', 4);
+    SaveParamsAsNIfTI('FittedParams.mat', 'NODDI_roi.mat', 'eddy_run_01_noB0_bet_mask.nii', 'PCN_DrD_Ext_scan1')
+    ```
 
 
 ### UMMAP Camino format bval/bvec
