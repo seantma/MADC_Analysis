@@ -2,6 +2,8 @@
 Sean Ma
 9/14/2018, 10:20:26 AM
 
+Scripts adopted heavily from UCL MIG's **NODDI Toolbox** tutorial: http://mig.cs.ucl.ac.uk/index.php?n=Tutorial.NODDImatlab . Also learned that _Daducci et al._ created another toolbox with faster method of calculation, named **AMICO** (maintained in `python`; although Scott is using their deprecated `Matlab` scripts): https://github.com/daducci/AMICO
+
 ### UMMAP Protocol
 There should be 96 volumes in the UMMAP NODDI DTI image. The bval/bvec values are posted below.
 
@@ -27,6 +29,16 @@ There should be 96 volumes in the UMMAP NODDI DTI image. The bval/bvec values ar
     SaveParamsAsNIfTI('FittedParams.mat', 'NODDI_roi.mat', 'eddy_run_01_noB0_bet_mask.nii', 'PCN_DrD_Ext_scan1')
     SaveParamsAsNIfTI('FittedParams.mat', 'NODDI_roi.mat', 'eddy_run_01_noB0_bet_mask.nii', 'DrD_Ext_scan1')
     ```
+### Output
+Output files analyzed are listed below with brief descrpition:
+
+- Neurite density (or intra-cellular volume fraction): example_ficvf.nii
+- Orientation dispersion index (ODI): example_odi.nii
+- CSF volume fraction: example_fiso.nii
+- Fibre orientation: example_fibredirs_{x,y,z}vec.nii
+- Fitting objective function values: example_fmin.nii
+- Concentration parameter of Watson distribution used to compute ODI: example_kappa.nii
+- Error code: example_error_code.nii (NEW) Nonzero values indicate fitting errors.
 
 
 ### UMMAP Camino format bval/bvec
