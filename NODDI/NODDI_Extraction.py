@@ -3,10 +3,15 @@
 #
 # Sean Ma, 9/25/2018, 10:51:25 AM
 
-# define files
-neurite1 = "/Users/tehsheng/Dropbox/DrD_Ext/DrD_Ext_DTI_scan1/DrD_Ext_scan1_ficvf.nii"
-neurite2 = "/Users/tehsheng/Dropbox/DrD_Ext/DrD_Ext_DTI_scan2/reSlice_fromScan1_FICVF_DrD_Ext_scan2_ficvf.nii"
-anat = "/Users/tehsheng/Dropbox/DrD_Ext/anatomy/reSlice_fromODI_ht1spgr.nii"
+# %% set working directory
+import os
+workdir = "/Users/tehsheng/Dropbox/DrD_Ext"
+os.chdir(workdir)
+
+# %% define files
+neurite1 = "DrD_Ext_DTI_scan1/DrD_Ext_scan1_ficvf.nii"
+neurite2 = "DrD_Ext/DrD_Ext_DTI_scan2/reSlice_fromScan1_FICVF_DrD_Ext_scan2_ficvf.nii"
+anat = "anatomy/reSlice_fromODI_ht1spgr.nii"
 
 # %% plotting glass brain /w `nilearn`
 import nilearn
