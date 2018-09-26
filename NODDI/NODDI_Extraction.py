@@ -34,6 +34,10 @@ from nilearn.plotting import plot_glass_brain
 img_s1 = Brain_Data(neurite1)
 plot_glass_brain(img_s1.to_nifti())
 
+# %% importing roi spreadsheet /w `pandas`
+import pandas as pd
+
+
 # %% creating & saving sphere for masking & later fslview
 from nltools.mask import create_sphere
 r_mask = create_sphere([32, 24, -11], radius = 15)
