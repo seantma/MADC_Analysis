@@ -36,12 +36,22 @@ plot_glass_brain(img_s1.to_nifti())
 
 # %% importing roi spreadsheet /w `pandas`
 import pandas as pd
-
+roi_df = pd.read_csv('roi_5mm.csv')
+roi_df.x[1]
 
 # %% creating & saving sphere for masking & later fslview
 from nltools.mask import create_sphere
 r_mask = create_sphere([32, 24, -11], radius = 15)
 r_mask.to_filename('15mm_mask.nii')
+
+# %% define function to create roi mask files
+def roi_mask(x,y,z,label,size):
+    mask = create_sphere([x, y, z], radius = size)
+    mask.to_filename("_".join([label, str(size), ".nii"]))
+    return
+
+# %% testing roi mask function
+roi_mask(3,4,5,"test",5)
 
 # %% applying mask to image of interest
 masked_img_s1 = img_s1.apply_mask(r_mask)
