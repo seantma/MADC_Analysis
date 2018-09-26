@@ -42,7 +42,7 @@ roi_df = pd.read_csv('roi_5mm.csv')
 def roi_mask(x, y, z, label, size):
     mask = create_sphere([x, y, z], radius = size)
     mask.to_filename("_".join([label, str(size), ".nii"]))
-    return
+    return mask
 
 # %% looping over dataframe to create & save sphere for roi masked_img_s1 & later fslview
 from nltools.mask import create_sphere
@@ -50,19 +50,21 @@ from nltools.mask import create_sphere
 # r_mask.to_filename('15mm_mask.nii')
 # inspired by https://stackoverflow.com/questions/43619896/python-pandas-iterate-over-rows-and-access-column-names
 for row in roi_df.itertuples():
-    roi_mask(row.x, row.y, row.z, row.label, row.size)
-
-# %% applying mask to image of interest
-masked_img_s1 = img_s1.apply_mask(r_mask)
-masked_img_s1.plot()
+    # saving and returning the roi mask created
+    mask = roi_mask(row.x, row.y, row.z, row.label, row.size)
+    # applying the mask on image of interest
+    masked_img_s1 = img_s1.apply_mask(mask)
+    # plotting ortho views at roi coordinates on subject's brain instead of default axial plots
+    # masked_img_s1.plot()
+    plotting.plot_stat_map(masked_img_s1.to_nifti(), bg_img=anat,
+    display_mode='ortho', cut_coords=[row.x, row.y, row.z],
+    draw_cross=False,
+    title="{0}, {1} mm sphere at [{2},{3},{4}]".format(row.label,str(row.size),row.x,row.y,row.z))
 
 # %% plot the masked image with histogram distributions
 import seaborn as sns
 len(masked_img_s1.data)
 sns.distplot(masked_img_s1.data)
-
-# %% plotting on individual brain instead of standard brain
-masked_img_s1.plot(anatomical = anat)
 
 # %% read in neurite from scan2 and generate histogram for comparison
 img_s2 = Brain_Data(neurite2)
