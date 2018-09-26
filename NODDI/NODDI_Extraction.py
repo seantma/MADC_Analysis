@@ -8,7 +8,7 @@ neurite1 = "/Users/tehsheng/Dropbox/DrD_Ext/DrD_Ext_DTI_scan1/DrD_Ext_scan1_ficv
 neurite2 = "/Users/tehsheng/Dropbox/DrD_Ext/DrD_Ext_DTI_scan2/reSlice_fromScan1_FICVF_DrD_Ext_scan2_ficvf.nii"
 anat = "/Users/tehsheng/Dropbox/DrD_Ext/anatomy/reSlice_fromODI_ht1spgr.nii"
 
-# %% first attempt in using `nilearn`
+# %% plotting glass brain /w `nilearn`
 import nilearn
 from nilearn import plotting
 plotting.plot_glass_brain(neurite1)
@@ -18,12 +18,12 @@ from nilearn import image
 smoothed_img = image.smooth_img(neurite1, fwhm=5)
 plotting.plot_glass_brain(smoothed_img)
 
-# %% loading it from `nilearn` as `Nifti1Image`
+# %% loading image as `Nifti1Image`
 img = image.load_img(neurite1)
 print(img.header)
 print(img.shape)
 
-# %% loading image from `nltools` and plotting it on glass brain
+# %% visualizing glass brain /w `nltools`
 from nltools.data import Brain_Data
 from nilearn.plotting import plot_glass_brain
 img_s1 = Brain_Data(neurite1)
