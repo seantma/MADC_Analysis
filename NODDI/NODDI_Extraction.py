@@ -2,6 +2,9 @@
 # Using `hydrogen` in Atom
 #
 # Sean Ma, 9/25/2018, 10:51:25 AM
+#
+# NOTE::
+# - figure out `pweave` and how it interacts /w `hydrogen: `
 
 # %% set working directory
 import os
@@ -12,6 +15,7 @@ os.chdir(workdir)
 neurite1 = "DrD_Ext_DTI_scan1/DrD_Ext_scan1_ficvf.nii"
 neurite2 = "DrD_Ext/DrD_Ext_DTI_scan2/reSlice_fromScan1_FICVF_DrD_Ext_scan2_ficvf.nii"
 anat = "anatomy/reSlice_fromODI_ht1spgr.nii"
+roi_all = "all_rois.nii.gz"
 
 # %% plotting glass brain /w `nilearn`
 import nilearn
@@ -39,14 +43,14 @@ import pandas as pd
 roi_df = pd.read_csv('roi_5mm.csv')
 
 # %% define function to create roi mask files
+from nltools.mask import create_sphere
+
 def roi_mask(x, y, z, label, size):
     mask = create_sphere([x, y, z], radius = size)
     mask.to_filename("_".join([label, str(size), ".nii"]))
     return mask
 
 # %% looping over dataframe to create & save sphere for roi masked_img_s1 & later fslview
-from nltools.mask import create_sphere
-
 # initialize dataframe
 neurite_df = pd.DataFrame()
 
@@ -69,11 +73,20 @@ for row in roi_df.itertuples():
     fig_label = "{0}, {1} mm sphere at [{2},{3},{4}]".format(row.label,str(row.size),row.x,row.y,row.z)
     plotting.plot_stat_map(masked_img_s1.to_nifti(), bg_img=anat,
                            display_mode='ortho', cut_coords=[row.x, row.y, row.z],
-                           draw_cross=False,
+                           draw_cross=False, dim=-1,
                            title=fig_label)
 
 # %%
 neurite_df
+neurite_df.describe()
+
+# %% visualizing the rois altogether on subject's brain
+# NOTE:: using `plot_roi`
+# using `fslmaths` : fslmaths L_ant_5_.nii -add L_mid_5_.nii -add L_post_5_.nii -add R_ant_5_.nii -add R_mid_5_.nii -add R_post_5_.nii -add R_CSF_3_.nii -add Corpus_Callosm_3_.nii all_rois.nii
+rois = image.load_img(roi_all)
+
+plotting.plot_roi(rois, bg_img=anat, display_mode='z', dim=-1)
+
 
 # %% plot the masked image with histogram distributions
 import seaborn as sns
