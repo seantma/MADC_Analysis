@@ -62,14 +62,14 @@ for row in roi_df.itertuples():
 
     # concatenate extracted neurite into dataframe
     neurite_df = pd.concat([neurite_df, pd.DataFrame(masked_img_s1.data, columns=[row.label])],
-    axis = 1)
+                           axis = 1)
 
     # plotting ortho views at roi coordinates on subject's brain instead of default axial plots
     # masked_img_s1.plot()
     plotting.plot_stat_map(masked_img_s1.to_nifti(), bg_img=anat,
-    display_mode='ortho', cut_coords=[row.x, row.y, row.z],
-    draw_cross=False,
-    title="{0}, {1} mm sphere at [{2},{3},{4}]".format(row.label,str(row.size),row.x,row.y,row.z))
+                           display_mode='ortho', cut_coords=[row.x, row.y, row.z],
+                           draw_cross=False,
+                           title="{0}, {1} mm sphere at [{2},{3},{4}]".format(row.label,str(row.size),row.x,row.y,row.z))
 
 neurite_df
 
