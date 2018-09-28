@@ -14,12 +14,34 @@ os.chdir(workdir)
 # %% define files
 neurite1 = "DrD_Ext_DTI_scan1/DrD_Ext_scan1_ficvf.nii"
 neurite2 = "DrD_Ext_DTI_scan2/reSlice_fromScan1_FICVF_DrD_Ext_scan2_ficvf.nii"
-anat = "anatomy/reSlice_fromODI_ht1spgr.nii"
+# anat = "anatomy/reSlice_fromODI_ht1spgr.nii"
 anat = "anatomy/ht1spgr.nii"
 roi_all = "all_rois.nii.gz"
 sub_img = "DrD_Ext_DTI_scan2/Scan2-1_ficvf.nii.gz"
 asl1 = "DrD_Ext_ASL_scan1/vasc_3dasl/vasc_3dasl_scan1.nii"
-asl2 = "DrD_Ext_ASL_scan1/vasc_3dasl/vasc_3dasl_scan2.nii"
+asl2 = "DrD_Ext_ASL_scan2/vasc_3dasl/vasc_3dasl_scan2.nii"
+# define z axis cuts
+import numpy as np
+z_cut = np.arange(-16,56,8)
+z_cut
+
+# %% Visualization on the subject's own brain
+from nilearn import plotting
+from nilearn import image
+
+for asl in [asl1, asl2]:
+    # read in the perfusion volume in 3dasl (index 1, 2nd volume)
+    asl_img = image.index_img(asl, 1)
+    # split up the file path for figure title use
+    path, file = os.path.split(asl)
+    # plot the asl map subject's T1
+    plotting.plot_roi(asl_img,
+                      bg_img = anat,
+                      display_mode = 'z', cut_coords = z_cut,
+                      threshold = 50,
+                      dim = -1,                     # dimming the anatomy background
+                      title = "ASL file: {0}".format(file),
+                      output_file = "ASL_visual_{0}.png".format(file))
 
 
 
