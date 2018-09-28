@@ -15,29 +15,13 @@ os.chdir(workdir)
 neurite1 = "DrD_Ext_DTI_scan1/DrD_Ext_scan1_ficvf.nii"
 neurite2 = "DrD_Ext_DTI_scan2/reSlice_fromScan1_FICVF_DrD_Ext_scan2_ficvf.nii"
 anat = "anatomy/reSlice_fromODI_ht1spgr.nii"
+anat = "anatomy/ht1spgr.nii"
 roi_all = "all_rois.nii.gz"
 sub_img = "DrD_Ext_DTI_scan2/Scan2-1_ficvf.nii.gz"
+asl1 = "DrD_Ext_ASL_scan1/vasc_3dasl/vasc_3dasl_scan1.nii"
+asl2 = "DrD_Ext_ASL_scan1/vasc_3dasl/vasc_3dasl_scan2.nii"
 
-# %% plotting glass brain /w `nilearn`
-import nilearn
-from nilearn import plotting
-plotting.plot_glass_brain(neurite1)
 
-# %% testing smoothing on the image
-from nilearn import image
-smoothed_img = image.smooth_img(neurite1, fwhm=5)
-plotting.plot_glass_brain(smoothed_img)
-
-# %% loading image as `Nifti1Image` and header
-img = image.load_img(neurite1)
-print(img.header)
-print(img.shape)
-
-# %% visualizing glass brain /w `nltools`
-from nltools.data import Brain_Data
-from nilearn.plotting import plot_glass_brain
-img_s1 = Brain_Data(neurite2)
-plot_glass_brain(img_s1.to_nifti())
 
 # %% importing roi spreadsheet /w `pandas`
 import pandas as pd
@@ -121,3 +105,26 @@ masked_img_s2.plot(anatomical = anat)
 
 len(masked_img_s2.data)
 sns.distplot(masked_img_s2.data)
+
+# ==== Test ground for playing ====
+#
+# %% plotting glass brain /w `nilearn`
+import nilearn
+from nilearn import plotting
+plotting.plot_glass_brain(neurite1)
+
+# %% testing smoothing on the image
+from nilearn import image
+smoothed_img = image.smooth_img(neurite1, fwhm=5)
+plotting.plot_glass_brain(smoothed_img)
+
+# %% loading image as `Nifti1Image` and header
+img = image.load_img(neurite1)
+print(img.header)
+print(img.shape)
+
+# %% visualizing glass brain /w `nltools`
+from nltools.data import Brain_Data
+from nilearn.plotting import plot_glass_brain
+img_s1 = Brain_Data(neurite2)
+plot_glass_brain(img_s1.to_nifti())
