@@ -13,9 +13,10 @@ os.chdir(workdir)
 
 # %% define files
 neurite1 = "DrD_Ext_DTI_scan1/DrD_Ext_scan1_ficvf.nii"
-neurite2 = "DrD_Ext/DrD_Ext_DTI_scan2/reSlice_fromScan1_FICVF_DrD_Ext_scan2_ficvf.nii"
+neurite2 = "DrD_Ext_DTI_scan2/reSlice_fromScan1_FICVF_DrD_Ext_scan2_ficvf.nii"
 anat = "anatomy/reSlice_fromODI_ht1spgr.nii"
 roi_all = "all_rois.nii.gz"
+sub_img = "DrD_Ext_DTI_scan2/Scan2-1_ficvf.nii.gz"
 
 # %% plotting glass brain /w `nilearn`
 import nilearn
@@ -35,7 +36,7 @@ print(img.shape)
 # %% visualizing glass brain /w `nltools`
 from nltools.data import Brain_Data
 from nilearn.plotting import plot_glass_brain
-img_s1 = Brain_Data(neurite1)
+img_s1 = Brain_Data(neurite2)
 plot_glass_brain(img_s1.to_nifti())
 
 # %% importing roi spreadsheet /w `pandas`
@@ -76,9 +77,23 @@ for row in roi_df.itertuples():
                            draw_cross=False, dim=-1,
                            title=fig_label)
 
+# %% try using functional programming `apply` to solve this
+ # def noddi_extract(row, neurite):
+     # read in NODDI image
+     # img_s1 = Brain_Data(neurite1
+
+for neu in [neurite1, neurite2]:
+    img = image.load_img(neu)
+    print(img.shape)
+
+for indx,item in enumerate([neurite1, neurite2]):
+    print(indx, item)
+
 # %%
 neurite_df
 neurite_df.describe()
+neurite_df.to_csv('nuerite_scan2.csv')
+neurite_df.describe().to_csv('nuerite_scan2_Summary.csv')
 
 # %% visualizing the rois altogether on subject's brain
 # NOTE:: using `plot_roi`
@@ -86,6 +101,11 @@ neurite_df.describe()
 rois = image.load_img(roi_all)
 
 plotting.plot_roi(rois, bg_img=anat, display_mode='z', dim=-1)
+
+# %% visualizing Scan2-Scan1 neurite density difference map
+sub = image.load_img(sub_img)
+
+plotting.plot_roi(sub, bg_img=anat, display_mode='z', dim=-1, threshold=0.5)
 
 
 # %% plot the masked image with histogram distributions
