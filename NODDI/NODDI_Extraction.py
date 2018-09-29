@@ -29,12 +29,14 @@ z_cut
 # %% Visualization on the subject's own brain
 from nilearn import plotting
 from nilearn import image
+# `pathlib` more elegant for filename splitting
+import pathlib
 
 for asl in [asl1, asl2]:
     # read in the perfusion volume in 3dasl (index 1, 2nd volume)
     asl_img = image.index_img(asl, 1)
     # split up the file path for figure title use
-    path, file = os.path.split(asl)
+    file = pathlib.Path(asl).stem
     # plot the asl map subject's T1
     plotting.plot_roi(asl_img,
                       bg_img = anat,
@@ -42,9 +44,36 @@ for asl in [asl1, asl2]:
                       threshold = 50,
                       dim = -1,                     # dimming the anatomy background
                       colorbar = True,
-                      # output_file = "ASL_visual_{0}.png".format(file),
+                      vmin = 50, vmax = 1000,
+                      output_file = "ASL_visual_{0}.png".format(file),
                       title = "ASL file: {0}".format(file))
 
+# %% Plot difference map between Scan2 - Scan1
+# ERROR: 2 images need to have the same affine!! More strict than `fslmaths`!!
+# diff_img = image.math_img("img2 - img1",
+#                           img2 = image.index_img(asl2, 1),
+#                           img1 = image.index_img(asl1, 1))
+# using `fslmaths` instead
+import subprocess
+fp_asl1 = str(pathlib.PurePath(workdir, asl1))
+fp_asl2 = str(pathlib.PurePath(workdir, asl2))
+diff_img = 'asl_diff_scan2-1'
+
+# inspired by https://unix.stackexchange.com/questions/227337
+subprocess.call('fslmaths {0} -sub {1} {2}'.format(asl2,asl1,diff_img), shell=True)
+
+fname2 = pathlib.Path(asl2).stem
+fname1 = pathlib.Path(asl1).stem
+
+# visualizing the difference map - need to check if this is the right way!!
+plotting.plot_roi(image.index_img(diff_img+'.nii.gz', 1),
+                  bg_img = anat,
+                  display_mode = 'z', cut_coords = z_cut,
+                  threshold = 50,
+                  dim = -1,                     # dimming the anatomy background
+                  colorbar = True,
+                  # output_file = "ASL_visual_{0}.png".format(file),
+                  title = "ASL difference map: {0} - {1}".format(fname2, fname1))
 
 # %% importing roi spreadsheet /w `pandas`
 import pandas as pd
