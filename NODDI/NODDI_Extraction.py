@@ -20,7 +20,8 @@ roi_all = "all_rois.nii.gz"
 sub_img = "DrD_Ext_DTI_scan2/Scan2-1_ficvf.nii.gz"
 asl1 = "DrD_Ext_ASL_scan1/vasc_3dasl/vasc_3dasl_scan1.nii"
 asl2 = "DrD_Ext_ASL_scan2/vasc_3dasl/vasc_3dasl_scan2.nii"
-# define z axis cuts
+
+# %% define z axis cuts
 import numpy as np
 z_cut = np.arange(-16,56,8)
 z_cut
@@ -40,9 +41,9 @@ for asl in [asl1, asl2]:
                       display_mode = 'z', cut_coords = z_cut,
                       threshold = 50,
                       dim = -1,                     # dimming the anatomy background
-                      title = "ASL file: {0}".format(file),
-                      output_file = "ASL_visual_{0}.png".format(file))
-
+                      colorbar = True,
+                      # output_file = "ASL_visual_{0}.png".format(file),
+                      title = "ASL file: {0}".format(file))
 
 
 # %% importing roi spreadsheet /w `pandas`
