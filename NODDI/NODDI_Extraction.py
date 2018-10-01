@@ -75,6 +75,25 @@ plotting.plot_roi(image.index_img(diff_img+'.nii.gz', 1),
                   # output_file = "ASL_visual_{0}.png".format(file),
                   title = "ASL difference map: {0} - {1}".format(fname2, fname1))
 
+# %% visualize raw ASL images with no anatomy
+for asl in [asl1, asl2]:
+    # read in the perfusion volume in 3dasl (index 1, 2nd volume)
+    asl_img = image.index_img(asl, 1)
+    # split up the file path for figure title use
+    file = pathlib.Path(asl).stem
+    # plot the asl map subject's T1
+    plotting.plot_roi(asl_img,
+                      display_mode = 'z', cut_coords = z_cut,
+                      bg_img = None,
+                      threshold = 50,
+                      dim = -1,                         # dimming the anatomy background
+                      colorbar = True,
+                      vmin = 50, vmax = 1000, #200,     # using `fsleyes` histogram
+                      # cmap = 'gist_gray',             #'binary',
+                      output_file = "ASL_visual_{0}_vol1.png".format(file),
+                      title = "GE 3dasl: {0} - volume 1".format(file))
+
+
 # %% importing roi spreadsheet /w `pandas`
 import pandas as pd
 roi_df = pd.read_csv('roi_5mm.csv')
