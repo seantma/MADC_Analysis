@@ -1,5 +1,6 @@
-# Playing /w `nilearn` and `nltools`
-# Using `hydrogen` in Atom
+# Processing and extracting values from NODDI and 3dasl
+#   - This script adopted heavily the use of `nilearn` and `nltools`
+#   - This script was also prototyped using `hydrogen` in Atom
 #
 # Sean Ma, 9/25/2018, 10:51:25 AM
 #
