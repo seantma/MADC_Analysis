@@ -6,6 +6,7 @@
 #
 # NOTE::
 # - figure out `pweave` and how it interacts /w `hydrogen: `
+# - integrate `.Rmd` /w `.pmd`: https://github.com/nteract/hydrogen/issues/1165
 
 # %% set working directory
 import os
