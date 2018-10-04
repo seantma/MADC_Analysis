@@ -25,6 +25,7 @@ There should be 96 volumes in the UMMAP NODDI DTI image. The bval/bvec values ar
     CreateROI('eddy_run_01_noB0.nii','eddy_run_01_noB0_bet_mask.nii','NODDI_roi.mat')
     protocol = FSL2Protocol('ummap.bval', 'ummap.bvec');
     noddi = MakeModel('WatsonSHStickTortIsoV_B0');
+    noddi = MakeModel('BinghamStickTortIsoV_B0');   % Bingham model
     batch_fitting('NODDI_roi.mat', protocol, noddi, 'FittedParams.mat', 4);
     SaveParamsAsNIfTI('FittedParams.mat', 'NODDI_roi.mat', 'eddy_run_01_noB0_bet_mask.nii', 'PCN_DrD_Ext_scan1')
     SaveParamsAsNIfTI('FittedParams.mat', 'NODDI_roi.mat', 'eddy_run_01_noB0_bet_mask.nii', 'DrD_Ext_scan1')
