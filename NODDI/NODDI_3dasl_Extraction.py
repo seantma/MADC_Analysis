@@ -14,14 +14,19 @@ workdir = "/Users/tehsheng/Dropbox/DrD_Ext"
 os.chdir(workdir)
 
 # %% define files
-neurite1 = "DrD_Ext_DTI_scan1/DrD_Ext_scan1_ficvf.nii"
-neurite2 = "DrD_Ext_DTI_scan2/reSlice_fromScan1_FICVF_DrD_Ext_scan2_ficvf.nii"
 # anat = "anatomy/reSlice_fromODI_ht1spgr.nii"
 anat = "anatomy/ht1spgr.nii"
+anat_bet =
 roi_all = "all_rois.nii.gz"
+
+neurite1 = "DrD_Ext_DTI_scan1/DrD_Ext_scan1_ficvf.nii"
+neurite2 = "DrD_Ext_DTI_scan2/reSlice_fromScan1_FICVF_DrD_Ext_scan2_ficvf.nii"
 sub_img = "DrD_Ext_DTI_scan2/Scan2-1_ficvf.nii.gz"
+neurite_array = [neurite1, neurite2]
+
 asl1 = "DrD_Ext_ASL_scan1/vasc_3dasl/vasc_3dasl_scan1.nii"
 asl2 = "DrD_Ext_ASL_scan2/vasc_3dasl/vasc_3dasl_scan2.nii"
+asl_array = [asl1, asl2]
 
 # %% define z axis cuts
 import numpy as np
@@ -34,6 +39,7 @@ from nilearn import image
 # `pathlib` more elegant for filename splitting
 import pathlib
 
+# %% visualize raw ASL images with no anatomy
 for asl in [asl1, asl2]:
     # read in the perfusion volume in 3dasl (index 1, 2nd volume)
     asl_img = image.index_img(asl, 1)
@@ -41,14 +47,15 @@ for asl in [asl1, asl2]:
     file = pathlib.Path(asl).stem
     # plot the asl map subject's T1
     plotting.plot_roi(asl_img,
-                      bg_img = anat,
                       display_mode = 'z', cut_coords = z_cut,
+                      bg_img = None,                    # anat
                       threshold = 50,
-                      dim = -1,                     # dimming the anatomy background
+                      dim = -1,                         # dimming the anatomy background
                       colorbar = True,
-                      vmin = 50, vmax = 1000,
-                      output_file = "ASL_visual_{0}.png".format(file),
-                      title = "ASL file: {0}".format(file))
+                      vmin = 50, vmax = 1000, #200,     # using `fsleyes` histogram
+                      # cmap = 'gist_gray',             #'binary',
+                      output_file = "ASL_visual_{0}_vol1.png".format(file),
+                      title = "GE 3dasl: {0} - volume 1".format(file))
 
 # %% Plot difference map between Scan2 - Scan1
 # ERROR: 2 images need to have the same affine!! More strict than `fslmaths`!!
@@ -77,25 +84,7 @@ plotting.plot_roi(image.index_img(diff_img+'.nii.gz', 1),
                   # output_file = "ASL_visual_{0}.png".format(file),
                   title = "ASL difference map: {0} - {1}".format(fname2, fname1))
 
-# %% visualize raw ASL images with no anatomy
-for asl in [asl1, asl2]:
-    # read in the perfusion volume in 3dasl (index 1, 2nd volume)
-    asl_img = image.index_img(asl, 1)
-    # split up the file path for figure title use
-    file = pathlib.Path(asl).stem
-    # plot the asl map subject's T1
-    plotting.plot_roi(asl_img,
-                      display_mode = 'z', cut_coords = z_cut,
-                      bg_img = None,
-                      threshold = 50,
-                      dim = -1,                         # dimming the anatomy background
-                      colorbar = True,
-                      vmin = 50, vmax = 1000, #200,     # using `fsleyes` histogram
-                      # cmap = 'gist_gray',             #'binary',
-                      output_file = "ASL_visual_{0}_vol1.png".format(file),
-                      title = "GE 3dasl: {0} - volume 1".format(file))
-
-
+### ===== ROI section =====
 # %% importing roi spreadsheet /w `pandas`
 import pandas as pd
 roi_df = pd.read_csv('roi_5mm.csv')
