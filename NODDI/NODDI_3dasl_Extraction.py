@@ -16,7 +16,7 @@ os.chdir(workdir)
 # %% define files
 # anat = "anatomy/reSlice_fromODI_ht1spgr.nii"
 anat = "anatomy/ht1spgr.nii"
-anat_bet =
+anat_betmask = "anatomy/ht1spgr_bet_mask.nii.gz"        # bet2 ht1spgr.nii ht1spgr_bet -m
 roi_all = "all_rois.nii.gz"
 
 neurite1 = "DrD_Ext_DTI_scan1/DrD_Ext_scan1_ficvf.nii"
@@ -33,29 +33,50 @@ import numpy as np
 z_cut = np.arange(-16,56,8)
 z_cut
 
-# %% Visualization on the subject's own brain
+# %% Visualization slices on the subject's own brain
 from nilearn import plotting
 from nilearn import image
+from nltools.data import Brain_Data
 # `pathlib` more elegant for filename splitting
 import pathlib
 
+# %% Visualize histogram
+from matplotlib import pyplot
+img = Brain_Data(file)
+pyplot.hist(img.data[0], alpha=0.5, label='Spin density')
+pyplot.hist(img.data[1], alpha=0.5, label='Perfusion weight')
+pyplot.legend(loc='upper right')
+pyplot.show()
+
+# %% define roundup to hundreds function
+import math
+def roundup(x):
+    return int(math.ceil(x / 100.0)) * 100
+
 # %% visualize raw ASL images with no anatomy
-for asl in [asl1, asl2]:
-    # read in the perfusion volume in 3dasl (index 1, 2nd volume)
-    asl_img = image.index_img(asl, 1)
-    # split up the file path for figure title use
-    file = pathlib.Path(asl).stem
-    # plot the asl map subject's T1
-    plotting.plot_roi(asl_img,
-                      display_mode = 'z', cut_coords = z_cut,
-                      bg_img = None,                    # anat
-                      threshold = 50,
-                      dim = -1,                         # dimming the anatomy background
-                      colorbar = True,
-                      vmin = 50, vmax = 1000, #200,     # using `fsleyes` histogram
-                      # cmap = 'gist_gray',             #'binary',
-                      output_file = "ASL_visual_{0}_vol1.png".format(file),
-                      title = "GE 3dasl: {0} - volume 1".format(file))
+for file in asl_array:
+    for indx in [0, 1]:
+        # read in the perfusion volume in 3dasl (index 1, 2nd volume)
+        asl_img = image.index_img(file, indx)
+
+        # extract image filename for figure title use
+        fname = pathlib.Path(file).stem
+
+        # extract max intensity from image data
+        max_int = roundup(max(img.data[indx]))
+
+        # plot the asl map subject's T1
+        plotting.plot_roi(asl_img,
+                          display_mode = 'z', cut_coords = z_cut,
+                          bg_img = None,                # anat
+                          threshold = 50,
+                          dim = -1,                     # dimming the anatomy background
+                          colorbar = True,
+                          vmin = 50,                    # using `fsleyes` histogram
+                          vmax = max_int,
+                          # cmap = 'gist_gray',         #'binary',
+                          output_file = "ASL_visual_{0}_vol{1}.png".format(fname,indx),
+                          title = "GE 3dasl: {0} - volume {1}".format(fname,indx))
 
 # %% Plot difference map between Scan2 - Scan1
 # ERROR: 2 images need to have the same affine!! More strict than `fslmaths`!!
