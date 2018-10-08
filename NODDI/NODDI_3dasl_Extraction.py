@@ -142,20 +142,40 @@ for row in roi_df.itertuples():
     # saving and returning the roi mask created
     mask = roi_mask(row.x, row.y, row.z, row.label, row.size)
 
-    # applying the mask on image of interest
-    masked_img = img.apply_mask(mask)
+    # applying the roi mask on image of interest
+    roi_img = img_BD.apply_mask(mask)
 
     # concatenate extracted neurite array into dataframe
-    extract_df = pd.concat([extract_df, pd.DataFrame(masked_img.data, columns=[row.label])],
+    extract_df = pd.concat([extract_df, pd.DataFrame(roi_img.data, columns=[row.label])],
                            axis = 1)
 
     # ortho views at roi coordinates on subject's brain instead of default axial plots
     # masked_img.plot()
     fig_label = "{0}, {1} mm sphere at [{2},{3},{4}]".format(row.label,str(row.size),row.x,row.y,row.z)
-    plotting.plot_stat_map(masked_img.to_nifti(), bg_img=anat,
+    plotting.plot_stat_map(roi_img.to_nifti(),
+                           bg_img=anat,
                            display_mode='ortho', cut_coords=[row.x, row.y, row.z],
                            draw_cross=False, dim=-1,
                            title=fig_label)
+
+# %% plotting overlaid histograms /w pandas
+extract_df.head()
+
+# !! somehow can't save the figure with `savefig` or any!!
+# from https://pandas.pydata.org/pandas-docs/stable/visualization.html
+extract_df.hist(alpha=0.5, bins=20, figsize=(12,10), sharex=True)
+
+# switched to this: https://plot.ly/pandas/histograms/
+h = extract_df.plot(kind='hist',
+                subplots=True, layout=(3,3),
+                sharex=True, sharey=True,
+                bins=20,
+                figsize=(12,10)).get_figure()
+
+# try restarting program
+fig= h[0].get_figure()
+fig.savefig(h, 'test.png')
+
 
 # %% try using functional programming `apply` to solve this
  # def noddi_extract(row, neurite):
