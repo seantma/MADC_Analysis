@@ -43,6 +43,7 @@ import pathlib
 
 # %% --- Visualize histogram
 from matplotlib import pyplot
+file = asl1
 img = Brain_Data(file)
 pyplot.hist(img.data[0], alpha=0.5, label='Spin density')
 pyplot.hist(img.data[1], alpha=0.5, label='Perfusion weight')
@@ -117,9 +118,12 @@ def roi_mask(x, y, z, label, size):
 
 # %% --- visualizing the rois together on subject's brain
 # using `fslmaths` : fslmaths L_ant_5_.nii -add L_mid_5_.nii -add L_post_5_.nii -add R_ant_5_.nii -add R_mid_5_.nii -add R_post_5_.nii -add R_CSF_3_.nii -add Corpus_Callosm_3_.nii all_rois.nii
-# NOTE:: need to change roi color!!
 rois = image.load_img(roi_all)
-plotting.plot_roi(rois, bg_img=anat, display_mode='z', dim=-1)
+
+plotting.plot_roi(rois, bg_img=anat,
+                  display_mode='z', cut_coords= [-14, -10, -6, -2, 2, 6],
+                  cmap='bwr_r',         # http://nilearn.github.io/auto_examples/01_plotting/plot_colormaps.html
+                  dim=-1)
 
 # %% --- Create & save roi spheres by looping over dataframe & later fslview
 # import roi spreadsheet /w `pandas`
@@ -162,7 +166,7 @@ for row in roi_df.itertuples():
 extract_df.head()
 
 # !! somehow can't save the figure with `savefig` or any!!
-# from https://pandas.pydata.org/pandas-docs/stable/visualization.html
+# from http://pandas.pydata.org/pandas-docs/stable/visualization.html#visualization-hist
 extract_df.hist(alpha=0.5, bins=20, figsize=(12,10), sharex=True)
 
 # switched to this: https://plot.ly/pandas/histograms/
