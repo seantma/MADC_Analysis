@@ -8,12 +8,12 @@
 # - figure out `pweave` and how it interacts /w `hydrogen: `
 # - integrate `.Rmd` /w `.pmd`: https://github.com/nteract/hydrogen/issues/1165
 
-# %% set working directory
+# %% --- set working directory
 import os
 workdir = "/Users/tehsheng/Dropbox/DrD_Ext"
 os.chdir(workdir)
 
-# %% define files
+# %% --- define files
 # anat = "anatomy/reSlice_fromODI_ht1spgr.nii"
 anat = "anatomy/ht1spgr.nii"
 anat_betmask = "anatomy/ht1spgr_bet_mask.nii.gz"        # bet2 ht1spgr.nii ht1spgr_bet -m
@@ -28,7 +28,7 @@ asl1 = "DrD_Ext_ASL_scan1/vasc_3dasl/vasc_3dasl_scan1.nii"
 asl2 = "DrD_Ext_ASL_scan2/vasc_3dasl/vasc_3dasl_scan2.nii"
 asl_array = [asl1, asl2]
 
-# %% define z axis cuts
+# %% --- define z axis cuts
 import numpy as np
 z_cut = np.arange(-16,56,8)
 z_cut
@@ -41,7 +41,7 @@ from nltools.data import Brain_Data
 # `pathlib` more elegant for filename splitting
 import pathlib
 
-# %% Visualize histogram
+# %% --- Visualize histogram
 from matplotlib import pyplot
 img = Brain_Data(file)
 pyplot.hist(img.data[0], alpha=0.5, label='Spin density')
@@ -49,12 +49,12 @@ pyplot.hist(img.data[1], alpha=0.5, label='Perfusion weight')
 pyplot.legend(loc='upper right')
 pyplot.show()
 
-# %% define roundup to hundreds function
+# %% --- define roundup to hundreds function
 import math
 def roundup(x):
     return int(math.ceil(x / 100.0)) * 100
 
-# %% visualize raw ASL images with no anatomy
+# %% --- visualize raw ASL images with no anatomy
 for file in asl_array:
     for indx in [0, 1]:
         # read in the perfusion volume in 3dasl (index 1, 2nd volume)
@@ -107,10 +107,6 @@ plotting.plot_roi(image.index_img(diff_img+'.nii.gz', 1),
                   title = "ASL difference map: {0} - {1}".format(fname2, fname1))
 
 ### ===== ROI section =====
-# %% importing roi spreadsheet /w `pandas`
-import pandas as pd
-roi_df = pd.read_csv('roi_5mm.csv')
-
 # %% define function to create roi mask files
 from nltools.mask import create_sphere
 
@@ -119,18 +115,20 @@ def roi_mask(x, y, z, label, size):
     mask.to_filename("_".join([label, str(size), ".nii"]))
     return mask
 
-# %% visualizing the rois altogether on subject's brain
+# %% --- visualizing the rois together on subject's brain
 # using `fslmaths` : fslmaths L_ant_5_.nii -add L_mid_5_.nii -add L_post_5_.nii -add R_ant_5_.nii -add R_mid_5_.nii -add R_post_5_.nii -add R_CSF_3_.nii -add Corpus_Callosm_3_.nii all_rois.nii
 # NOTE:: need to change roi color!!
 rois = image.load_img(roi_all)
 plotting.plot_roi(rois, bg_img=anat, display_mode='z', dim=-1)
 
-# %% looping over dataframe to create & save sphere for roi masked_img_s1 & later fslview
+# %% --- Create & save roi spheres by looping over dataframe & later fslview
+# import roi spreadsheet /w `pandas`
+import pandas as pd
+roi_df = pd.read_csv('roi_5mm.csv')
+
 # initialize dataframe
 neurite_df = pd.DataFrame()
 
-# r_mask = create_sphere([32, 24, -11], radius = 15)
-# r_mask.to_filename('15mm_mask.nii')
 # inspired by https://stackoverflow.com/questions/43619896/python-pandas-iterate-over-rows-and-access-column-names
 for row in roi_df.itertuples():
     # saving and returning the roi mask created
@@ -139,11 +137,11 @@ for row in roi_df.itertuples():
     # applying the mask on image of interest
     masked_img_s1 = img_s1.apply_mask(mask)
 
-    # concatenate extracted neurite into dataframe
+    # concatenate extracted neurite array into dataframe
     neurite_df = pd.concat([neurite_df, pd.DataFrame(masked_img_s1.data, columns=[row.label])],
                            axis = 1)
 
-    # plotting ortho views at roi coordinates on subject's brain instead of default axial plots
+    # ortho views at roi coordinates on subject's brain instead of default axial plots
     # masked_img_s1.plot()
     fig_label = "{0}, {1} mm sphere at [{2},{3},{4}]".format(row.label,str(row.size),row.x,row.y,row.z)
     plotting.plot_stat_map(masked_img_s1.to_nifti(), bg_img=anat,
