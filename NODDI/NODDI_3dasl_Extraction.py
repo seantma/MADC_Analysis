@@ -1,4 +1,4 @@
-# Processing and extracting values from NODDI and 3dasl
+imgimg# Processing and extracting values from NODDI and 3dasl
 #   - This script adopted heavily the use of `nilearn` and `nltools`
 #   - This script was also prototyped using `hydrogen` in Atom
 #
@@ -57,7 +57,7 @@ def roundup(x):
 # %% --- visualize raw ASL images with no anatomy
 for file in asl_array:
     for indx in [0, 1]:
-        # read in the perfusion volume in 3dasl (index 1, 2nd volume)
+        # read in the perfusion volume in 3dasl (index 1: 2nd volume)
         asl_img = image.index_img(file, indx)
 
         # extract image filename for figure title use
@@ -127,7 +127,15 @@ import pandas as pd
 roi_df = pd.read_csv('roi_5mm.csv')
 
 # initialize dataframe
-neurite_df = pd.DataFrame()
+extract_df = pd.DataFrame()
+
+# read in the perfusion volume in 3dasl (index 1: 2nd volume)
+# coerce to `nltools``Brain_Data` for better background mask
+img = image.index_img(asl1, 0)
+img_BD_noMask = Brain_Data(img)            # no background masking
+img_BD = Brain_Data(img, mask=anat_betmask)
+img_BD_noMask.plot(anatomical=anat)
+img_BD.plot(anatomical=anat)
 
 # inspired by https://stackoverflow.com/questions/43619896/python-pandas-iterate-over-rows-and-access-column-names
 for row in roi_df.itertuples():
@@ -135,16 +143,16 @@ for row in roi_df.itertuples():
     mask = roi_mask(row.x, row.y, row.z, row.label, row.size)
 
     # applying the mask on image of interest
-    masked_img_s1 = img_s1.apply_mask(mask)
+    masked_img = img.apply_mask(mask)
 
     # concatenate extracted neurite array into dataframe
-    neurite_df = pd.concat([neurite_df, pd.DataFrame(masked_img_s1.data, columns=[row.label])],
+    extract_df = pd.concat([extract_df, pd.DataFrame(masked_img.data, columns=[row.label])],
                            axis = 1)
 
     # ortho views at roi coordinates on subject's brain instead of default axial plots
-    # masked_img_s1.plot()
+    # masked_img.plot()
     fig_label = "{0}, {1} mm sphere at [{2},{3},{4}]".format(row.label,str(row.size),row.x,row.y,row.z)
-    plotting.plot_stat_map(masked_img_s1.to_nifti(), bg_img=anat,
+    plotting.plot_stat_map(masked_img.to_nifti(), bg_img=anat,
                            display_mode='ortho', cut_coords=[row.x, row.y, row.z],
                            draw_cross=False, dim=-1,
                            title=fig_label)
