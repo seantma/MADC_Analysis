@@ -33,6 +33,7 @@ import numpy as np
 z_cut = np.arange(-16,56,8)
 z_cut
 
+### ===== Visualization section =====
 # %% Visualization slices on the subject's own brain
 from nilearn import plotting
 from nilearn import image
@@ -118,6 +119,12 @@ def roi_mask(x, y, z, label, size):
     mask.to_filename("_".join([label, str(size), ".nii"]))
     return mask
 
+# %% visualizing the rois altogether on subject's brain
+# using `fslmaths` : fslmaths L_ant_5_.nii -add L_mid_5_.nii -add L_post_5_.nii -add R_ant_5_.nii -add R_mid_5_.nii -add R_post_5_.nii -add R_CSF_3_.nii -add Corpus_Callosm_3_.nii all_rois.nii
+# NOTE:: need to change roi color!!
+rois = image.load_img(roi_all)
+plotting.plot_roi(rois, bg_img=anat, display_mode='z', dim=-1)
+
 # %% looping over dataframe to create & save sphere for roi masked_img_s1 & later fslview
 # initialize dataframe
 neurite_df = pd.DataFrame()
@@ -161,13 +168,6 @@ neurite_df
 neurite_df.describe()
 neurite_df.to_csv('nuerite_scan2.csv')
 neurite_df.describe().to_csv('nuerite_scan2_Summary.csv')
-
-# %% visualizing the rois altogether on subject's brain
-# NOTE:: using `plot_roi`
-# using `fslmaths` : fslmaths L_ant_5_.nii -add L_mid_5_.nii -add L_post_5_.nii -add R_ant_5_.nii -add R_mid_5_.nii -add R_post_5_.nii -add R_CSF_3_.nii -add Corpus_Callosm_3_.nii all_rois.nii
-rois = image.load_img(roi_all)
-
-plotting.plot_roi(rois, bg_img=anat, display_mode='z', dim=-1)
 
 # %% visualizing Scan2-Scan1 neurite density difference map
 sub = image.load_img(sub_img)
