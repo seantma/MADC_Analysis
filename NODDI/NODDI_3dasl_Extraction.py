@@ -142,11 +142,6 @@ plotting.plot_roi(rois, bg_img=anat,
                   output_file = "LR_LTC_ROI_visualization.png",
                   title = "L/R LTC ROIs visualization")
 
-# %%
-for key, value in asl_dict.items():
-    print(value['file'])
-
-
 # %% --- Visualize ASL volume with/without brain masking
 # read in the perfusion volume in 3dasl
 # coerce to `nltools``Brain_Data` for better background mask
@@ -157,84 +152,72 @@ for key, value in asl_dict.items():
     # skull-strip masking vs without
     img_BD_noMask = Brain_Data(img)
     img_BD_noMask.plot(anatomical=anat,
-                       title=" - ".join(img_title + ['NoMask']),
-                       output_file="_".join(img_title + ['NoMask']))
+    title=" - ".join(img_title + ['NoMask']),
+    output_file="_".join(img_title + ['NoMask']))
 
     img_BD = Brain_Data(img, mask=anat_betmask)
     img_BD.plot(anatomical=anat,
-                title=" - ".join(img_title + ['withMask']),
-                output_file="_".join(img_title + ['withMask']))
+    title=" - ".join(img_title + ['withMask']),
+    output_file="_".join(img_title + ['withMask']))
 
-# --- Create & save roi spheres by looping over dataframe & later fslview
-# import roi spreadsheet /w `pandas`
-import pandas as pd
-roi_df = pd.read_csv('roi_5mm.csv')
+    # --- Create & save roi spheres by looping over dataframe & later fslview
+    # import roi spreadsheet /w `pandas`
+    import pandas as pd
+    roi_df = pd.read_csv('roi_5mm.csv')
 
-# initialize dataframe
-extract_df = pd.DataFrame()
+    # initialize dataframe
+    extract_df = pd.DataFrame()
 
-# inspired by https://stackoverflow.com/questions/43619896/python-pandas-iterate-over-rows-and-access-column-names
-for row in roi_df.itertuples():
-    # saving and returning the roi mask created
-    mask = roi_mask(row.x, row.y, row.z, row.label, row.size)
+    # inspired by https://stackoverflow.com/questions/43619896/python-pandas-iterate-over-rows-and-access-column-names
+    for row in roi_df.itertuples():
+        # saving and returning the roi mask created
+        mask = roi_mask(row.x, row.y, row.z, row.label, row.size)
 
-    # applying the roi mask on image of interest
-    roi_img = img_BD.apply_mask(mask)
+        # applying the roi mask on image of interest
+        roi_img = img_BD.apply_mask(mask)
 
-    # concatenate extracted neurite array into dataframe
-    extract_df = pd.concat([extract_df, pd.DataFrame(roi_img.data, columns=[row.label])],
-                           axis = 1)
+        # concatenate extracted neurite array into dataframe
+        extract_df = pd.concat([extract_df, pd.DataFrame(roi_img.data, columns=[row.label])],
+        axis = 1)
 
-    # ortho views at roi coordinates on subject's brain instead of default axial plots
-    # masked_img.plot()
-    fig_label = "{0}, {1} mm sphere at [{2},{3},{4}]".format(row.label,str(row.size),row.x,row.y,row.z)
-    file_label = "{0}_{1}mm_sphere.png".format(row.label, str(row.size))
+        # ortho views at roi coordinates on subject's brain instead of default axial plots
+        # masked_img.plot()
+        fig_label = "{0}, {1} mm sphere at [{2},{3},{4}]".format(row.label,str(row.size),row.x,row.y,row.z)
+        file_label = "{0}_{1}mm_sphere.png".format(row.label, str(row.size))
 
-    plotting.plot_stat_map(roi_img.to_nifti(),
-                           bg_img=anat,
-                           display_mode='ortho', cut_coords=[row.x, row.y, row.z],
-                           draw_cross=False, dim=-1,
-                           title=fig_label,
-                           output_file=file_label)
+        plotting.plot_stat_map(roi_img.to_nifti(),
+                               bg_img=anat,
+                               display_mode='ortho', cut_coords=[row.x, row.y, row.z],
+                               draw_cross=False, dim=-1,
+                               title=fig_label,
+                               output_file=file_label)
 
-# plotting overlaid histograms /w pandas
-# extract_df.head()
+        # plotting overlaid histograms /w pandas
+        # extract_df.head()
 
-# !! somehow can't save the figure with `savefig` or any!!
-# from http://pandas.pydata.org/pandas-docs/stable/visualization.html#visualization-hist
-extract_df.hist(alpha=0.5, bins=20, figsize=(12,10), sharex=True)
+        # !! somehow can't save the figure with `savefig` or any!!
+        # from http://pandas.pydata.org/pandas-docs/stable/visualization.html#visualization-hist
+        # extract_df.hist(alpha=0.5, bins=20, figsize=(12,10), sharex=True)
 
-# switched to this: https://plot.ly/pandas/histograms/
-h = extract_df.plot(kind='hist',
-                subplots=True, layout=(3,3),
-                sharex=True, sharey=True,
-                bins=20,
-                figsize=(12,10),
-                title=" - ".join(img_title + ['ROI extracts']))
+        # switched to this: https://plot.ly/pandas/histograms/
+        h = extract_df.plot(kind='hist',
+                            subplots=True, layout=(3,3),
+                            sharex=True, sharey=True,
+                            bins=20,
+                            figsize=(12,10),
+                            title=" - ".join(img_title + ['ROI extracts']))
 
-# try restarting program
-# fig= h[0].get_figure()
-# fig.savefig(h, 'test.png')
+        # try restarting program
+        # fig= h[0].get_figure()
+        # fig.savefig(h, 'test.png')
 
-# summarize extracted dataframe
-fname = "{0}_{1}_ROI_extraction.csv".format(value['file'], value['scan'])
-extract_df.describe()
-extract_df.to_csv(fname)
-extract_df.describe().to_csv('Summary_' + fname)
+        # summarize extracted dataframe
+        fname = "{0}_{1}_ROI_extraction.csv".format(value['file'], value['scan'])
+        extract_df.describe()
+        extract_df.to_csv(fname)
+        extract_df.describe().to_csv('Summary_' + fname)
 
-# %% try using functional programming `apply` to solve this
- # def noddi_extract(row, neurite):
-     # read in NODDI image
-     # img_s1 = Brain_Data(neurite1
-for neu in [neurite1, neurite2]:
-    img = image.load_img(neu)
-    print(img.shape)
-
-for indx,item in enumerate([neurite1, neurite2]):
-    print(indx, item)
-
-
-
+### ===== Old stuff to be deleted =====
 # %% plot the masked image with histogram distributions
 import seaborn as sns
 len(masked_img_s1.data)
