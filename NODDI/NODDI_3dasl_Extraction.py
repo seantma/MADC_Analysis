@@ -113,7 +113,7 @@ from nltools.mask import create_sphere
 
 def roi_mask(x, y, z, label, size):
     mask = create_sphere([x, y, z], radius = size)
-    mask.to_filename("_".join([label, str(size), ".nii"]))
+    mask.to_filename("_".join([label, str(size), "mm.nii"]))
     return mask
 
 # %% --- visualizing the rois together on subject's brain
@@ -131,21 +131,18 @@ plotting.plot_roi(rois, bg_img=anat,
 # read in the perfusion volume in 3dasl (index 1: 2nd volume)
 # coerce to `nltools``Brain_Data` for better background mask
 img = image.index_img(asl1, 0)
-img_title = ["ASL", "Scan1", "Perfusion weights"]
+img_title = ["ASL", "Scan1", "PerfusionWeights"]
 
 # skull-strip masking vs without
 img_BD_noMask = Brain_Data(img)
-img_title.append('NoMask')
 img_BD_noMask.plot(anatomical=anat,
-                   title=" - ".join(img_title),
-                   output_file="_".join(img_title))
+                   title=" - ".join(img_title + ['NoMask']),
+                   output_file="_".join(img_title + ['NoMask']))
 
 img_BD = Brain_Data(img, mask=anat_betmask)
-img_title.pop()                 #remove previous insert
-img_title.append('withMask')
 img_BD.plot(anatomical=anat,
-            title=" - ".join(img_title),
-            output_file="_".join(img_title))
+            title=" - ".join(img_title + ['withMask']),
+            output_file="_".join(img_title + ['withMask']))
 
 # %% --- Create & save roi spheres by looping over dataframe & later fslview
 # import roi spreadsheet /w `pandas`
@@ -170,11 +167,14 @@ for row in roi_df.itertuples():
     # ortho views at roi coordinates on subject's brain instead of default axial plots
     # masked_img.plot()
     fig_label = "{0}, {1} mm sphere at [{2},{3},{4}]".format(row.label,str(row.size),row.x,row.y,row.z)
+    file_label = "{0}_{1}mm_sphere.png".format(row.label, str(row.size))
+
     plotting.plot_stat_map(roi_img.to_nifti(),
                            bg_img=anat,
                            display_mode='ortho', cut_coords=[row.x, row.y, row.z],
                            draw_cross=False, dim=-1,
-                           title=fig_label)
+                           title=fig_label,
+                           output_file=file_label)
 
 # %% plotting overlaid histograms /w pandas
 # extract_df.head()
@@ -188,7 +188,8 @@ h = extract_df.plot(kind='hist',
                 subplots=True, layout=(3,3),
                 sharex=True, sharey=True,
                 bins=20,
-                figsize=(12,10)).get_figure()
+                figsize=(12,10),
+                title=" - ".join(img_title + ['ROI extracts']))
 
 # try restarting program
 fig= h[0].get_figure()
@@ -199,7 +200,6 @@ fig.savefig(h, 'test.png')
  # def noddi_extract(row, neurite):
      # read in NODDI image
      # img_s1 = Brain_Data(neurite1
-
 for neu in [neurite1, neurite2]:
     img = image.load_img(neu)
     print(img.shape)
