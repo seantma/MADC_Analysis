@@ -107,6 +107,11 @@ plotting.plot_roi(image.index_img(diff_img+'.nii.gz', 1),
                   # output_file = "ASL_visual_{0}.png".format(file),
                   title = "ASL difference map: {0} - {1}".format(fname2, fname1))
 
+# %% visualizing Scan2-Scan1 neurite density difference map
+sub = image.load_img(sub_img)
+
+plotting.plot_roi(sub, bg_img=anat, display_mode='z', dim=-1, threshold=0.5)
+
 ### ===== ROI section =====
 # %% define function to create roi mask files
 from nltools.mask import create_sphere
@@ -195,7 +200,6 @@ h = extract_df.plot(kind='hist',
 fig= h[0].get_figure()
 fig.savefig(h, 'test.png')
 
-
 # %% try using functional programming `apply` to solve this
  # def noddi_extract(row, neurite):
      # read in NODDI image
@@ -207,17 +211,10 @@ for neu in [neurite1, neurite2]:
 for indx,item in enumerate([neurite1, neurite2]):
     print(indx, item)
 
-# %%
-neurite_df
-neurite_df.describe()
-neurite_df.to_csv('nuerite_scan2.csv')
-neurite_df.describe().to_csv('nuerite_scan2_Summary.csv')
-
-# %% visualizing Scan2-Scan1 neurite density difference map
-sub = image.load_img(sub_img)
-
-plotting.plot_roi(sub, bg_img=anat, display_mode='z', dim=-1, threshold=0.5)
-
+# %% summarize extracted dataframe
+extract_df.describe()
+extract_df.to_csv('nuerite_scan2.csv')
+extract_df.describe().to_csv('nuerite_scan2_Summary.csv')
 
 # %% plot the masked image with histogram distributions
 import seaborn as sns
