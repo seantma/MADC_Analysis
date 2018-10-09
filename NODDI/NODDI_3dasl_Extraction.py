@@ -19,14 +19,22 @@ anat = "anatomy/ht1spgr.nii"
 anat_betmask = "anatomy/ht1spgr_bet_mask.nii.gz"        # bet2 ht1spgr.nii ht1spgr_bet -m
 roi_all = "all_rois.nii.gz"
 
+# NODDI files
 neurite1 = "DrD_Ext_DTI_scan1/DrD_Ext_scan1_ficvf.nii"
 neurite2 = "DrD_Ext_DTI_scan2/reSlice_fromScan1_FICVF_DrD_Ext_scan2_ficvf.nii"
 sub_img = "DrD_Ext_DTI_scan2/Scan2-1_ficvf.nii.gz"
-neurite_array = [neurite1, neurite2]
+noddi_dict = {
+    'scan1': {'file':'neurite1', 'scan_indx':1},
+    'scan2': {'file':'neurite2', 'scan_indx':2}
+     }
 
+# ASL files
 asl1 = "DrD_Ext_ASL_scan1/vasc_3dasl/vasc_3dasl_scan1.nii"
 asl2 = "DrD_Ext_ASL_scan2/vasc_3dasl/vasc_3dasl_scan2.nii"
-asl_array = [asl1, asl2]
+asl_dict = {
+    'scan1': {'file':'asl1', 'scan_indx':1},
+    'scan2': {'file':'asl2', 'scan_indx':2}
+     }
 
 # %% --- define z axis cuts
 import numpy as np
