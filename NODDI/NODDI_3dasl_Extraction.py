@@ -192,30 +192,30 @@ for key, value in asl_dict.items():
                                title=fig_label,
                                output_file=file_label)
 
-        # plotting overlaid histograms /w pandas
-        # extract_df.head()
+    # plotting overlaid histograms /w pandas
+    # extract_df.head()
 
-        # !! somehow can't save the figure with `savefig` or any!!
-        # from http://pandas.pydata.org/pandas-docs/stable/visualization.html#visualization-hist
-        # extract_df.hist(alpha=0.5, bins=20, figsize=(12,10), sharex=True)
+    # !! somehow can't save the figure with `savefig` or any!!
+    # from http://pandas.pydata.org/pandas-docs/stable/visualization.html#visualization-hist
+    # extract_df.hist(alpha=0.5, bins=20, figsize=(12,10), sharex=True)
 
-        # switched to this: https://plot.ly/pandas/histograms/
-        h = extract_df.plot(kind='hist',
-                            subplots=True, layout=(3,3),
-                            sharex=True, sharey=True,
-                            bins=20,
-                            figsize=(12,10),
-                            title=" - ".join(img_title + ['ROI extracts']))
+    # switched to this: https://plot.ly/pandas/histograms/
+    h = extract_df.plot(kind='hist',
+                        subplots=True, layout=(3,3),
+                        sharex=True, sharey=True,
+                        bins=20,
+                        figsize=(12,10),
+                        title=" - ".join(img_title + ['ROI extracts']))
 
-        # try restarting program
-        # fig= h[0].get_figure()
-        # fig.savefig(h, 'test.png')
+    # try restarting program
+    # fig= h[0].get_figure()
+    # fig.savefig(h, 'test.png')
 
-        # summarize extracted dataframe
-        fname = "{0}_{1}_ROI_extraction.csv".format(value['file'], value['scan'])
-        extract_df.describe()
-        extract_df.to_csv(fname)
-        extract_df.describe().to_csv('Summary_' + fname)
+    # summarize extracted dataframe
+    fname = "{0}_{1}_ROI_extraction.csv".format(value['file'], value['scan'])
+    extract_df.describe()
+    extract_df.to_csv(fname)
+    extract_df.describe().to_csv('Summary_' + fname)
 
 ### ===== Old stuff to be deleted =====
 # %% plot the masked image with histogram distributions
