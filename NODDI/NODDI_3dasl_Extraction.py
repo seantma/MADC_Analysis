@@ -23,17 +23,19 @@ roi_all = "all_rois.nii.gz"
 neurite1 = "DrD_Ext_DTI_scan1/DrD_Ext_scan1_ficvf.nii"
 neurite2 = "DrD_Ext_DTI_scan2/reSlice_fromScan1_FICVF_DrD_Ext_scan2_ficvf.nii"
 sub_img = "DrD_Ext_DTI_scan2/Scan2-1_ficvf.nii.gz"
+noddi_array = [neurite1, neurite2]
 noddi_dict = {
-    'scan1': {'file':'neurite1', 'scan_indx':1},
-    'scan2': {'file':'neurite2', 'scan_indx':2}
+    'scan1': {'file':'neurite1', 'scan_indx':1, 'scan':'Scan1'},
+    'scan2': {'file':'neurite2', 'scan_indx':2, 'scan':'Scan2'}
      }
 
 # ASL files
 asl1 = "DrD_Ext_ASL_scan1/vasc_3dasl/vasc_3dasl_scan1.nii"
 asl2 = "DrD_Ext_ASL_scan2/vasc_3dasl/vasc_3dasl_scan2.nii"
+asl_arrary = [asl1, asl2]
 asl_dict = {
-    'scan1': {'file':'asl1', 'scan_indx':1},
-    'scan2': {'file':'asl2', 'scan_indx':2}
+    'scan1': {'file':'asl1', 'scan_indx':1, 'scan':'Scan1'},
+    'scan2': {'file':'asl2', 'scan_indx':2, 'scan':'Scan2'}
      }
 
 # %% --- define z axis cuts
@@ -140,24 +142,30 @@ plotting.plot_roi(rois, bg_img=anat,
                   output_file = "LR_LTC_ROI_visualization.png",
                   title = "L/R LTC ROIs visualization")
 
+# %%
+for key, value in asl_dict.items():
+    print(value['file'])
+
+
 # %% --- Visualize ASL volume with/without brain masking
-# read in the perfusion volume in 3dasl (index 1: 2nd volume)
+# read in the perfusion volume in 3dasl
 # coerce to `nltools``Brain_Data` for better background mask
-img = image.index_img(asl1, 0)
-img_title = ["ASL", "Scan1", "PerfusionWeights"]
+for key, value in asl_dict.items():
+    img = image.index_img( eval(value['file']), 0 )     # (index 1: 2nd volume)
+    img_title = [ value['file'], value['scan'], "PerfusionWeights"]
 
-# skull-strip masking vs without
-img_BD_noMask = Brain_Data(img)
-img_BD_noMask.plot(anatomical=anat,
-                   title=" - ".join(img_title + ['NoMask']),
-                   output_file="_".join(img_title + ['NoMask']))
+    # skull-strip masking vs without
+    img_BD_noMask = Brain_Data(img)
+    img_BD_noMask.plot(anatomical=anat,
+                       title=" - ".join(img_title + ['NoMask']),
+                       output_file="_".join(img_title + ['NoMask']))
 
-img_BD = Brain_Data(img, mask=anat_betmask)
-img_BD.plot(anatomical=anat,
-            title=" - ".join(img_title + ['withMask']),
-            output_file="_".join(img_title + ['withMask']))
+    img_BD = Brain_Data(img, mask=anat_betmask)
+    img_BD.plot(anatomical=anat,
+                title=" - ".join(img_title + ['withMask']),
+                output_file="_".join(img_title + ['withMask']))
 
-# %% --- Create & save roi spheres by looping over dataframe & later fslview
+# --- Create & save roi spheres by looping over dataframe & later fslview
 # import roi spreadsheet /w `pandas`
 import pandas as pd
 roi_df = pd.read_csv('roi_5mm.csv')
@@ -189,7 +197,7 @@ for row in roi_df.itertuples():
                            title=fig_label,
                            output_file=file_label)
 
-# %% plotting overlaid histograms /w pandas
+# plotting overlaid histograms /w pandas
 # extract_df.head()
 
 # !! somehow can't save the figure with `savefig` or any!!
@@ -205,8 +213,14 @@ h = extract_df.plot(kind='hist',
                 title=" - ".join(img_title + ['ROI extracts']))
 
 # try restarting program
-fig= h[0].get_figure()
-fig.savefig(h, 'test.png')
+# fig= h[0].get_figure()
+# fig.savefig(h, 'test.png')
+
+# summarize extracted dataframe
+fname = "{0}_{1}_ROI_extraction.csv".format(value['file'], value['scan'])
+extract_df.describe()
+extract_df.to_csv(fname)
+extract_df.describe().to_csv('Summary_' + fname)
 
 # %% try using functional programming `apply` to solve this
  # def noddi_extract(row, neurite):
@@ -219,10 +233,7 @@ for neu in [neurite1, neurite2]:
 for indx,item in enumerate([neurite1, neurite2]):
     print(indx, item)
 
-# %% summarize extracted dataframe
-extract_df.describe()
-extract_df.to_csv('nuerite_scan2.csv')
-extract_df.describe().to_csv('nuerite_scan2_Summary.csv')
+
 
 # %% plot the masked image with histogram distributions
 import seaborn as sns
