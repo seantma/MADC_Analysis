@@ -123,7 +123,29 @@ rois = image.load_img(roi_all)
 plotting.plot_roi(rois, bg_img=anat,
                   display_mode='z', cut_coords= [-14, -10, -6, -2, 2, 6],
                   cmap='bwr_r',         # http://nilearn.github.io/auto_examples/01_plotting/plot_colormaps.html
-                  dim=-1)
+                  dim=-1,
+                  output_file = "LR_LTC_ROI_visualization.png",
+                  title = "L/R LTC ROIs visualization")
+
+# %% --- Visualize ASL volume with/without brain masking
+# read in the perfusion volume in 3dasl (index 1: 2nd volume)
+# coerce to `nltools``Brain_Data` for better background mask
+img = image.index_img(asl1, 0)
+img_title = ["ASL", "Scan1", "Perfusion weights"]
+
+# skull-strip masking vs without
+img_BD_noMask = Brain_Data(img)
+img_title.append('NoMask')
+img_BD_noMask.plot(anatomical=anat,
+                   title=" - ".join(img_title),
+                   output_file="_".join(img_title))
+
+img_BD = Brain_Data(img, mask=anat_betmask)
+img_title.pop()                 #remove previous insert
+img_title.append('withMask')
+img_BD.plot(anatomical=anat,
+            title=" - ".join(img_title),
+            output_file="_".join(img_title))
 
 # %% --- Create & save roi spheres by looping over dataframe & later fslview
 # import roi spreadsheet /w `pandas`
@@ -132,14 +154,6 @@ roi_df = pd.read_csv('roi_5mm.csv')
 
 # initialize dataframe
 extract_df = pd.DataFrame()
-
-# read in the perfusion volume in 3dasl (index 1: 2nd volume)
-# coerce to `nltools``Brain_Data` for better background mask
-img = image.index_img(asl1, 0)
-img_BD_noMask = Brain_Data(img)            # no background masking
-img_BD = Brain_Data(img, mask=anat_betmask)
-img_BD_noMask.plot(anatomical=anat)
-img_BD.plot(anatomical=anat)
 
 # inspired by https://stackoverflow.com/questions/43619896/python-pandas-iterate-over-rows-and-access-column-names
 for row in roi_df.itertuples():
@@ -163,7 +177,7 @@ for row in roi_df.itertuples():
                            title=fig_label)
 
 # %% plotting overlaid histograms /w pandas
-extract_df.head()
+# extract_df.head()
 
 # !! somehow can't save the figure with `savefig` or any!!
 # from http://pandas.pydata.org/pandas-docs/stable/visualization.html#visualization-hist
