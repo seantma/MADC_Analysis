@@ -55,8 +55,8 @@ import pathlib
 from matplotlib import pyplot
 file = asl1
 img = Brain_Data(file)
-pyplot.hist(img.data[0], alpha=0.5, label='Spin density')
-pyplot.hist(img.data[1], alpha=0.5, label='Perfusion weight')
+pyplot.hist(img.data[0], alpha=0.5, label='Spin density')       # volume 0: spin density
+pyplot.hist(img.data[1], alpha=0.5, label='Perfusion weight')   # volume 1: perfusion weights
 pyplot.legend(loc='upper right')
 pyplot.show()
 
@@ -68,7 +68,7 @@ def roundup(x):
 # %% --- visualize raw ASL images with no anatomy
 for file in asl_array:
     for indx in [0, 1]:
-        # read in the perfusion volume in 3dasl (index 1: 2nd volume)
+        # read in the perfusion volume in 3dasl (index 0: 1st volume - spin density)
         asl_img = image.index_img(file, indx)
 
         # extract image filename for figure title use
@@ -146,7 +146,7 @@ plotting.plot_roi(rois, bg_img=anat,
 # read in the perfusion volume in 3dasl
 # coerce to `nltools``Brain_Data` for better background mask
 for key, value in asl_dict.items():
-    img = image.index_img( eval(value['file']), 0 )     # (index 1: 2nd volume)
+    img = image.index_img( eval(value['file']), 0 )     # index 0: 1st volume
     img_title = [ value['file'], value['scan'], "PerfusionWeights"]
 
     # skull-strip masking vs without
@@ -217,20 +217,6 @@ for key, value in asl_dict.items():
     extract_df.to_csv(fname)
     extract_df.describe().to_csv('Summary_' + fname)
 
-### ===== Old stuff to be deleted =====
-# %% plot the masked image with histogram distributions
-import seaborn as sns
-len(masked_img_s1.data)
-sns.distplot(masked_img_s1.data)
-
-# %% read in neurite from scan2 and generate histogram for comparison
-img_s2 = Brain_Data(neurite2)
-masked_img_s2 = img_s2.apply_mask(r_mask)
-masked_img_s2.plot()
-masked_img_s2.plot(anatomical = anat)
-
-len(masked_img_s2.data)
-sns.distplot(masked_img_s2.data)
 
 # ==== Test ground for playing ====
 #
