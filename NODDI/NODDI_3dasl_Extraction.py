@@ -38,6 +38,10 @@ asl_dict = {
     'scan2': {'file':'asl2', 'scan_indx':2, 'scan':'Scan2'}
      }
 
+# constructing whole file path
+fp_asl1 = str(pathlib.PurePath(workdir, asl1))
+fp_asl2 = str(pathlib.PurePath(workdir, asl2))
+
 # %% --- define z axis cuts
 import numpy as np
 z_cut = np.arange(-16,56,8)
@@ -55,8 +59,8 @@ import pathlib
 from matplotlib import pyplot
 file = asl1
 img = Brain_Data(file)
-pyplot.hist(img.data[0], alpha=0.5, label='Spin density')       # volume 0: spin density
-pyplot.hist(img.data[1], alpha=0.5, label='Perfusion weight')   # volume 1: perfusion weights
+pyplot.hist(img.data[0], alpha=0.5, label='Spin density')       # volume 0: perfusion weights
+pyplot.hist(img.data[1], alpha=0.5, label='Perfusion weight')   # volume 1: spin density
 pyplot.legend(loc='upper right')
 pyplot.show()
 
@@ -68,7 +72,7 @@ def roundup(x):
 # %% --- visualize raw ASL images with no anatomy
 for file in asl_array:
     for indx in [0, 1]:
-        # read in the perfusion volume in 3dasl (index 0: 1st volume - spin density)
+        # read in the perfusion volume in 3dasl (index 0: 1st volume - perfusion weights)
         asl_img = image.index_img(file, indx)
 
         # extract image filename for figure title use
@@ -91,31 +95,34 @@ for file in asl_array:
                           title = "GE 3dasl: {0} - volume {1}".format(fname,indx))
 
 # %% Plot difference map between Scan2 - Scan1
-# ERROR: 2 images need to have the same affine!! More strict than `fslmaths`!!
+# ERROR:: images do not have the same affine!!
+# SEARCH:: whether coregistered functionals should have the same affine
 # diff_img = image.math_img("img2 - img1",
-#                           img2 = image.index_img(asl2, 1),
-#                           img1 = image.index_img(asl1, 1))
+#                           img2 = image.index_img(asl2, 0),
+#                           img1 = image.index_img(asl1, 0))  # volume 0: perfusion weights
+
 # using `fslmaths` instead
-import subprocess
-fp_asl1 = str(pathlib.PurePath(workdir, asl1))
-fp_asl2 = str(pathlib.PurePath(workdir, asl2))
-diff_img = 'asl_diff_scan2-1'
-
 # inspired by https://unix.stackexchange.com/questions/227337
-subprocess.call('fslmaths {0} -sub {1} {2}'.format(asl2,asl1,diff_img), shell=True)
+diff_fname = 'asl_diff_scan2-1'
 
+import subprocess
+subprocess.call('fslmaths {0} -sub {1} {2}'.format(asl2,asl1,diff_fname), shell=True)
+
+# visualizing the difference map - need to check if this is the right way!!
 fname2 = pathlib.Path(asl2).stem
 fname1 = pathlib.Path(asl1).stem
 
-# visualizing the difference map - need to check if this is the right way!!
-plotting.plot_roi(image.index_img(diff_img+'.nii.gz', 1),
+diff_img = image.index_img(diff_fname + '.nii.gz', 1)
+diff_img_BD_mask = Brain_Data(diff_img, mask=anat_betmask)
+
+plotting.plot_roi(diff_img_BD_mask.to_nifti(),
                   bg_img = anat,
                   display_mode = 'z', cut_coords = z_cut,
                   threshold = 50,
                   dim = -1,                     # dimming the anatomy background
                   colorbar = True,
-                  # output_file = "ASL_visual_{0}.png".format(file),
-                  title = "ASL difference map: {0} - {1}".format(fname2, fname1))
+                  output_file = "{0}_visual.png".format(diff_fname),
+                  title = "ASL difference map: {0}.nii.gz".format(diff_fname))
 
 # %% visualizing Scan2-Scan1 neurite density difference map
 sub = image.load_img(sub_img)
@@ -155,7 +162,7 @@ for key, value in asl_dict.items():
     title=" - ".join(img_title + ['NoMask']),
     output_file="_".join(img_title + ['NoMask']))
 
-    img_BD = Brain_Data(img, mask=anat_betmask)
+    img_BD = Brain_Data(img, mask=anat_betmask)         # applying skull-strip mask
     img_BD.plot(anatomical=anat,
     title=" - ".join(img_title + ['withMask']),
     output_file="_".join(img_title + ['withMask']))
