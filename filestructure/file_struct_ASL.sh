@@ -21,12 +21,12 @@
 #
 # TODO(Sean): 1. print out original file directory and file name of t1mprage_208
 
-THISDIR=/nfs/fmri/Analysis/Subjects_oldResting
+THISDIR=/nfs/fmri/Analysis/Subjects_ASL
 RAWDIR=/nfs/fmri/RAW_nopreprocess
 
-echo "* * * * * * * * * * * * * * * * * * * * * * * * * * *"
-echo "*** Script Resting state file structure purpose!! ***"
-echo "* * * * * * * * * * * * * * * * * * * * * * * * * * *"
+echo "* * * * * * * * * * * * * * * * * * * * * * * *"
+echo "*** Script for ASL file structure purpose!! ***"
+echo "* * * * * * * * * ** * * * * * * * * * * * * * *"
 
 # number of files index
 N=0
