@@ -36,16 +36,16 @@ PLD=1.525;    %for UMMAP protocol
 PLD=2.025;    %for PTR protocol
 
 %% equation definitions
-eqnum=(1-exp(-ST/T1t))*exp(PLD/T1b);
-eqdenom=2*T1b*(1-exp(-LT/T1b))*eff*NEX;
+eqnum = (1-exp(-ST/T1t))*exp(PLD/T1b);
+eqdenom = 2*T1b*(1-exp(-LT/T1b))*eff*NEX;
 
 % don't know what this is
-SF=32;
+SF = 32;
 
 % final scaling factors
-cbf=6000*alpha*(eqnum/eqdenom)*(pw./(SF*pd));
+cbf = 6000*alpha*(eqnum/eqdenom)*(pw./(SF*pd));
 
 % masking out noise
-cbfmap=cbf;
-cbfmap(find(msk1))=0;
-cbfmap(find(msk2))=1;
+cbfmap = cbf;
+cbfmap(find(msk1)) = 0;
+cbfmap(find(msk2)) = 1;
