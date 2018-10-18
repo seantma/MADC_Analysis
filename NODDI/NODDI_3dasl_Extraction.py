@@ -39,6 +39,8 @@ asl_dict = {
      }
 
 # constructing whole file path
+# `pathlib` more elegant for filename splitting
+import pathlib
 fp_asl1 = str(pathlib.PurePath(workdir, asl1))
 fp_asl2 = str(pathlib.PurePath(workdir, asl2))
 
@@ -52,10 +54,9 @@ z_cut
 from nilearn import plotting
 from nilearn import image
 from nltools.data import Brain_Data
-# `pathlib` more elegant for filename splitting
-import pathlib
 
 # %% --- Visualize histogram
+# !!NOTE!! `Brain_Data()` will automatically mask a MNI mask if not defined !!
 from matplotlib import pyplot
 file = asl1
 img = Brain_Data(file)
@@ -63,6 +64,27 @@ pyplot.hist(img.data[0], alpha=0.5, label='Spin density')       # volume 0: perf
 pyplot.hist(img.data[1], alpha=0.5, label='Perfusion weight')   # volume 1: spin density
 pyplot.legend(loc='upper right')
 pyplot.show()
+
+# %% --- Test data from nilearn.image
+ni_img = image.load_img(asl1)
+ni_img_data = ni_img.get_fdata()
+ni_img_data.shape
+
+asl1_perfw = image.index_img(asl1, 0)
+print(asl1_perfw.header)
+
+# %% --- Test writing out asl files for `Brain_Data` & `nilearn.image`
+# masked by MNI mask from `Brain_Data`
+perfw = img[0];
+spin = img[1];
+perfw.write('nltools_perfwght_scan1.nii.gz')
+spin.write('nltools_spindense_scan1.nii.gz')
+
+# no masking from `nilearn.image`
+perfw = image.index_img(asl1, 0)
+spin = image.index_img(asl1, 1)
+perfw.to_filename('nilearn_perfwght_scan1.nii.gz')
+spin.to_filename('nilearn_spindense_scan1.nii.gz')
 
 # %% --- define roundup to hundreds function
 import math
@@ -108,6 +130,8 @@ diff_fname = 'asl_diff_scan2-1'
 import subprocess
 subprocess.call('fslmaths {0} -sub {1} {2}'.format(asl2,asl1,diff_fname), shell=True)
 
+# !!NEED TO TRY!! `ImCalc` in spm12
+
 # visualizing the difference map - need to check if this is the right way!!
 fname2 = pathlib.Path(asl2).stem
 fname1 = pathlib.Path(asl1).stem
@@ -128,6 +152,13 @@ plotting.plot_roi(diff_img_BD_mask.to_nifti(),
 sub = image.load_img(sub_img)
 
 plotting.plot_roi(sub, bg_img=anat, display_mode='z', dim=-1, threshold=0.5)
+
+### ===== ASL scaling section =====
+# this code is adopted from Scott's `cbfmap.m` function
+# while his code scales appropriately, there is no way of writing the image out
+
+
+
 
 ### ===== ROI section =====
 # %% define function to create roi mask files
