@@ -60,8 +60,8 @@ from nltools.data import Brain_Data
 from matplotlib import pyplot
 file = asl1
 img = Brain_Data(file)
-pyplot.hist(img.data[0], alpha=0.5, label='Spin density')       # volume 0: perfusion weights
-pyplot.hist(img.data[1], alpha=0.5, label='Perfusion weight')   # volume 1: spin density
+pyplot.hist(img.data[0], alpha=0.5, label='Perfusion weight')   # volume 0: perfusion weights
+pyplot.hist(img.data[1], alpha=0.5, label='Spin density')       # volume 1: spin density
 pyplot.legend(loc='upper right')
 pyplot.show()
 
@@ -154,10 +154,60 @@ sub = image.load_img(sub_img)
 plotting.plot_roi(sub, bg_img=anat, display_mode='z', dim=-1, threshold=0.5)
 
 ### ===== ASL scaling section =====
-# this code is adopted from Scott's `cbfmap.m` function
+# %% this code is adopted from Scott's `cbfmap.m` function
 # while his code scales appropriately, there is no way of writing the image out
+import numpy as np
+import nibabel as nib
 
+# extract just the data
+perfw_mat = perfw.get_fdata()
+spin_mat = spin.get_fdata()
 
+# check our data again if matches prior histogram
+# NOTE:: previous histogram read by `Brain_Data` is masked by MNI mask
+pyplot.hist(perfw_mat.ravel())
+pyplot.hist(spin_mat.ravel())
+
+# creating masks
+msk1 = np.where(perfw_mat == 0)   # pw==0; mask outside spiral coverage
+msk2 = np.where(spin_mat < 200)     # pd<200; masks non-brain areas
+
+# count number of elements matching criteria
+perfw_mat.size
+np.where(perfw_mat > 500)
+(perfw_mat == 0).sum()
+(spin_mat < 200).sum()
+
+# parameter definitions
+alpha = 0.9
+ST = 2
+T1t = 1.2
+eff = 0.6
+T1b = 1.6
+LT = 1.5
+
+NEX=3;
+
+# post labelling delay
+# PLD = 1.525;    # for UMMAP protocol
+PLD = 2.025;    # for PTR protocol
+
+# equation definitions
+eqnum = (1 - np.exp(-ST/T1t)) * np.exp(PLD/T1b);
+eqdenom = 2 * T1b *(1 - np.exp(-LT/T1b)) * eff * NEX;
+
+# don't know what this is
+SF = 32;
+
+# final scaling factors
+cbf = 6000 * alpha * (eqnum/eqdenom) * np.divide(perfw_mat, (SF * spin_mat));
+
+np.divide(1, 0)
+
+tt = np.divide(perfw_mat, (SF * spin_mat))
+
+tt.shape
+pyplot.hist(tt.ravel())
 
 
 ### ===== ROI section =====
