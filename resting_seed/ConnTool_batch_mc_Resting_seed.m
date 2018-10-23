@@ -715,7 +715,7 @@ saveroiTC      = 1;
 
 global mcRoot
 
-mcRoot = '/mnt/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore'
+mcRoot = '/opt/apps/MCore2'
 
 addpath(fullfile(mcRoot,'matlabScripts'));
 addpath(fullfile(mcRoot,'ConnTool'));
