@@ -6,7 +6,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% The folder that contains your Subjects folders
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Exp = '/nfs/fmri/Analysis';
+Exp = '/nfs/fmri/Analysis/Sean_Working';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% The list of subjects to process
@@ -587,7 +587,7 @@ ROISize = {19};
 %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ROITemplate = '[Exp]/ROIs/Neurosynth_Language';  %'[Exp]/ROIs'
-ROITemplate = '[Exp]/ROIs/Neurosynth_DMN';  %'[Exp]/ROIs'
+ROITemplate = '[Exp]/Sean_Working/ROIs/Neurosynth_DMN';  %'[Exp]/ROIs'
 ROIImages = {
 %===== Ben's Brazil Talk /w Neurosynth Language Topic 87 ===== 6/11/2018
   % 'reSlice8_topic87_FinalMask_SubROI_LSFG.nii';
