@@ -3,7 +3,7 @@
 %
 % 2018, Scott Peltier
 % 10/17/2018, 12:36:14 PM
-function [cbfmap]=cbf_calc(asl_filename);
+function [cbfmap] = cbf_calc(asl_filename);
 
 %% Read in data, reshape, do masking of images
 tst = read_nii_img(asl_filename);
@@ -34,19 +34,18 @@ SF = 32;        %scaling factor
 % Protocol dependent parameters, check if running new protocol
 % UMMAP NEX=3 PLD=1.525
 % PTR   NEX=3 PLD=2.025
-
 NEX = 3;
 
 % post labelling delay
-PLD = 1.525;    %for UMMAP protocol
+% PLD = 1.525;    %for UMMAP protocol
 PLD = 2.025;    %for PTR protocol
 
 %% equation definitions
-eqnum = (1-exp(-ST/T1t))*exp(PLD/T1b);
-eqdenom = 2*T1b*(1-exp(-LT/T1b))*eff*NEX;
+eqnum = (1 - exp(-ST/T1t)) * exp(PLD/T1b);
+eqdenom = 2 * T1b * (1 - exp(-LT/T1b)) * eff * NEX;
 
 % final scaling factors
-cbf = 6000*alpha*(eqnum/eqdenom)*(pw./(SF*pd));
+cbf = 6000 * alpha * (eqnum/eqdenom) * (pw ./ (SF * pd));
 
 % masking out noise
 cbfmap = cbf;
@@ -58,4 +57,4 @@ h = read_nii_hdr(asl_filename);
 h2 = h;
 h2.dim(5) = 1;
 
-write_nii(strcat('cbfmap', asl_filename), cbfmap, h2, 0)
+write_nii(strcat('cbfmap_', asl_filename), cbfmap, h2, 0)
