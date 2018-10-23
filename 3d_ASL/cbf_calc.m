@@ -6,16 +6,16 @@
 function [cbfmap]=cbf_calc(asl_filename);
 
 %% Read in data, reshape, do masking of images
-tst=read_nii_img(asl_filename);
-tst=reshape(tst.',[128 128 40 2]);
+tst = read_nii_img(asl_filename);
+tst = reshape(tst.',[128 128 40 2]);
 
 % divide image into perfusion weights and spin density
-pw=tst(:,:,:,1);
-pd=tst(:,:,:,2);
+pw = tst(:,:,:,1);
+pd = tst(:,:,:,2);
 
 % creating masks
-msk1=(pw==0);   %mask outside spiral coverage
-msk2=(pd<200);  %masks non-brain areas
+msk1 = (pw == 0);   %mask outside spiral coverage
+msk2 = (pd < 200);  %masks non-brain areas
 
 % report the number of 1s in mask
 % https://www.mathworks.com/matlabcentral/answers/37196-count-number-of-specific-values-in-matrix
@@ -54,8 +54,8 @@ cbfmap(find(msk1)) = 0;
 cbfmap(find(msk2)) = 1;
 
 % Get original header, use it to write out cbfmap as nifti image
-h=read_nii_hdr(asl_filename);
-h2=h;
-h2.dim(5)=1;
+h = read_nii_hdr(asl_filename);
+h2 = h;
+h2.dim(5) = 1;
 
-write_nii('cbfmap.nii', cbfmap, h2, 0)
+write_nii(strcat('cbfmap', asl_filename), cbfmap, h2, 0)
