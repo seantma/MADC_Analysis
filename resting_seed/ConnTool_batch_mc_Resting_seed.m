@@ -170,7 +170,7 @@ RunDir = {
 %%% NeuroImage 2007;37:90?101.
 %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-confoundFile = 'vbm8_w3mm_rtprun';
+confoundFile = 'vbm8_w3mm_utprun';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% The file to run the connectivity on
@@ -178,7 +178,7 @@ confoundFile = 'vbm8_w3mm_rtprun';
 %%% This will be the smoothed and warped to MNI file.
 %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-connectFile  = 's5vbm8_w3mm_rtprun';
+connectFile  = 's5vbm8_w3mm_utprun';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Image Type should be either 'nii' or 'img'
