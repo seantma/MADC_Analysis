@@ -6,17 +6,120 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% The folder that contains your Subjects folders
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Exp = '/mnt/psych-bhampstelab/Patient_Centered_Neurorehab/Sean_Working';
+Exp = '/nfs/fmri/Analysis';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% The list of subjects to process
 %%% The format is 'subjectfolder',[runs to include]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 SubjDir = {
-  % DrD Extenstion study as of 10/15/2018 for Nov 2018 grant submission =====================
-  'DrD_Ext_scan1',[1];
-  'DrD_Ext_scan2',[1];
-
+  % === 6/5/18 batch ===
+  %  issues /w 1357, 1479
+  % 'madc1357_scan1',[1];
+  % 'madc1479_scan1',[1];
+  'madc0732_scan1',[1];
+  'madc0768_scan1',[1];
+  'madc0773_scan1',[1];
+  'madc0775_scan1',[1];
+  'madc0833_scan1',[1];
+  'madc0960_scan1',[1];
+  'madc1066_scan1',[1];
+  'madc1174_scan1',[1];
+  'madc1179_scan1',[1];
+  'madc1220_scan1',[1];
+  'madc1227_scan1',[1];
+  'madc1228_scan1',[1];
+  'madc1241_scan1',[1];
+  'madc1243_scan1',[1];
+  'madc1250_scan1',[1];
+  'madc1254_scan1',[1];
+  'madc1259_scan1',[1];
+  'madc1260_scan1',[1];
+  'madc1263_scan1',[1];
+  'madc1268_scan1',[1];
+  'madc1271_scan1',[1];
+  'madc1276_scan1',[1];
+  'madc1294_scan1',[1];
+  'madc1299_scan1',[1];
+  'madc1307_scan1',[1];
+  'madc1314_scan1',[1];
+  'madc1315_scan1',[1];
+  'madc1338_scan1',[1];
+  'madc1340_scan1',[1];
+  'madc1341_scan1',[1];
+  'madc1346_scan1',[1];
+  'madc1348_scan1',[1];
+  'madc1353_scan1',[1];
+  'madc1356_scan1',[1];
+  'madc1358_scan1',[1];
+  'madc1359_scan1',[1];
+  'madc1360_scan1',[1];
+  'madc1362_scan1',[1];
+  'madc1364_scan1',[1];
+  'madc1367_scan1',[1];
+  'madc1368_scan1',[1];
+  'madc1372_scan1',[1];
+  'madc1377_scan1',[1];
+  'madc1378_scan1',[1];
+  'madc1378_scan2',[1];
+  'madc1379_scan1',[1];
+  'madc1380_scan1',[1];
+  'madc1382_scan1',[1];
+  'madc1384_scan1',[1];
+  'madc1388_scan1',[1];
+  'madc1389_scan1',[1];
+  'madc1393_scan1',[1];
+  'madc1394_scan1',[1];
+  'madc1395_scan1',[1];
+  'madc1396_scan1',[1];
+  'madc1398_scan1',[1];
+  'madc1401_scan1',[1];
+  'madc1402_scan1',[1];
+  'madc1403_scan1',[1];
+  'madc1404_scan1',[1];
+  'madc1407_scan1',[1];
+  'madc1408_scan1',[1];
+  'madc1409_scan1',[1];
+  'madc1410_scan1',[1];
+  'madc1411_scan1',[1];
+  'madc1412_scan1',[1];
+  'madc1413_scan1',[1];
+  'madc1415_scan1',[1];
+  'madc1419_scan1',[1];
+  'madc1420_scan1',[1];
+  'madc1422_scan1',[1];
+  'madc1424_scan1',[1];
+  'madc1425_scan1',[1];
+  'madc1426_scan1',[1];
+  'madc1430_scan1',[1];
+  'madc1434_scan1',[1];
+  'madc1437_scan1',[1];
+  'madc1438_scan1',[1];
+  'madc1439_scan1',[1];
+  'madc1440_scan1',[1];
+  'madc1442_scan1',[1];
+  'madc1444_scan1',[1];
+  'madc1445_scan1',[1];
+  'madc1446_scan1',[1];
+  'madc1447_scan1',[1];
+  'madc1448_scan1',[1];
+  'madc1449_scan1',[1];
+  'madc1453_scan1',[1];
+  'madc1454_scan1',[1];
+  'madc1457_scan1',[1];
+  'madc1458_scan1',[1];
+  'madc1459_scan1',[1];
+  'madc1461_scan1',[1];
+  'madc1462_scan1',[1];
+  'madc1463_scan1',[1];
+  'madc1473_scan1',[1];
+  'madc1480_scan1',[1];
+  'madc1482_scan1',[1];
+  'madc1484_scan1',[1];
+  'madc1487_scan1',[1];
+  'madc1489_scan1',[1];
+  'madc1493_scan1',[1];
+  'madc1507_scan1',[1];
 };
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -42,7 +145,7 @@ SubjectDirBatch = [];
 %%% ImageTemplate = '[Exp]/Subjects/[Subject]/func/run_0[iRun]/';
 %%% ImageTemplate = '[Exp]/Subjects/[Subject]/TASK/func/[Run]/'
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-ImageTemplate = '[Exp]/Subjects_Resting/[Subject]/func/[Run]';
+ImageTemplate = '[Exp]/Subjects_oldResting/[Subject]/func/[Run]';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% A list of run folders where the script can find functional images
@@ -159,7 +262,7 @@ Mode = 'full';
 %%% are using 'maps' as the output.
 %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-AnatomyMaskPath = '[Exp]/Subjects_Resting/[Subject]/func/coReg/vbm8/';
+AnatomyMaskPath = '[Exp]/Subjects_oldResting/[Subject]/func/coReg/vbm8/';
 
 GreyFile  = '';
 %GreyFile  = 'vbm8_w3mm_p1ht1spgr.nii';
@@ -196,8 +299,8 @@ EPIThreshold   = [];
 %%% Path Template for realignment parameters file
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 RealignmentParametersTemplate = ...
-    '[Exp]/Subjects_Resting/[Subject]/func/[Run]/realign.dat';
-    % '[Exp]/Subjects_Resting/[Subject]/func/[Run]/mcflirt*a8*.dat';
+    '[Exp]/Subjects_oldResting/[Subject]/func/[Run]/realign.dat';
+    % '[Exp]/Subjects_oldResting/[Subject]/func/[Run]/mcflirt*a8*.dat';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%  Include first derivitave and quadratic terms for regressors
@@ -261,7 +364,7 @@ MotionQuad = 1;
 %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 DespikeParametersTemplate = ...
-    '[Exp]/Subjects_Resting/[Subject]/func/[Run]/CensorVector.mat';
+    '[Exp]/Subjects_oldResting/[Subject]/func/[Run]/CensorVector.mat';
 DespikeReplacementOption  = 'sgolay7';
 DespikeReplacementInterp  = 'pchip';
 
@@ -317,7 +420,7 @@ DespikeReplacementInterp  = 'pchip';
 %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 CensorParametersTemplate = ...
-    '[Exp]/Subjects_Resting/[Subject]/func/[Run]/CensorVector.mat';
+    '[Exp]/Subjects_oldResting/[Subject]/func/[Run]/CensorVector.mat';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%
