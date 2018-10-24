@@ -37,8 +37,11 @@ asl_dict = {
     'scan1': {'file':'asl1', 'scan_indx':1, 'scan':'Scan1'},
     'scan2': {'file':'asl2', 'scan_indx':2, 'scan':'Scan2'}
      }
+
+# CBF files
 cbf_asl1 = "DrD_Ext_ASL_scan1/vasc_3dasl/cbfmap_vasc_3dasl_scan1.nii"
 cbf_asl2 = "DrD_Ext_ASL_scan2/vasc_3dasl/cbfmap_vasc_3dasl_scan2.nii"
+cbf_array = [cbf_asl1, cbf_asl2]
 
 # constructing whole file path
 # `pathlib` more elegant for filename splitting
@@ -197,8 +200,8 @@ for file in [cbf_asl1, cbf_asl2]:
 
     # plot the asl map over subject's T1
     asl_img_BD.plot(anatomical=anat,
-                title = " - ".join(img_title + ['BDwithMask']),
-                output_file = "_".join(img_title + ['BDwithMask']))
+                    title = " - ".join(img_title + ['BDwithMask']),
+                    output_file = "_".join(img_title + ['BDwithMask']))
 
 ### ===== CBF map scaling section =====
 # %% this code is adopted from Scott's `cbfmap.m` function
@@ -280,20 +283,28 @@ plotting.plot_roi(rois, bg_img=anat,
 # %% --- Visualize ASL volume with/without brain masking
 # read in the perfusion volume in 3dasl
 # coerce to `nltools::Brain_Data` for better background mask
-for key, value in asl_dict.items():
-    img = image.index_img( eval(value['file']), 0 )     # index 0: 1st volume
-    img_title = [ value['file'], value['scan'], "PerfusionWeights" ]
+
+# Loop for raw ASL images which includes perfusion wights & spin density
+# for key, value in asl_dict.items():
+#     img = image.index_img( eval(value['file']), 0 )     # index 0: 1st volume
+#     img_title = [ value['file'], value['scan'], "PerfusionWeights" ]
+
+# Loop for CBF calculated maps (code provided by Scott)
+for img in cbf_array:
+    # extract image filename for figure title use
+    fname = pathlib.Path(file).stem
+    img_title = ['CBF', fname]
 
     # skull-strip masking vs without
     img_BD_noMask = Brain_Data(img)
     img_BD_noMask.plot(anatomical=anat,
-    title=" - ".join(img_title + ['NoMask']),
-    output_file="_".join(img_title + ['NoMask']))
+                       title=" - ".join(img_title + ['BDnoMask']),
+                       output_file="_".join(img_title + ['BDnoMask']))
 
     img_BD = Brain_Data(img, mask=anat_betmask)         # applying skull-strip mask
     img_BD.plot(anatomical=anat,
-    title=" - ".join(img_title + ['withMask']),
-    output_file="_".join(img_title + ['withMask']))
+                title=" - ".join(img_title + ['BDwithMask']),
+                output_file="_".join(img_title + ['BDwithMask']))
 
     # --- Create & save roi spheres by looping over dataframe & later fslview
     # import roi spreadsheet /w `pandas`
@@ -347,10 +358,10 @@ for key, value in asl_dict.items():
     # fig.savefig(h, 'test.png')
 
     # summarize extracted dataframe
-    fname = "{0}_{1}_ROI_extraction.csv".format(value['file'], value['scan'])
+    # fname = "{0}_{1}_ROI_extraction.csv".format(value['file'], value['scan'])
     extract_df.describe()
-    extract_df.to_csv(fname)
-    extract_df.describe().to_csv('Summary_' + fname)
+    extract_df.to_csv('ROI_extract_' + fname + '.csv')
+    extract_df.describe().to_csv('Summary_ROI_extract_' + fname + '.csv')
 
 
 # ==== Test ground for playing ====
