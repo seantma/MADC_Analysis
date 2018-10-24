@@ -190,7 +190,7 @@ for file in [cbf_asl1, cbf_asl2]:
 
 # %% --- visualize processed CBF maps with no anatomy - using Brain_Data()
 # `nilearn::image` seems too difficult to manipulate raw data matrix
-for file in [cbf_asl1, cbf_asl2]:
+for file in cbf_array:
     # read in the perfusion volume in 3dasl (index 0: 1st volume - perfusion weights)
     asl_img_BD = Brain_Data(file, mask=anat_betmask)    # applying skull-strip mask
 
@@ -290,18 +290,18 @@ plotting.plot_roi(rois, bg_img=anat,
 #     img_title = [ value['file'], value['scan'], "PerfusionWeights" ]
 
 # Loop for CBF calculated maps (code provided by Scott)
-for img in cbf_array:
+for file in cbf_array:
     # extract image filename for figure title use
     fname = pathlib.Path(file).stem
     img_title = ['CBF', fname]
 
     # skull-strip masking vs without
-    img_BD_noMask = Brain_Data(img)
+    img_BD_noMask = Brain_Data(file)
     img_BD_noMask.plot(anatomical=anat,
                        title=" - ".join(img_title + ['BDnoMask']),
                        output_file="_".join(img_title + ['BDnoMask']))
 
-    img_BD = Brain_Data(img, mask=anat_betmask)         # applying skull-strip mask
+    img_BD = Brain_Data(file, mask=anat_betmask)         # applying skull-strip mask
     img_BD.plot(anatomical=anat,
                 title=" - ".join(img_title + ['BDwithMask']),
                 output_file="_".join(img_title + ['BDwithMask']))
