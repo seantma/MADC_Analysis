@@ -37,6 +37,8 @@ asl_dict = {
     'scan1': {'file':'asl1', 'scan_indx':1, 'scan':'Scan1'},
     'scan2': {'file':'asl2', 'scan_indx':2, 'scan':'Scan2'}
      }
+cbf_asl1 = "DrD_Ext_ASL_scan1/vasc_3dasl/cbfmap_vasc_3dasl_scan1.nii"
+cbf_asl2 = "DrD_Ext_ASL_scan2/vasc_3dasl/cbfmap_vasc_3dasl_scan2.nii"
 
 # constructing whole file path
 # `pathlib` more elegant for filename splitting
@@ -153,7 +155,52 @@ sub = image.load_img(sub_img)
 
 plotting.plot_roi(sub, bg_img=anat, display_mode='z', dim=-1, threshold=0.5)
 
-### ===== ASL scaling section =====
+# %% --- visualize processed CBF maps with no anatomy - using `nilearn::image`
+# `nilearn::image` seems too difficult to manipulate raw data matrix
+for file in [cbf_asl1, cbf_asl2]:
+    # read in the perfusion volume in 3dasl (index 0: 1st volume - perfusion weights)
+    asl_img = image.load_img(file)
+
+    # convert image matrix into data matrix
+    # http://nipy.org/nibabel/nibabel_images.html
+    # !!NOTE!! asl_img.get_fdata() is different than asl_img.get_fdata
+    asl_img_data = np.asarray(asl_img.get_fdata())
+
+    # extract image filename for figure title use
+    fname = pathlib.Path(file).stem
+
+    # extract max intensity from image data
+    max_int = roundup(asl_img_data.max())
+
+    # plot the asl map subject's T1
+    plotting.plot_roi(asl_img,
+                      display_mode = 'z', cut_coords = z_cut,
+                      bg_img = anat,                # anat
+                      threshold = 2,
+                      dim = -1,                     # dimming the anatomy background
+                      colorbar = True,
+                      vmin = 5,                     # using `fsleyes` histogram
+                      vmax = 100,                   # max_int:: need to find common between 2 images
+                      # cmap = 'gist_rainbow',      #'binary',
+                      output_file = "CBF_visual_{0}_noMask.png".format(fname),
+                      title = "GE 3dasl CBF map: {0} - no Mask".format(fname))
+
+# %% --- visualize processed CBF maps with no anatomy - using Brain_Data()
+# `nilearn::image` seems too difficult to manipulate raw data matrix
+for file in [cbf_asl1, cbf_asl2]:
+    # read in the perfusion volume in 3dasl (index 0: 1st volume - perfusion weights)
+    asl_img_BD = Brain_Data(file, mask=anat_betmask)    # applying skull-strip mask
+
+    # extract image filename for figure title use
+    fname = pathlib.Path(file).stem
+    img_title = ['CBF', fname]
+
+    # plot the asl map over subject's T1
+    asl_img_BD.plot(anatomical=anat,
+                title = " - ".join(img_title + ['BDwithMask']),
+                output_file = "_".join(img_title + ['BDwithMask']))
+
+### ===== CBF map scaling section =====
 # %% this code is adopted from Scott's `cbfmap.m` function
 # while his code scales appropriately, there is no way of writing the image out
 import numpy as np
@@ -232,10 +279,10 @@ plotting.plot_roi(rois, bg_img=anat,
 
 # %% --- Visualize ASL volume with/without brain masking
 # read in the perfusion volume in 3dasl
-# coerce to `nltools``Brain_Data` for better background mask
+# coerce to `nltools::Brain_Data` for better background mask
 for key, value in asl_dict.items():
     img = image.index_img( eval(value['file']), 0 )     # index 0: 1st volume
-    img_title = [ value['file'], value['scan'], "PerfusionWeights"]
+    img_title = [ value['file'], value['scan'], "PerfusionWeights" ]
 
     # skull-strip masking vs without
     img_BD_noMask = Brain_Data(img)
