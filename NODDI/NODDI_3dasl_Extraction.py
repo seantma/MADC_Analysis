@@ -280,7 +280,7 @@ plotting.plot_roi(rois, bg_img=anat,
                   output_file = "LR_LTC_ROI_visualization.png",
                   title = "L/R LTC ROIs visualization")
 
-# %% --- Visualize ASL volume with/without brain masking
+# %% --- Visualize ASL volume or CBF map with/without brain masking
 # read in the perfusion volume in 3dasl
 # coerce to `nltools::Brain_Data` for better background mask
 
