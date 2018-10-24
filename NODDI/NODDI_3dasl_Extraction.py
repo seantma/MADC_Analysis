@@ -1,4 +1,4 @@
-imgimg# Processing and extracting values from NODDI and 3dasl
+# Processing and extracting values from NODDI and 3dasl
 #   - This script adopted heavily the use of `nilearn` and `nltools`
 #   - This script was also prototyped using `hydrogen` in Atom
 #
@@ -7,6 +7,8 @@ imgimg# Processing and extracting values from NODDI and 3dasl
 # NOTE::
 # - figure out `pweave` and how it interacts /w `hydrogen: `
 # - integrate `.Rmd` /w `.pmd`: https://github.com/nteract/hydrogen/issues/1165
+# - use `dir()` to list variables
+# - use `%reset` to clear all variables
 
 # %% --- set working directory
 import os
