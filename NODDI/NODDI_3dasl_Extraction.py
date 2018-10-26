@@ -348,12 +348,13 @@ for file in cbf_array:
     # extract_df.hist(alpha=0.5, bins=20, figsize=(12,10), sharex=True)
 
     # switched to this: https://plot.ly/pandas/histograms/
-    h = extract_df.plot(kind='hist',
-                        subplots=True, layout=(3,3),
-                        sharex=True, sharey=True,
-                        bins=20,
-                        figsize=(12,10),
-                        title=" - ".join(img_title + ['ROI extracts']))
+    # some bug , need to fix!!
+    # h = extract_df.plot(kind='hist',
+    #                     subplots=True, layout=(3,3),
+    #                     sharex=True, sharey=True,
+    #                     bins=20,
+    #                     figsize=(12,10),
+    #                     title=" - ".join(img_title + ['ROI extracts']))
 
     # try restarting program
     # fig= h[0].get_figure()
