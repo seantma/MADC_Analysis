@@ -1,0 +1,13 @@
+﻿name,x.mni,y.mni,z.mni,lobe,hemi,index,name.full,network
+L_dmPFC,-3,50,0,Frontal,L,1,L_dmPFC,Default_mode
+R_dmPFC,6,50,-1,Frontal,R,2,R_dmPFC,Default_mode
+L_PCC,-5,-57,24,Parietal,L,3,L_PCC,Default_mode
+R_PCC,6,-52,24,Parietal,R,4,R_PCC,Default_mode
+L_LTC,-58,-10,-22,Temporal,L,5,L_LTC,Default_mode
+R_LTC,58,-5,-22,Temporal,R,6,R_LTC,Default_mode
+L_MTL,-22,-21,-19,Limbic,L,7,L_MTL,Default_mode
+R_MTL,23,-22,-19,Limbic,R,8,R_MTL,Default_mode
+L_MFG,-23,25,49,Frontal,L,9,L_MFG,Default_mode
+R_MFG,25,34,44,Frontal,R,10,R_MFG,Default_mode
+L_IPL,-49,-59,31,Parietal,L,11,L_IPL,Default_mode
+R_IPL,50,-61,31,Parietal,R,12,R_IPL,Default_mode
