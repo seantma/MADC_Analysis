@@ -11,7 +11,7 @@ tst = reshape(tst.',[128 128 40 2]);
 
 % read in anatomy mask from bet2
 % should be resliced to asl size , ie. 128x128x40
-anat_mask = read_nii_img(bet_mask)
+anat_mask = read_nii_img(bet_mask);
 % sum(anat_mask(:) == 1)    %count of voxels == 1 (ie, brain signal)
 % unique(anat_mask)         %should be only 0 & 1
 
