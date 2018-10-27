@@ -3,11 +3,17 @@
 %
 % 2018, Scott Peltier
 % 10/17/2018, 12:36:14 PM
-function [cbfmap] = cbf_calc(asl_filename);
+function [cbfmap] = cbf_calc(asl_filename, bet_mask);
 
 %% Read in data, reshape, do masking of images
 tst = read_nii_img(asl_filename);
 tst = reshape(tst.',[128 128 40 2]);
+
+% read in anatomy mask from bet2
+% should be resliced to asl size , ie. 128x128x40
+anat_mask = read_nii_img(bet_mask)
+% sum(anat_mask(:) == 1)    %count of voxels == 1 (ie, brain signal)
+% unique(anat_mask)         %should be only 0 & 1
 
 % divide image into perfusion weights and spin density
 pw = tst(:,:,:,1);
@@ -52,9 +58,21 @@ cbfmap = cbf;
 cbfmap(find(msk1)) = 0;
 cbfmap(find(msk2)) = 1;
 
+% apply anatomy mask
+cbfmap_anat = cbfmap .* anat_mask;
+
+% mean scale to 100 for non-zeros elements to compare between scans
+% https://stackoverflow.com/questions/26624040/find-mean-of-non-zero-elements
+cbfmap_anat100 = (cbfmap_anat / mean(nonzeros(cbfmap_anat))) * 100;
+
 % Get original header, use it to write out cbfmap as nifti image
 h = read_nii_hdr(asl_filename);
 h2 = h;
 h2.dim(5) = 1;
 
+% write out CBF to nii
+% writing out 3 files: 1. calibrated CBF map, 2. brain-masked calibrated CBF map
+% 3. mean scaled to 100, brain-masked calibrated CBF map
 write_nii(strcat('cbfmap_', asl_filename), cbfmap, h2, 0)
+write_nii(strcat('cbfmap_anat_', asl_filename), cbfmap_anat, h2, 0)
+write_nii(strcat('cbfmap_anat_mean100_', asl_filename), cbfmap_anat100, h2, 0)
