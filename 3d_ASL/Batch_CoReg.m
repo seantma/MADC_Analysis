@@ -48,11 +48,12 @@ for iSubjDir = 1:size(SubjDir)
     % change to Working directory and rm .ps
     fprintf('\nRemoving old .ps files ...\n\n')
     cd(SubjDirPath)
-    try
-      system('rm *.ps');
-    catch
-      warning('No .ps file to rm')
-    end
+    system('rm *.ps');
+    % try
+    %   system('rm *.ps');
+    % catch
+    %   warning('No .ps file to rm')
+    % end
 
     % ----- CoRegistration section -----
     fprintf('=============================\n')
