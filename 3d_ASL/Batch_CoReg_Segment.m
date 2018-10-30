@@ -1,27 +1,24 @@
-
-% Parent directory
-% ParentDir = '/mnt/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/SecondLevel';
-ParentDir = '/mnt/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/FirstLevel';
-
-% Reporting directory
-ReportDir = '/mnt/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/Sean_docs/Hampstead_Spire/MethodsCore_mod';
-
-% Model name
-% Modelname = 'Video_02';
-% Modelname = 'Rest_Trial4';
-Modelname = 'Video_02';
+% Custom batch file for ASL processing
+%
+%% Sean Ma
+% Oct 2018
+%
+% This script can do:
+% 1. CoRegistration
+% 2. Segmentation of coregistered anatomy
+% 3. CBF calibration
 
 % Working directory
-% WorkDir = strcat(ParentDir, '/', Modelname);  %for WorkDir/Modelname/Subject structure
-WorkDir = strcat(ParentDir);  %for WorkDir/Subject/Modelname structure
+WorkDir = '/nfs/fmri/Analysis/Sean_Working/ASL_pilot';
 
 % Contrast directories under Working directory
 d = dir(WorkDir);
-idir = [d(:).isdir];                        % returns logical vector
-ConDir = {d(idir).name}';
-ConDir(ismember(ConDir,{'.','..'})) = [];   % removing . & ..
-index = find(~cellfun('isempty', regexp(ConDir, 'spi000[0-9]+_scan[1-2]'))); %regex matching 'spi00012_scan1'
-ConDir = ConDir(index);
+idir = [d(:).isdir];                          % returns logical vector for dir folders
+SubjDir = {d(idir).name}';
+SubjDir(ismember(SubjDir,{'.','..'})) = [];   % removing . & ..
+% Use regex to match pattern folder
+% index = find(~cellfun('isempty', regexp(SubjDir, 'spi000[0-9]+_scan[1-2]'))); %regex matching 'spi00012_scan1'
+% SubjDir = SubjDir(index);
 
 % setting up path
 % global mcRoot
@@ -29,27 +26,21 @@ ConDir = ConDir(index);
 % addpath(fullfile(mcRoot,'SPM','SPM8','spm8_with_R4667'))
 
 % spm addpath
-addpath /mnt/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8/spm8_with_R6313/
+addpath /opt/apps/MCore2/SPM/SPM12/spm12_R7219/
 
 % loop into different contrast directories
-for iConDir = 1:size(ConDir)
+for iSubjDir = 1:size(SubjDir)
     fprintf('\n')
-    fprintf('================\n')
-    fprintf('  NEW contrast  \n')
-    fprintf('================\n')
+    fprintf('===============\n')
+    fprintf('  NEW Subject  \n')
+    fprintf('===============\n')
 
-    % setting up Contrast directory
-    % ContrastDir = strcat(WorkDir, '/', ConDir{iConDir});  %for WorkDir/Modelname/Subject structure
-    ContrastDir = strcat(WorkDir, '/', ConDir{iConDir}, '/', Modelname);  %for WorkDir/Subject/Modelname structure
-
-    % setting up SPM.mat file
-    spmFile = strcat(ContrastDir, '/SPM.mat');
-    fprintf('\nWorking on SPM.mat ...\n');
-    fprintf('%s\n', spmFile)
+    % setting up full path subject directory
+    SubjDirPath = strcat(WorkDir, '/', SubjDir{iSubjDir});  %for WorkDir/Subject/Modelname structure
 
     % change to Working directory and rm .ps
     fprintf('\nRemoving old .ps files ...\n\n')
-    cd(ContrastDir)
+    cd(SubjDirPath)
     try
       system('rm *.ps');
     catch
@@ -57,26 +48,22 @@ for iConDir = 1:size(ConDir)
     end
 
     %-----------------------------------------------------------------------
-    % Job configuration created by cfg_util (rev $Rev: 4252 $)
+    % Job saved on 30-Oct-2018 12:03:20 by cfg_util (rev $Rev: 6942 $)
+    % spm SPM - SPM12 (7219)
     %-----------------------------------------------------------------------
     % inspired by SPM mailist: https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=spm;b72c4540.1601
 
-    fprintf('================================\n')
-    fprintf('  Working on Positive contrast  \n')
-    fprintf('================================\n')
+    fprintf('=============================\n')
+    fprintf('  Working on CoRegistration  \n')
+    fprintf('=============================\n')
 
-    matlabbatch{1}.spm.stats.results.spmmat = { spmFile };        %spm.mat location
-    matlabbatch{1}.spm.stats.results.conspec.titlestr = strcat(ConDir{iConDir}, ': Mean');  %contrast directory name
-    matlabbatch{1}.spm.stats.results.conspec.contrasts = 4;       %positive contrast (for now): 1
-    matlabbatch{1}.spm.stats.results.conspec.threshdesc = 'none';
-    matlabbatch{1}.spm.stats.results.conspec.thresh = 1;      %p threshold: 0.005
-    matlabbatch{1}.spm.stats.results.conspec.extent = 0;
-    matlabbatch{1}.spm.stats.results.conspec.mask = struct('contrasts', {}, 'thresh', {}, 'mtype', {});
-    matlabbatch{1}.spm.stats.results.units = 1;
-    matlabbatch{1}.spm.stats.results.print = true;
-    % matlabbatch{1}.spm.stats.results.print = 'pdf';
-    % matlabbatch{1}.spm.util.print.fname = 'Sean_test';
-    % matlabbatch{1}.spm.stats.results.write.tspm.basename = 'Sean_test_2ndLevel';
+    matlabbatch{1}.spm.spatial.coreg.estimate.ref = {strcat(SubjDirPath,'/vasc_3dasl.nii,2')};
+    matlabbatch{1}.spm.spatial.coreg.estimate.source = {strcat(SubjDirPath,'t1mprage_208.nii,1')};
+    matlabbatch{1}.spm.spatial.coreg.estimate.other = {''};
+    matlabbatch{1}.spm.spatial.coreg.estimate.eoptions.cost_fun = 'ecc';
+    matlabbatch{1}.spm.spatial.coreg.estimate.eoptions.sep = [4 2];
+    matlabbatch{1}.spm.spatial.coreg.estimate.eoptions.tol = [0.02 0.02 0.02 0.001 0.001 0.001 0.01 0.01 0.01 0.001 0.001 0.001];
+    matlabbatch{1}.spm.spatial.coreg.estimate.eoptions.fwhm = [7 7];
 
     % spm initiation
     spm_jobman('initcfg');
@@ -95,7 +82,7 @@ for iConDir = 1:size(ConDir)
     % fprintf('================================\n')
     %
     % matlabbatch{1}.spm.stats.results.spmmat = { spmFile };        %spm.mat location
-    % matlabbatch{1}.spm.stats.results.conspec.titlestr = strcat(ConDir{iConDir}, ': Negative');  %contrast directory name
+    % matlabbatch{1}.spm.stats.results.conspec.titlestr = strcat(SubjDir{iSubjDir}, ': Negative');  %contrast directory name
     % matlabbatch{1}.spm.stats.results.conspec.contrasts = 2;         %positive contrast (for now)
     % matlabbatch{1}.spm.stats.results.conspec.threshdesc = 'none';
     % matlabbatch{1}.spm.stats.results.conspec.thresh = 0.005;
@@ -124,7 +111,7 @@ for iConDir = 1:size(ConDir)
 
     [status, cmdout] = system('ls -t *.ps | head -n1');
     whichPS = strtrim(cmdout);
-    myCommand = ['mv ', whichPS,' ', ReportDir, '/', ConDir{iConDir}, '_p1.ps'];  %_p005.ps
+    myCommand = ['mv ', whichPS,' ', ReportDir, '/', SubjDir{iSubjDir}, '_p1.ps'];  %_p005.ps
     fprintf('Move %s with command: %s\n', whichPS, myCommand)
     system(myCommand);
 
