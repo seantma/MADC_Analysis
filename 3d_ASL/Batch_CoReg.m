@@ -56,6 +56,7 @@ for iSubjDir = 1:size(SubjDir)
     end
 
     % ----- CoRegistration section -----
+    fprintf('\n')
     fprintf('=============================\n')
     fprintf('  Working on CoRegistration  \n')
     fprintf('=============================\n')
@@ -85,6 +86,7 @@ for iSubjDir = 1:size(SubjDir)
 
     % ----- Skull-Strip section -----
     % use `bet2` for skull-strip and mask generation
+    fprintf('\n')
     fprintf('==========================\n')
     fprintf('  Working on Skull-Strip  \n')
     fprintf('==========================\n')
@@ -97,6 +99,7 @@ for iSubjDir = 1:size(SubjDir)
     system(unzipCommand);
 
     % ----- Reslice bet2 mask to vasc_3dasl section -----
+    fprintf('\n')
     fprintf('========================\n')
     fprintf('  Reslicing brain mask  \n')
     fprintf('========================\n')
@@ -127,6 +130,7 @@ for iSubjDir = 1:size(SubjDir)
     clear matlabbatch
 
     % ----- CBF calibration section -----
+    fprintf('\n')
     fprintf('=======================\n')
     fprintf('  Calibrating CBF map  \n')
     fprintf('=======================\n')
@@ -137,9 +141,10 @@ for iSubjDir = 1:size(SubjDir)
 
     % ----- Backup files section -----
     % copy cbfmap_anat_mean100_vasc_3dasl.nii
+    fprintf('\n')
     fprintf('===============================\n')
     fprintf('  Copy CBF files to ReportDir  \n')
-    fprintf('===============================\n\n')
+    fprintf('===============================\n')
 
     cd(ReportDir)
     mkdirCommand = ['mkdir ', SubjDir{iSubjDir}];
@@ -152,9 +157,10 @@ for iSubjDir = 1:size(SubjDir)
     fprintf('Finished copying CBF files')
 
     % finding the printed .ps. rename and move it
+    fprintf('\n')
     fprintf('==================================\n')
     fprintf('  Move & Rename .ps to ReportDir  \n')
-    fprintf('==================================\n\n')
+    fprintf('==================================\n')
 
     cd(SubjDirPath)
     [status, cmdout] = system('ls -t *.ps | head -n1');
