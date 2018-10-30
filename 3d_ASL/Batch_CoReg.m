@@ -65,7 +65,7 @@ for iSubjDir = 1:size(SubjDir)
     %-----------------------------------------------------------------------
     % inspired by SPM mailist: https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=spm;b72c4540.1601
     matlabbatch{1}.spm.spatial.coreg.estimate.ref = {strcat(SubjDirPath,'/vasc_3dasl.nii,2')};
-    matlabbatch{1}.spm.spatial.coreg.estimate.source = {strcat(SubjDirPath,'t1mprage_208.nii,1')};
+    matlabbatch{1}.spm.spatial.coreg.estimate.source = {strcat(SubjDirPath,'/t1mprage_208.nii,1')};
     matlabbatch{1}.spm.spatial.coreg.estimate.other = {''};
     matlabbatch{1}.spm.spatial.coreg.estimate.eoptions.cost_fun = 'ecc';
     matlabbatch{1}.spm.spatial.coreg.estimate.eoptions.sep = [4 2];
@@ -104,7 +104,7 @@ for iSubjDir = 1:size(SubjDir)
     % spm SPM - SPM12 (7219)
     %-----------------------------------------------------------------------
     matlabbatch{1}.spm.spatial.coreg.estwrite.ref = {strcat(SubjDirPath,'/vasc_3dasl.nii,2')};
-    matlabbatch{1}.spm.spatial.coreg.estwrite.source = {strcat(SubjDirPath,'bet_t1mprage_208_mask.nii,1')};
+    matlabbatch{1}.spm.spatial.coreg.estwrite.source = {strcat(SubjDirPath,'/bet_t1mprage_208_mask.nii,1')};
     matlabbatch{1}.spm.spatial.coreg.estwrite.other = {''};
     matlabbatch{1}.spm.spatial.coreg.estwrite.eoptions.cost_fun = 'ecc';
     matlabbatch{1}.spm.spatial.coreg.estwrite.eoptions.sep = [4 2];
