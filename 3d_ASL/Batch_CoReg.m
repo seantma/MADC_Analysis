@@ -84,6 +84,7 @@ for iSubjDir = 1:size(SubjDir)
     fprintf('  Working on Skull-Strip  \n')
     fprintf('==========================\n')
 
+    cd(SubjDirPath)
     betCommand = ['bet2 t1mprage_208.nii bet_t1mprage_208 -m'];
     unzipCommand = ['gunzip bet_t1mprage_208_mask.nii.gz']
     fprintf('Skull-strip for subject: %s \n', SubjDir{iSubjDir})
@@ -120,11 +121,36 @@ for iSubjDir = 1:size(SubjDir)
 
     clear matlabbatch
 
+    % ----- CBF calibration section -----
+    fprintf('=======================\n')
+    fprintf('  Calibrating CBF map  \n')
+    fprintf('=======================\n')
+
+    % running Scott's CBF calibration code
+    cd(SubjDirPath)
+    cbf_calc('vasc_3dasl.nii', 'reSlice_3dasl2_bet_t1mprage_208_mask.nii')
+
+    % ----- Backup files section -----
+    % copy cbfmap_anat_mean100_vasc_3dasl.nii
+    fprintf('===============================\n')
+    fprintf('  Copy CBF files to ReportDir  \n')
+    fprintf('===============================\n\n')
+
+    cd(ReportDir)
+    mkdirCommand = ['mkdir ', SubjDir{iSubjDir}]
+    cp1Command = ['cp ', SubjDirPath, '/cbfmap_*.* .']
+    cp2Command = ['cp ', SubjDirPath, '/bet_t1mprage_208_mask.nii .']
+
+    system(mkdirCommand);
+    system(cp1Command);
+    system(cp2Command);
+
     % finding the printed .ps. rename and move it
     fprintf('==================================\n')
     fprintf('  Move & Rename .ps to ReportDir  \n')
     fprintf('==================================\n\n')
 
+    cd(SubjDirPath)
     [status, cmdout] = system('ls -t *.ps | head -n1');
     whichPS = strtrim(cmdout);
     myCommand = ['mv ', whichPS, ' ', ReportDir, '/', SubjDir{iSubjDir}, '.ps'];
@@ -136,8 +162,6 @@ end
 % converting ps to pdf
 % cd(ReportDir)
 % system(['for f in *.ps; do ps2pdf ${f}; echo ''Converted ${f} to pdf, deleting original .ps file''; done;'])
-
-
 
 % saying goodbye!
 fprintf('\n')
