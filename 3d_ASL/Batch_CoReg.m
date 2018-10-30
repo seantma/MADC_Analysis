@@ -34,9 +34,9 @@ addpath /opt/apps/MCore2/SPM/SPM12/spm12_R7219/
 % loop into different contrast directories
 for iSubjDir = 1:size(SubjDir)
     fprintf('\n')
-    fprintf('===============\n')
-    fprintf('  NEW Subject  \n')
-    fprintf('===============\n')
+    fprintf('=====================================\n')
+    fprintf('  NEW Subject: %s \n', SubjDir{iSubjDir})
+    fprintf('=====================================\n\n')
 
     % setting up full path subject directory
     SubjDirPath = strcat(WorkDir, '/', SubjDir{iSubjDir});  %for WorkDir/Subject/Modelname structure
