@@ -138,7 +138,7 @@ for iSubjDir = 1:size(SubjDir)
 
     % running Scott's CBF calibration code
     cd(SubjDirPath)
-    cbf_calc('vasc_3dasl.nii', 'reSlice_3dasl2_bet_t1mprage_208_mask.nii')
+    cbf_calc('vasc_3dasl.nii', 'reSlice_3dasl2_bet_t1mprage_208_mask.nii');
 
     % ----- Backup files section -----
     % copy cbfmap_anat_mean100_vasc_3dasl.nii
