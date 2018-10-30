@@ -31,6 +31,10 @@ SubjDir(ismember(SubjDir,{'.','..'})) = [];   % removing . & ..
 % spm addpath
 addpath /opt/apps/MCore2/SPM/SPM12/spm12_R7219/
 
+% Logging diary
+diary(strcat('Batch_CoReg_console_Log.txt'))
+disp(['======== Starting session!! ==========  ', datestr(clock), '  ==================']);
+
 % loop into different contrast directories
 for iSubjDir = 1:size(SubjDir)
     fprintf('\n')
@@ -144,6 +148,7 @@ for iSubjDir = 1:size(SubjDir)
     system(mkdirCommand);
     system(cp1Command);
     system(cp2Command);
+    fprintf('Finished copying CBF files')
 
     % finding the printed .ps. rename and move it
     fprintf('==================================\n')
@@ -154,10 +159,22 @@ for iSubjDir = 1:size(SubjDir)
     [status, cmdout] = system('ls -t *.ps | head -n1');
     whichPS = strtrim(cmdout);
     myCommand = ['mv ', whichPS, ' ', ReportDir, '/', SubjDir{iSubjDir}, '.ps'];
+
     fprintf('Move %s with command: %s\n', whichPS, myCommand)
     system(myCommand);
 
 end
+
+% Ending diary Logging
+disp(['======== Session ENDED!! ==========  ', datestr(clock), '  ==================']);
+diary off
+
+% copy console log to ReportDir
+cd(ReportDir)
+logCommand = ['cp ', SubjDirPath, '/Batch_CoReg_console_Log.txt .']
+
+system(logCommand)
+fprintf('Finished copying Log diary!!')
 
 % converting ps to pdf
 % cd(ReportDir)
