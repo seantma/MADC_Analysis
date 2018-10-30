@@ -31,6 +31,7 @@ SubjDir(ismember(SubjDir,{'.','..'})) = [];   % removing . & ..
 % addpath for spm & ASL scripts
 addpath /opt/apps/MCore2/SPM/SPM12/spm12_R7219/
 addpath /nfs/fmri/Analysis/Sean_Working/Git_MADC/3d_ASL
+addpath /nfs/fmri/Analysis/Sean_Working/Git_MADC/3d_ASL/multiband_fm_ru/mfiles
 
 % Logging diary
 diary('Batch_CoReg_console_Log.txt')
