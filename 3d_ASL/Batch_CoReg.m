@@ -50,16 +50,16 @@ for iSubjDir = 1:size(SubjDir)
       warning('No .ps file to rm')
     end
 
+    % ----- CoRegistration section -----
+    fprintf('=============================\n')
+    fprintf('  Working on CoRegistration  \n')
+    fprintf('=============================\n')
+
     %-----------------------------------------------------------------------
     % Job saved on 30-Oct-2018 12:03:20 by cfg_util (rev $Rev: 6942 $)
     % spm SPM - SPM12 (7219)
     %-----------------------------------------------------------------------
     % inspired by SPM mailist: https://www.jiscmail.ac.uk/cgi-bin/webadmin?A2=spm;b72c4540.1601
-
-    fprintf('=============================\n')
-    fprintf('  Working on CoRegistration  \n')
-    fprintf('=============================\n')
-
     matlabbatch{1}.spm.spatial.coreg.estimate.ref = {strcat(SubjDirPath,'/vasc_3dasl.nii,2')};
     matlabbatch{1}.spm.spatial.coreg.estimate.source = {strcat(SubjDirPath,'t1mprage_208.nii,1')};
     matlabbatch{1}.spm.spatial.coreg.estimate.other = {''};
@@ -77,6 +77,19 @@ for iSubjDir = 1:size(SubjDir)
     spm_jobman('run',matlabbatch);
 
     clear matlabbatch
+
+    % ----- Skull-Strip section -----
+    % use `bet2` for skull-strip and mask generation
+    fprintf('==========================\n')
+    fprintf('  Working on Skull-Strip  \n')
+    fprintf('==========================\n')
+
+    betCommand = ['bet2 t1mprage_208.nii bet_t1mprage_208 -m'];
+    unzipCommand = ['gunzip bet_t1mprage_208_mask.nii.gz']
+    fprintf('Skull-strip for subject: %s \n', SubjDir{iSubjDir})
+    system(betCommand);
+    system(unzipCommand);
+
 
     % finding the printed .ps. rename and move it
     fprintf('==================================\n')
