@@ -178,11 +178,7 @@ disp(['======== Session ENDED!! ==========  ', datestr(clock), '  ==============
 diary off
 
 % copy console log to ReportDir
-cd(ReportDir)
-logCommand = ['cp ', SubjDirPath, '/Batch_CoReg_console_Log.txt .'];
-
-system(logCommand)
-fprintf('Finished copying Log diary!!')
+% no need as console log is already in Github folder
 
 % converting ps to pdf
 % cd(ReportDir)
