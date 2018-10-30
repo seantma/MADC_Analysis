@@ -43,6 +43,8 @@ asl_dict = {
 # CBF files
 cbf_asl1 = "DrD_Ext_ASL_scan1/vasc_3dasl/cbfmap_vasc_3dasl_scan1.nii"
 cbf_asl2 = "DrD_Ext_ASL_scan2/vasc_3dasl/cbfmap_vasc_3dasl_scan2.nii"
+cbf_asl1 = "DrD_Ext_ASL_scan1/vasc_3dasl/cbfmap_anat_mean100_vasc_3dasl_scan1.nii"
+cbf_asl2 = "DrD_Ext_ASL_scan2/vasc_3dasl/cbfmap_anat_mean100_vasc_3dasl_scan2.nii"
 cbf_array = [cbf_asl1, cbf_asl2]
 
 # constructing whole file path
