@@ -17,7 +17,13 @@ This question was asked by Ben on how different source of T1 and coregistering w
 2. Backup anatomy file to allow **Estimation** of `CoRegistration` can be overwritten (it's always best to check to original and coregistered anatomy on top of perfusion weighted images).
     - `for dir in */; do cp $dir/t1mprage_208.nii $dir/t1mprage_208.nii.bakup; done`
 3. Coregistration: _vasc_3dasl as reference image, anatomy as target_
-4.
+    - `Batch_CoReg.m`
+4. Generate skull-strip BET mask **!!This needs to happen AFTER CoRegistration!!**
+    - `for dir in */; do bet2 $dir/t1mprage_208.nii $dir/bet_t1mprage_208 -m; done`
+    - `for dir in */; do gunzip $dir/bet_t1mprage_208_mask.nii.gz; done`
+5. reSlice BET mask to vasc_3dasl space
+6. CBF calibration
+7. move files back to Github folder
 
 ### References
 - Reference paper: Sun et al., 2016, Cerebral Blood Flow Alterations as Assessed by 3D ASL in Cognitive Impairment in Patients with Subcortical Vascular Cognitive Impairment: A Marker for Disease Severity https://www.frontiersin.org/articles/10.3389/fnagi.2016.00211/full
