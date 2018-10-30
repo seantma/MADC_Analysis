@@ -11,6 +11,9 @@
 % Working directory
 WorkDir = '/nfs/fmri/Analysis/Sean_Working/ASL_pilot';
 
+% Reporting directory
+ReportDir = '/nfs/fmri/Analysis/Sean_Working/Git_MADC/3d_ASL';
+
 % Contrast directories under Working directory
 d = dir(WorkDir);
 idir = [d(:).isdir];                          % returns logical vector for dir folders
@@ -75,35 +78,6 @@ for iSubjDir = 1:size(SubjDir)
 
     clear matlabbatch
 
-    % % ===========================================================================
-    % % running the negative contrast
-    % fprintf('================================\n')
-    % fprintf('  Working on Negative contrast  \n')
-    % fprintf('================================\n')
-    %
-    % matlabbatch{1}.spm.stats.results.spmmat = { spmFile };        %spm.mat location
-    % matlabbatch{1}.spm.stats.results.conspec.titlestr = strcat(SubjDir{iSubjDir}, ': Negative');  %contrast directory name
-    % matlabbatch{1}.spm.stats.results.conspec.contrasts = 2;         %positive contrast (for now)
-    % matlabbatch{1}.spm.stats.results.conspec.threshdesc = 'none';
-    % matlabbatch{1}.spm.stats.results.conspec.thresh = 0.005;
-    % matlabbatch{1}.spm.stats.results.conspec.extent = 0;
-    % matlabbatch{1}.spm.stats.results.conspec.mask = struct('contrasts', {}, 'thresh', {}, 'mtype', {});
-    % matlabbatch{1}.spm.stats.results.units = 1;
-    % matlabbatch{1}.spm.stats.results.print = true;
-    % % matlabbatch{1}.spm.stats.results.print = 'pdf';
-    % % matlabbatch{1}.spm.util.print.fname = 'Sean_test';
-    % % matlabbatch{1}.spm.stats.results.write.tspm.basename = 'Sean_test_2ndLevel';
-    %
-    % % spm initiation
-    % spm_jobman('initcfg');
-    % spm('defaults','fmri');
-    % global defaults;
-    %
-    % % running spm job
-    % spm_jobman('run',matlabbatch);
-    %
-    % clear matlabbatch
-
     % finding the printed .ps. rename and move it
     fprintf('==================================\n')
     fprintf('  Move & Rename .ps to ReportDir  \n')
@@ -111,22 +85,17 @@ for iSubjDir = 1:size(SubjDir)
 
     [status, cmdout] = system('ls -t *.ps | head -n1');
     whichPS = strtrim(cmdout);
-    myCommand = ['mv ', whichPS,' ', ReportDir, '/', SubjDir{iSubjDir}, '_p1.ps'];  %_p005.ps
+    myCommand = ['mv ', whichPS, ' ', ReportDir, '/', SubjDir{iSubjDir}, '.ps'];
     fprintf('Move %s with command: %s\n', whichPS, myCommand)
     system(myCommand);
 
 end
 
-% get contrast directory list
-cd(WorkDir)
-system(['ls -d * > ContrastsList_', Modelname, '.txt']);
-myCommand = ['mv ContrastsList_', Modelname, '.txt ', ReportDir];
-fprintf('Move Contrasts list file with command: %s\n', myCommand)
-system(myCommand);
-
 % converting ps to pdf
 % cd(ReportDir)
 % system(['for f in *.ps; do ps2pdf ${f}; echo ''Converted ${f} to pdf, deleting original .ps file''; done;'])
+
+
 
 % saying goodbye!
 fprintf('\n')
@@ -134,6 +103,9 @@ fprintf('===============\n')
 fprintf('  ALL DONE !!  \n')
 fprintf('===============\n')
 fprintf('\n')
+
+
+
 
 %% converting ps to pdf on Mac or Linux
 % #!/bin/bash
