@@ -15,7 +15,7 @@ This question was asked by Ben on how different source of T1 and coregistering w
 ### Steps taken
 1. Copy anatomy and vasc_3dasl files to analysis folder.
 2. Backup anatomy file to allow **Estimation** of `CoRegistration` can be overwritten (it's always best to check to original and coregistered anatomy on top of perfusion weighted images).
-    - `for dir in */; do cp $dir/t1mprage_208.nii $dir/t1mprage_208.nii.bakup; done`
+    - `for dir in */; do cp -p $dir/t1mprage_208.nii $dir/t1mprage_208.nii.bakup; done`
 3. Coregistration: _vasc_3dasl as reference image, anatomy as target_
     - `Batch_CoReg.m`
 4. Generate skull-strip BET mask **!!This needs to happen AFTER CoRegistration!!**
