@@ -12,46 +12,20 @@
 
 # %% --- set working directory
 import os
-workdir = "/Users/tehsheng/Dropbox/DrD_Ext"
+workdir = "/Users/tehsheng/Dropbox/ASL_pilot"
 os.chdir(workdir)
+
+# `pathlib` more elegant for filename splitting
+import pathlib
 
 # %% --- define files
 # anat = "anatomy/reSlice_fromODI_ht1spgr.nii"
-anat = "anatomy/ht1spgr.nii"
-anat_betmask = "anatomy/ht1spgr_bet_mask.nii.gz"        # bet2 ht1spgr.nii ht1spgr_bet -m
+anat = "t1mprage_208.nii"
+anat_betmask = "bet_t1mprage_208_mask.nii"        # bet2 ht1spgr.nii ht1spgr_bet -m
 roi_all = "all_rois.nii.gz"
 
-# NODDI files
-neurite1 = "DrD_Ext_DTI_scan1/DrD_Ext_scan1_ficvf.nii"
-neurite2 = "DrD_Ext_DTI_scan2/reSlice_fromScan1_FICVF_DrD_Ext_scan2_ficvf.nii"
-sub_img = "DrD_Ext_DTI_scan2/Scan2-1_ficvf.nii.gz"
-noddi_array = [neurite1, neurite2]
-noddi_dict = {
-    'scan1': {'file':'neurite1', 'scan_indx':1, 'scan':'Scan1'},
-    'scan2': {'file':'neurite2', 'scan_indx':2, 'scan':'Scan2'}
-     }
-
-# ASL files
-asl1 = "DrD_Ext_ASL_scan1/vasc_3dasl/vasc_3dasl_scan1.nii"
-asl2 = "DrD_Ext_ASL_scan2/vasc_3dasl/vasc_3dasl_scan2.nii"
-asl_arrary = [asl1, asl2]
-asl_dict = {
-    'scan1': {'file':'asl1', 'scan_indx':1, 'scan':'Scan1'},
-    'scan2': {'file':'asl2', 'scan_indx':2, 'scan':'Scan2'}
-     }
-
 # CBF files
-cbf_asl1 = "DrD_Ext_ASL_scan1/vasc_3dasl/cbfmap_vasc_3dasl_scan1.nii"
-cbf_asl2 = "DrD_Ext_ASL_scan2/vasc_3dasl/cbfmap_vasc_3dasl_scan2.nii"
-cbf_asl1 = "DrD_Ext_ASL_scan1/vasc_3dasl/cbfmap_anat_mean100_vasc_3dasl_scan1.nii"
-cbf_asl2 = "DrD_Ext_ASL_scan2/vasc_3dasl/cbfmap_anat_mean100_vasc_3dasl_scan2.nii"
-cbf_array = [cbf_asl1, cbf_asl2]
-
-# constructing whole file path
-# `pathlib` more elegant for filename splitting
-import pathlib
-fp_asl1 = str(pathlib.PurePath(workdir, asl1))
-fp_asl2 = str(pathlib.PurePath(workdir, asl2))
+cbfmap = "cbfmap_anat_mean100_vasc_3dasl.nii"
 
 # %% --- define z axis cuts
 import numpy as np
@@ -82,16 +56,21 @@ def roi_mask(x, y, z, label, size):
 # read in the perfusion volume in 3dasl
 # coerce to `nltools::Brain_Data` for better background mask
 
-# Loop for raw ASL images which includes perfusion wights & spin density
-# for key, value in asl_dict.items():
-#     img = image.index_img( eval(value['file']), 0 )     # index 0: 1st volume
-#     img_title = [ value['file'], value['scan'], "PerfusionWeights" ]
+# --- Create & save roi spheres by looping over dataframe & later fslview
+# import roi spreadsheet /w `pandas`
+import pandas as pd
+subj_roi_df = pd.read_csv('LRTC_5mm.csv')
 
-# Loop for CBF calculated maps (code provided by Scott)
-for file in cbf_array:
-    # extract image filename for figure title use
-    fname = pathlib.Path(file).stem
-    img_title = ['CBF', fname]
+# Loop over subjects
+# inspired by https://stackoverflow.com/questions/43619896/python-pandas-iterate-over-rows-and-access-column-names
+for row in subj_roi_dir.itertuples():
+
+    # constructing whole file path
+    fp_anat = str(pathlib.PurePath(workdir, row.Subject, anat))
+    fp_anat_betmask = str(pathlib.PurePath(workdir, row.Subject, anat_betmask))
+    fp_cbfmap = str(pathlib.PurePath(workdir, row.Subject, cbfmap))
+
+    img_title = ['CBF', row.Subject]
 
     # skull-strip masking vs without
     img_BD_noMask = Brain_Data(file)
@@ -104,37 +83,31 @@ for file in cbf_array:
                 title=" - ".join(img_title + ['BDwithMask']),
                 output_file="_".join(img_title + ['BDwithMask']))
 
-    # --- Create & save roi spheres by looping over dataframe & later fslview
-    # import roi spreadsheet /w `pandas`
-    import pandas as pd
-    roi_df = pd.read_csv('roi_5mm.csv')
-
-    # initialize dataframe
+    # initialize extraction dataframe
     extract_df = pd.DataFrame()
 
-    # inspired by https://stackoverflow.com/questions/43619896/python-pandas-iterate-over-rows-and-access-column-names
-    for row in roi_df.itertuples():
-        # saving and returning the roi mask created
-        mask = roi_mask(row.x, row.y, row.z, row.label, row.size)
+    # saving and returning the roi mask created
+    mask = roi_mask(row.x, row.y, row.z, row.label, row.size)
 
-        # applying the roi mask on image of interest
-        roi_img = img_BD.apply_mask(mask)
+    # applying the roi mask on image of interest
+    roi_img = img_BD.apply_mask(mask)
 
-        # concatenate extracted neurite array into dataframe
-        extract_df = pd.concat([extract_df, pd.DataFrame(roi_img.data, columns=[row.label])],
-        axis = 1)
+    # concatenate extracted neurite array into dataframe
+    extract_df = pd.concat([extract_df,
+                            pd.DataFrame(roi_img.data, columns=[row.Subject+'_'+row.label])],
+                           axis = 1)
 
-        # ortho views at roi coordinates on subject's brain instead of default axial plots
-        # masked_img.plot()
-        fig_label = "{0}, {1} mm sphere at [{2},{3},{4}]".format(row.label,str(row.size),row.x,row.y,row.z)
-        file_label = "{0}_{1}mm_sphere.png".format(row.label, str(row.size))
+    # ortho views at roi coordinates on subject's brain instead of default axial plots
+    # masked_img.plot()
+    fig_label = "{0}, {1} mm sphere at [{2},{3},{4}]".format(row.label,str(row.size),row.x,row.y,row.z)
+    file_label = "{0}_{1}_{2}mm_sphere.png".format(row.Subject, row.label, str(row.size))
 
-        plotting.plot_stat_map(roi_img.to_nifti(),
-                               bg_img=anat,
-                               display_mode='ortho', cut_coords=[row.x, row.y, row.z],
-                               draw_cross=False, dim=-1,
-                               title=fig_label,
-                               output_file=file_label)
+    plotting.plot_stat_map(roi_img.to_nifti(),
+                           bg_img=anat,
+                           display_mode='ortho', cut_coords=[row.x, row.y, row.z],
+                           draw_cross=False, dim=-1,
+                           title=fig_label,
+                           output_file=file_label)
 
     # plotting overlaid histograms /w pandas
     # extract_df.head()
@@ -159,5 +132,5 @@ for file in cbf_array:
     # summarize extracted dataframe
     # fname = "{0}_{1}_ROI_extraction.csv".format(value['file'], value['scan'])
     extract_df.describe()
-    extract_df.to_csv('ROI_extract_' + fname + '.csv')
-    extract_df.describe().to_csv('Summary_ROI_extract_' + fname + '.csv')
+    extract_df.to_csv('ROI_extract_ASL_pilot.csv')
+    extract_df.describe().to_csv('Summary_ROI_extract_ASL_pilot.csv')
