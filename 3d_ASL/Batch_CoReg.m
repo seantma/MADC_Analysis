@@ -28,11 +28,12 @@ SubjDir(ismember(SubjDir,{'.','..'})) = [];   % removing . & ..
 % mcRoot = '/mnt/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore'
 % addpath(fullfile(mcRoot,'SPM','SPM8','spm8_with_R4667'))
 
-% spm addpath
+% addpath for spm & ASL scripts
 addpath /opt/apps/MCore2/SPM/SPM12/spm12_R7219/
+addpath /nfs/fmri/Analysis/Sean_Working/Git_MADC/3d_ASL
 
 % Logging diary
-diary(strcat('Batch_CoReg_console_Log.txt'))
+diary('Batch_CoReg_console_Log.txt')
 disp(['======== Starting session!! ==========  ', datestr(clock), '  ==================']);
 
 % loop into different contrast directories
@@ -48,12 +49,11 @@ for iSubjDir = 1:size(SubjDir)
     % change to Working directory and rm .ps
     fprintf('\nRemoving old .ps files ...\n\n')
     cd(SubjDirPath)
-    system('rm *.ps');
-    % try
-    %   system('rm *.ps');
-    % catch
-    %   warning('No .ps file to rm')
-    % end
+    try
+      system('rm *.ps');
+    catch
+      warning('No .ps file to rm')
+    end
 
     % ----- CoRegistration section -----
     fprintf('=============================\n')
@@ -91,7 +91,7 @@ for iSubjDir = 1:size(SubjDir)
 
     cd(SubjDirPath)
     betCommand = ['bet2 t1mprage_208.nii bet_t1mprage_208 -m'];
-    unzipCommand = ['gunzip bet_t1mprage_208_mask.nii.gz']
+    unzipCommand = ['gunzip bet_t1mprage_208_mask.nii.gz'];
     fprintf('Skull-strip for subject: %s \n', SubjDir{iSubjDir})
     system(betCommand);
     system(unzipCommand);
@@ -142,9 +142,9 @@ for iSubjDir = 1:size(SubjDir)
     fprintf('===============================\n\n')
 
     cd(ReportDir)
-    mkdirCommand = ['mkdir ', SubjDir{iSubjDir}]
-    cp1Command = ['cp ', SubjDirPath, '/cbfmap_*.* .']
-    cp2Command = ['cp ', SubjDirPath, '/bet_t1mprage_208_mask.nii .']
+    mkdirCommand = ['mkdir ', SubjDir{iSubjDir}];
+    cp1Command = ['cp ', SubjDirPath, '/cbfmap_*.* .'];
+    cp2Command = ['cp ', SubjDirPath, '/bet_t1mprage_208_mask.nii .'];
 
     system(mkdirCommand);
     system(cp1Command);
@@ -172,7 +172,7 @@ diary off
 
 % copy console log to ReportDir
 cd(ReportDir)
-logCommand = ['cp ', SubjDirPath, '/Batch_CoReg_console_Log.txt .']
+logCommand = ['cp ', SubjDirPath, '/Batch_CoReg_console_Log.txt .'];
 
 system(logCommand)
 fprintf('Finished copying Log diary!!')
