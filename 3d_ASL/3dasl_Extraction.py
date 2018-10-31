@@ -56,8 +56,9 @@ def roi_mask(x, y, z, label, size):
 # coerce to `nltools::Brain_Data` for better background mask
 
 # --- Create & save roi spheres by looping over dataframe & later fslview
-# import roi spreadsheet /w `pandas`
+# initialize extraction dataframe
 import pandas as pd
+extract_df = pd.DataFrame()
 
 # %% Loop over subjects
 # inspired by https://stackoverflow.com/questions/43619896/python-pandas-iterate-over-rows-and-access-column-names
@@ -85,9 +86,6 @@ for dirname in next(os.walk('.'))[1]:
     # read in subject-specific roi.csv file
     subj_roi_df = pd.read_csv(str(pathlib.PurePath(workdir, dirname, 'LRTC_roi_10mm.csv')))
 
-    # initialize extraction dataframe
-    extract_df = pd.DataFrame()
-
     # iterating roi.csv file within each subject's folder
     for row in subj_roi_df.itertuples():
 
@@ -98,12 +96,12 @@ for dirname in next(os.walk('.'))[1]:
         roi_img = img_BD.apply_mask(mask)
 
         # concatenate extracted neurite array into dataframe
-        extract_df = pd.concat([extract_df,pd.DataFrame(roi_img.data, columns=[row.Subject+'_'+row.label])],axis = 1)
+        extract_df = pd.concat([extract_df,pd.DataFrame(roi_img.data, columns=[dirname+'_'+row.label])],axis = 1)
 
         # ortho views at roi coordinates on subject's brain instead of default axial plots
         # masked_img.plot()
         fig_label = "{0}, {1} mm sphere at [{2},{3},{4}]".format(row.label,str(row.size),row.x,row.y,row.z)
-        file_label = "{0}_{1}_{2}mm_sphere.png".format(row.Subject, row.label, str(row.size))
+        file_label = "{0}_{1}_{2}mm_sphere.png".format(dirname, row.label, str(row.size))
 
         plotting.plot_stat_map(roi_img.to_nifti(),
                                bg_img = fp_anat,
