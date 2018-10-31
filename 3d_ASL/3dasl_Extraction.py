@@ -22,7 +22,6 @@ import pathlib
 # anat = "anatomy/reSlice_fromODI_ht1spgr.nii"
 anat = "t1mprage_208.nii"
 anat_betmask = "bet_t1mprage_208_mask.nii"        # bet2 ht1spgr.nii ht1spgr_bet -m
-roi_all = "all_rois.nii.gz"
 
 # CBF files
 cbfmap = "cbfmap_anat_mean100_vasc_3dasl.nii"
@@ -49,7 +48,7 @@ from nltools.mask import create_sphere
 
 def roi_mask(x, y, z, label, size):
     mask = create_sphere([x, y, z], radius = size)
-    mask.to_filename("_".join([label, str(size), "mm.nii"]))
+    # mask.to_filename("_".join([label, str(size), "mm.nii"]))
     return mask
 
 # %% --- Visualize ASL volume or CBF map with/without brain masking
@@ -59,78 +58,61 @@ def roi_mask(x, y, z, label, size):
 # --- Create & save roi spheres by looping over dataframe & later fslview
 # import roi spreadsheet /w `pandas`
 import pandas as pd
-subj_roi_df = pd.read_csv('LRTC_5mm.csv')
 
-# Loop over subjects
+# %% Loop over subjects
 # inspired by https://stackoverflow.com/questions/43619896/python-pandas-iterate-over-rows-and-access-column-names
-for row in subj_roi_dir.itertuples():
+for dirname in next(os.walk('.'))[1]:
 
     # constructing whole file path
-    fp_anat = str(pathlib.PurePath(workdir, row.Subject, anat))
-    fp_anat_betmask = str(pathlib.PurePath(workdir, row.Subject, anat_betmask))
-    fp_cbfmap = str(pathlib.PurePath(workdir, row.Subject, cbfmap))
+    fp_anat = str(pathlib.PurePath(workdir, dirname, anat))
+    fp_anat_betmask = str(pathlib.PurePath(workdir, dirname, anat_betmask))
+    fp_cbfmap = str(pathlib.PurePath(workdir, dirname, cbfmap))
 
-    img_title = ['CBF', row.Subject]
+    # constructing image title
+    img_title = ['CBF', dirname]
 
     # skull-strip masking vs without
-    img_BD_noMask = Brain_Data(file)
-    img_BD_noMask.plot(anatomical=anat,
+    img_BD_noMask = Brain_Data(fp_cbfmap)
+    img_BD_noMask.plot(anatomical = fp_anat,
                        title=" - ".join(img_title + ['BDnoMask']),
                        output_file="_".join(img_title + ['BDnoMask']))
 
-    img_BD = Brain_Data(file, mask=anat_betmask)         # applying skull-strip mask
-    img_BD.plot(anatomical=anat,
+    img_BD = Brain_Data(fp_cbfmap, mask = fp_anat_betmask) # applying skull-strip mask
+    img_BD.plot(anatomical = fp_anat,
                 title=" - ".join(img_title + ['BDwithMask']),
                 output_file="_".join(img_title + ['BDwithMask']))
+
+    # read in subject-specific roi.csv file
+    subj_roi_df = pd.read_csv(str(pathlib.PurePath(workdir, dirname, 'LRTC_roi_10mm.csv')))
 
     # initialize extraction dataframe
     extract_df = pd.DataFrame()
 
-    # saving and returning the roi mask created
-    mask = roi_mask(row.x, row.y, row.z, row.label, row.size)
+    # iterating roi.csv file within each subject's folder
+    for row in subj_roi_df.itertuples():
 
-    # applying the roi mask on image of interest
-    roi_img = img_BD.apply_mask(mask)
+        # saving and returning the roi mask created
+        mask = roi_mask(row.x, row.y, row.z, row.label, row.size)
 
-    # concatenate extracted neurite array into dataframe
-    extract_df = pd.concat([extract_df,
-                            pd.DataFrame(roi_img.data, columns=[row.Subject+'_'+row.label])],
-                           axis = 1)
+        # applying the roi mask on image of interest
+        roi_img = img_BD.apply_mask(mask)
 
-    # ortho views at roi coordinates on subject's brain instead of default axial plots
-    # masked_img.plot()
-    fig_label = "{0}, {1} mm sphere at [{2},{3},{4}]".format(row.label,str(row.size),row.x,row.y,row.z)
-    file_label = "{0}_{1}_{2}mm_sphere.png".format(row.Subject, row.label, str(row.size))
+        # concatenate extracted neurite array into dataframe
+        extract_df = pd.concat([extract_df,pd.DataFrame(roi_img.data, columns=[row.Subject+'_'+row.label])],axis = 1)
 
-    plotting.plot_stat_map(roi_img.to_nifti(),
-                           bg_img=anat,
-                           display_mode='ortho', cut_coords=[row.x, row.y, row.z],
-                           draw_cross=False, dim=-1,
-                           title=fig_label,
-                           output_file=file_label)
+        # ortho views at roi coordinates on subject's brain instead of default axial plots
+        # masked_img.plot()
+        fig_label = "{0}, {1} mm sphere at [{2},{3},{4}]".format(row.label,str(row.size),row.x,row.y,row.z)
+        file_label = "{0}_{1}_{2}mm_sphere.png".format(row.Subject, row.label, str(row.size))
 
-    # plotting overlaid histograms /w pandas
-    # extract_df.head()
+        plotting.plot_stat_map(roi_img.to_nifti(),
+                               bg_img = fp_anat,
+                               display_mode = 'ortho', cut_coords = [row.x, row.y, row.z],
+                               draw_cross = False, dim = -1,
+                               title = fig_label,
+                               output_file = file_label)
 
-    # !! somehow can't save the figure with `savefig` or any!!
-    # from http://pandas.pydata.org/pandas-docs/stable/visualization.html#visualization-hist
-    # extract_df.hist(alpha=0.5, bins=20, figsize=(12,10), sharex=True)
-
-    # switched to this: https://plot.ly/pandas/histograms/
-    # some bug , need to fix!!
-    # h = extract_df.plot(kind='hist',
-    #                     subplots=True, layout=(3,3),
-    #                     sharex=True, sharey=True,
-    #                     bins=20,
-    #                     figsize=(12,10),
-    #                     title=" - ".join(img_title + ['ROI extracts']))
-
-    # try restarting program
-    # fig= h[0].get_figure()
-    # fig.savefig(h, 'test.png')
-
-    # summarize extracted dataframe
-    # fname = "{0}_{1}_ROI_extraction.csv".format(value['file'], value['scan'])
-    extract_df.describe()
-    extract_df.to_csv('ROI_extract_ASL_pilot.csv')
-    extract_df.describe().to_csv('Summary_ROI_extract_ASL_pilot.csv')
+        # summarize extracted dataframe
+        extract_df.describe()
+        extract_df.to_csv('ROI_extract_ASL_pilot.csv')
+        extract_df.describe().to_csv('Summary_ROI_extract_ASL_pilot.csv')
