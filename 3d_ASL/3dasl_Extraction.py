@@ -60,7 +60,7 @@ def roi_mask(x, y, z, label, size):
 import pandas as pd
 extract_df = pd.DataFrame()
 
-# %% Loop over subjects
+# %% Loop over subject directories
 # inspired by https://stackoverflow.com/questions/43619896/python-pandas-iterate-over-rows-and-access-column-names
 for dirname in next(os.walk('.'))[1]:
 
