@@ -39,3 +39,4 @@ ASL data was collected with a 3.0T MRI scanner (GE HealthCare, Milwaukee, WI, US
 ### Resources
 1. Very good information regarding GE 3d ASL acquisition from UCSD's fMRI center: https://cfmriweb.ucsd.edu/Howto/3T/asl.html
 2. GE 3d ASL information: https://www.gehealthcare.com/en/products/magnetic-resonance-imaging/mr-applications/3d-asl---pediatric
+3. Great book for ASL: `Introduction to perfusion qualification using arterial spin labeling` by Michael Chappell.
