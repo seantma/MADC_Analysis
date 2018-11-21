@@ -191,8 +191,7 @@ do
   echo
   echo "* * * * * * *coregOverlay* * * * * * "
   echo
-  coregOverlay -M ../../../Subjects_ABCDResting ${SUBJECT} -v utprun_ -o t1mprage -B &> ${PSTAGE}_${LOCAL_LOG}
-  # coregOverlay -M ../../Subjects_ABCDResting ${SUBJECT} -v utprun_ -o ht1overlay -B &> ${PSTAGE}_${LOCAL_LOG}
+  coregOverlay -M ../../Subjects_ABCDResting ${SUBJECT} -v utprun_ -o t1mprage -B &> ${PSTAGE}_${LOCAL_LOG}
   cat ${UMSTREAM_STATUS_FILE}
 
   # !! Note no t1overlay.nii ==> using `coregOverlay` to coregister directly rtprun.nii to t1spgr.nii !!
@@ -225,7 +224,7 @@ do
   echo
   echo "* * * * * * *vbm8HiRes* * * * * * "
   echo
-  vbm8HiRes -a func/coReg -w func/coReg/vbm8 -M ../../../Subjects_ABCDResting ${SUBJECT} -h t1mprage -n vbm8_w3mm_ -I r3mm_avg152T1 -B &> ${PSTAGE}_${LOCAL_LOG}
+  vbm8HiRes -a func/coReg -w func/coReg/vbm8 -M ../../Subjects_ABCDResting ${SUBJECT} -h t1mprage -n vbm8_w3mm_ -I r3mm_avg152T1 -B &> ${PSTAGE}_${LOCAL_LOG}
   cat ${UMSTREAM_STATUS_FILE}
 
   let STAGE++
@@ -233,7 +232,7 @@ do
   echo
   echo "* * * * * * *warpfMRI* * * * * * "
   echo
-  warpfMRI -W -w coReg/vbm8 -M ../../../Subjects_ABCDResting ${SUBJECT} -h t1mprage -v utprun_ -n vbm8_w3mm_ -I r3mm_avg152T1 -B &> ${PSTAGE}_${LOCAL_LOG}
+  warpfMRI -W -w coReg/vbm8 -M ../../Subjects_ABCDResting ${SUBJECT} -h t1mprage -v utprun_ -n vbm8_w3mm_ -I r3mm_avg152T1 -B &> ${PSTAGE}_${LOCAL_LOG}
   cat ${UMSTREAM_STATUS_FILE}
 
   let STAGE++
@@ -241,7 +240,7 @@ do
   echo
   echo "* * * * * * *Smoothing* * * * * * "
   echo
-  smoothfMRI 5 5 5 -M ../../../Subjects_ABCDResting ${SUBJECT} -v vbm8_w3mm_utprun_ -n s5 -B &> ${PSTAGE}_${LOCAL_LOG}
+  smoothfMRI 5 5 5 -M ../../Subjects_ABCDResting ${SUBJECT} -v vbm8_w3mm_utprun_ -n s5 -B &> ${PSTAGE}_${LOCAL_LOG}
   cat ${UMSTREAM_STATUS_FILE}
 
   echo
