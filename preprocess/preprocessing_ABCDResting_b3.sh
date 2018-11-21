@@ -27,72 +27,75 @@
 
 subjIDs=(
 # === ABCD Resting 1st batch Nov21 as of 11/21/2018, 12:00:34 PM
-madc0732_scan1
-madc0768_scan1
-# madc0773_scan1  # !!fs ERROR see fs script
-madc0775_scan1
-madc0833_scan1
-madc0960_scan1
-madc1053_scan1
-madc1066_scan1
-madc1143_scan1
-# madc1151_scan1  # !!fs ERROR see fs script
-madc1174_scan1
-madc1179_scan1
-madc1220_scan1
-madc1227_scan1
-madc1228_scan1
-madc1241_scan1
-madc1243_scan1
-# madc1246_scan1  # !!fs ERROR see fs script
-madc1250_scan1
-# madc1252_scan1  # !!fs ERROR see fs script
-madc1254_scan1
-madc1259_scan1
-madc1260_scan1
-madc1263_scan1
-madc1268_scan1
-madc1271_scan1
-madc1276_scan1
-madc1294_scan1
-madc1299_scan1
-madc1307_scan1
-madc1314_scan1
-madc1315_scan1
-madc1340_scan1
-# madc1346_scan1  # !!fs ERROR see fs script
-madc1348_scan1
-madc1353_scan1
-madc1356_scan1
-madc1357_scan1
-madc1358_scan1
-madc1360_scan1
-madc1362_scan1
-madc1364_scan1
-madc1368_scan1
-# madc1371_scan1  # !!fs ERROR see fs script
-madc1372_scan1
-madc1374_scan1
-madc1377_scan1
-madc1378_scan1
-madc1379_scan1
-madc1380_scan1
-madc1382_scan1
-madc1384_scan1
-madc1387_scan1
-madc1388_scan1
-madc1389_scan1
-madc1393_scan1
-madc1394_scan1
-madc1395_scan1
-madc1396_scan1
-madc1398_scan1
-madc1399_scan1
-madc1401_scan1
-madc1402_scan1
-madc1403_scan1
-madc1404_scan1
-# madc1405_scan1  # !!fs ERROR see fs script
+# Batch 1
+# madc0732_scan1
+# madc0768_scan1
+# # madc0773_scan1  # !!fs ERROR see fs script
+# madc0775_scan1
+# madc0833_scan1
+# madc0960_scan1
+# madc1053_scan1
+# madc1066_scan1
+# madc1143_scan1
+# # madc1151_scan1  # !!fs ERROR see fs script
+# madc1174_scan1
+# madc1179_scan1
+# madc1220_scan1
+# madc1227_scan1
+# madc1228_scan1
+# madc1241_scan1
+# madc1243_scan1
+# # madc1246_scan1  # !!fs ERROR see fs script
+# madc1250_scan1
+# # madc1252_scan1  # !!fs ERROR see fs script
+# madc1254_scan1
+# madc1259_scan1
+# madc1260_scan1
+# madc1263_scan1
+# madc1268_scan1
+# madc1271_scan1
+# madc1276_scan1
+# madc1294_scan1
+# madc1299_scan1
+# madc1307_scan1
+# madc1314_scan1
+# madc1315_scan1
+# madc1340_scan1
+# # madc1346_scan1  # !!fs ERROR see fs script
+# # Batch 2
+# madc1348_scan1
+# madc1353_scan1
+# madc1356_scan1
+# madc1357_scan1
+# madc1358_scan1
+# madc1360_scan1
+# madc1362_scan1
+# madc1364_scan1
+# madc1368_scan1
+# # madc1371_scan1  # !!fs ERROR see fs script
+# madc1372_scan1
+# madc1374_scan1
+# madc1377_scan1
+# madc1378_scan1
+# madc1379_scan1
+# madc1380_scan1
+# madc1382_scan1
+# madc1384_scan1
+# madc1387_scan1
+# madc1388_scan1
+# madc1389_scan1
+# madc1393_scan1
+# madc1394_scan1
+# madc1395_scan1
+# madc1396_scan1
+# madc1398_scan1
+# madc1399_scan1
+# madc1401_scan1
+# madc1402_scan1
+# madc1403_scan1
+# madc1404_scan1
+# # madc1405_scan1  # !!fs ERROR see fs script
+# Batch 3
 madc1407_scan1
 madc1408_scan1
 madc1409_scan1
