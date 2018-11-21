@@ -93,10 +93,10 @@ do
   else
     cd run_01
     # previously using cp -ip --> occupying too much space; using hardlinks instead
-    cp -ipal ${RAWDIR}/${oldfolder}/func/resting/run_01/utprun_01.nii .
-    cp -ipal ${RAWDIR}/${oldfolder}/func/resting/run_01/meanutprun_01.nii .
-    cp -ipal ${RAWDIR}/${oldfolder}/func/resting/run_01/run_01.nii .
-    cp -ipal ${RAWDIR}/${oldfolder}/func/resting/run_01/realign.dat .
+    cp -ipal ${RAWDIR}/${oldfolder}/func/restingabcd/run_01/utprun_01.nii .
+    cp -ipal ${RAWDIR}/${oldfolder}/func/restingabcd/run_01/meanutprun_01.nii .
+    cp -ipal ${RAWDIR}/${oldfolder}/func/restingabcd/run_01/run_01.nii .
+    cp -ipal ${RAWDIR}/${oldfolder}/func/restingabcd/run_01/realign.dat .
 
     # chmod to read only
     chmod go-w *.nii *.dat
@@ -113,3 +113,7 @@ do
   fi
 
 done < MADC_ABCDResting_1stbatch_Nov21_2018.csv
+
+## ==== addressing specific subject issues ====
+#
+# grep -i 'cannot' Log_file_struct_ABCDResting_1121_2018.txt
