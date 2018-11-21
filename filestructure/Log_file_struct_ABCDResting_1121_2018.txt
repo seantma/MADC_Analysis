@@ -18,18 +18,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc07
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--r--r--r--. 3 tehsheng users    493192 May 29 18:29 meanutprun_01.nii
--r--r--r--. 3 tehsheng users     38311 Sep 20  2017 realign.dat
--r--r--r--. 3 tehsheng users 249377392 Sep 20  2017 run_01.nii
--r--r--r--. 3 tehsheng users 249377392 May 29 18:29 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 18:55 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     43239 Sep 20  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Sep 20  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 18:55 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -52,18 +52,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc07
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--r--r--r--. 3 tehsheng users    493192 May 29 23:29 meanutprun_01.nii
--r--r--r--. 3 tehsheng users     38221 Dec  6  2017 realign.dat
--r--r--r--. 3 tehsheng users 249377392 Dec  6  2017 run_01.nii
--r--r--r--. 3 tehsheng users 249377392 May 29 23:30 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 23:56 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41688 Dec  6  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Dec  6  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 23:56 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -84,20 +84,21 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc0773_scan1/func
 
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm00773_03440/func/restingabcd/run_01/run_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm00773_03440/func/restingabcd/run_01/realign.dat’: No such file or directory
+chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users           4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users           4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users         493192 May 30 13:07 meanutprun_01.nii
--rw-r--r--. 3 tehsheng umhs_users     37384 Jun 15  2017 realign.dat
--rw-r--r--. 3 tehsheng umhs_users 249377392 Jun 15  2017 run_01.nii
--rw-r--r--. 3 tehsheng users      249377392 May 30 13:07 utprun_01.nii
+total 544156
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 13:17 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 13:18 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -120,18 +121,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc07
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 20:56 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     36360 Oct 25  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 25  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 20:56 utprun_01.nii
+total 1087392
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 21:20 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     40305 Oct 25  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 25  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 21:20 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -154,18 +155,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc08
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 23:26 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38432 Nov 15  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Nov 15  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 23:27 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 23:52 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     43134 Nov 15  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Nov 15  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 23:52 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -188,18 +189,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc09
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 07:46 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37564 Apr 22  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Apr 22  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 07:46 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 08:12 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42683 Apr 22  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Apr 22  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 08:13 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -220,22 +221,20 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1053_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01053_03687/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01053_03687/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01053_03687/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01053_03687/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
-chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 16:26 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42306 Aug 25  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug 25  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 16:26 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -258,18 +257,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc10
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 00:12 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37763 Dec 19  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Dec 19  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 00:12 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 00:38 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41946 Dec 19  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Dec 19  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 00:39 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -290,22 +289,20 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1143_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01143_04683/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01143_04683/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01143_04683/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01143_04683/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
-chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 06:38 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42905 Apr  6  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Apr  6  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 06:38 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -327,20 +324,20 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1151_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01151_04164/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01151_04164/func/resting/run_01/meanutprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01151_04164/func/restingabcd/run_01/utprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01151_04164/func/restingabcd/run_01/meanutprun_01.nii’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 244548
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 2 tehsheng users     37380 Dec 19  2017 realign.dat
--rw-r--r--. 2 tehsheng users 249377392 Dec 19  2017 run_01.nii
+total 543248
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users     41307 Dec 19  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Dec 19  2017 run_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -363,18 +360,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc11
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 16:26 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37559 Aug 25  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug 25  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 16:26 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 16:50 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41215 Aug 25  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug 25  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 16:51 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -397,18 +394,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc11
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 23:28 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     36515 Nov 22  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Nov 22  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 23:29 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 23:55 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42210 Nov 22  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Nov 22  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 23:55 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -431,18 +428,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc12
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 18:06 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     36539 Sep 21  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Sep 21  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 18:06 utprun_01.nii
+total 1087392
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 18:31 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     40127 Sep 21  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Sep 21  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 18:32 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -465,18 +462,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc12
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 07:46 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     36857 Apr 18  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Apr 18  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 07:46 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 08:11 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41069 Apr 18  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Apr 18  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 08:11 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -499,18 +496,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc12
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 20:55 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     35735 Oct 25  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 25  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 20:55 utprun_01.nii
+total 1087392
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 21:22 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     40374 Oct 25  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 25  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 21:22 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -533,18 +530,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc12
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 22:46 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38546 Nov 15  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Nov 15  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 22:46 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 23:12 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42441 Nov 15  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Nov 15  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 23:12 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -567,18 +564,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc12
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 00:12 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38026 Jan 12  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Jan 12  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 00:12 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 00:38 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42269 Jan 16  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Jan 16  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 00:38 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -600,22 +597,21 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1246_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01246_05153/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01246_05153/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01246_05153/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01246_05153/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01246_05153/func/restingabcd/run_01/utprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01246_05153/func/restingabcd/run_01/meanutprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01246_05153/func/restingabcd/run_01/realign.dat’: No such file or directory
 chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 554636
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users 565704352 Jun 21 11:48 run_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -638,18 +634,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc12
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 17:07 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38088 Aug 25  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug 25  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 17:07 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 17:31 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     43100 Aug 25  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug 25  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 17:32 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -671,22 +667,21 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1252_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01252_05187/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01252_05187/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01252_05187/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01252_05187/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01252_05187/func/restingabcd/run_01/utprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01252_05187/func/restingabcd/run_01/meanutprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01252_05187/func/restingabcd/run_01/realign.dat’: No such file or directory
 chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 554636
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users 565704352 Jul  6 12:22 run_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -709,18 +704,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc12
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 00:50 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37492 Jan  2  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Jan  2  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 00:50 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 01:16 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41990 Jan  2  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Jan  2  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 01:16 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -743,18 +738,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc12
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 22:47 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37780 Nov  9  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Nov  9  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 22:47 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 23:10 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42238 Nov  9  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Nov  9  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 23:10 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -777,18 +772,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc12
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 16:59 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37098 Aug 25  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug 25  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 16:59 utprun_01.nii
+total 1087392
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 17:25 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     40460 Aug 25  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug 25  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 17:25 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -811,18 +806,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc12
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 19:00 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38000 Oct 12  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 12  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 19:00 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 19:24 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41789 Oct 12  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 12  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 19:25 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -845,18 +840,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc12
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 19:54 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37608 Oct 12  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 12  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 19:54 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 20:18 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41872 Oct 12  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 12  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 20:19 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -879,18 +874,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc12
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 22:46 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38768 Nov 10  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Nov 10  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 22:46 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 23:12 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42983 Nov 10  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Nov 10  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 23:12 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -913,18 +908,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc12
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 20:35 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38108 Oct 23  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 23  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 20:35 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 21:01 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42692 Oct 23  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 23  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 21:01 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -947,18 +942,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc12
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 16:16 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     36992 Aug 25  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug 25  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 16:16 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 16:43 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42809 Aug 25  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug 25  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 16:43 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -981,18 +976,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc12
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 18:19 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38079 Sep 18  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Sep 18  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 18:19 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 18:44 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41752 Sep 18  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Sep 18  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 18:45 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1019,58 +1014,23 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1299_scan1/func
 
 mkdir: cannot create directory ‘run_01’: File exists
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01299_05225/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01299_05225/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01299_05225/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01299_05225/func/resting/run_01/realign.dat’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01299_05225/func/restingabcd/run_01/utprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01299_05225/func/restingabcd/run_01/meanutprun_01.nii’: No such file or directory
+cp: overwrite ‘./run_01.nii’? cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01299_05225/func/restingabcd/run_01/realign.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 18:19 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38079 Sep 18  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Sep 18  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 18:19 utprun_01.nii
-
- =========================================================
-              Copy complete, next subject
- =========================================================
-
-
-Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1307_scan1
-
-
-Making anatomy and func directories
-
-
-Copying and linking t1mprage.nii for Resting state
-
-
-Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, realign.dat
-
-
-Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1307_scan1/func
-
-.:
-total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
-
-./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 22:01 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38087 Nov  1  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Nov  1  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 22:01 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 18:44 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41752 Sep 18  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Sep 18  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 18:45 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1093,18 +1053,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 02:15 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37333 Jan 31  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Jan 31  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 02:15 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 02:39 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42810 Jan 31  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Jan 31  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 02:39 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1127,18 +1087,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 02:18 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37155 Feb  1  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Feb  1  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 02:18 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 02:44 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     40992 Feb  1  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Feb  1  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 02:44 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1161,18 +1121,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 07:03 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     36387 Apr  6  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Apr  6  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 07:03 utprun_01.nii
+total 1087392
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 07:30 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     40894 Apr  6  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Apr  6  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 07:30 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1193,20 +1153,21 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1346_scan1/func
 
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01346_03445/func/restingabcd/run_01/run_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01346_03445/func/restingabcd/run_01/realign.dat’: No such file or directory
+chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users           4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users           4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users         493192 May 30 13:15 meanutprun_01.nii
--rw-r--r--. 3 tehsheng umhs_users     36089 Jun 15  2017 realign.dat
--rw-r--r--. 3 tehsheng umhs_users 249377392 Jun 15  2017 run_01.nii
--rw-r--r--. 3 tehsheng users      249377392 May 30 13:15 utprun_01.nii
+total 544156
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 13:25 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 13:25 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1229,18 +1190,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 22:27 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37051 Nov 10  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Nov 10  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 22:27 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 22:52 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42265 Nov 10  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Nov 10  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 22:52 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1263,18 +1224,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 14:25 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38232 Aug  4  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug  4  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 14:25 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 14:51 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41788 Aug  4  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug  4  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 14:51 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1297,18 +1258,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 18:50 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38310 Oct 25  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 24  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 18:50 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 19:15 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42421 Oct 25  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 25  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 19:15 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1331,18 +1292,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 14:53 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37767 Aug  3  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug  3  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 14:53 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 15:16 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42605 Aug  3  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug  3  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 15:16 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1365,18 +1326,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 15:04 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37778 Aug  4  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug  4  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 15:04 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 15:31 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41980 Aug  4  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug  4  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 15:31 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1399,18 +1360,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users           4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users           4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users         493192 May 30 13:41 meanutprun_01.nii
--rw-r--r--. 3 tehsheng umhs_users     36952 Jun 28  2017 realign.dat
--rw-r--r--. 3 tehsheng umhs_users 249377392 Jun 28  2017 run_01.nii
--rw-r--r--. 3 tehsheng users      249377392 May 30 13:41 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users           4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users           4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users         972352 May 30 13:50 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng umhs_users     42240 Jul  7  2017 realign.dat
+-rw-r--r--. 2 tehsheng umhs_users 554040352 Jul  7  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users      554040352 May 30 13:51 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1433,18 +1394,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 14:11 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38945 Aug  4  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug  4  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 14:11 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 14:35 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41650 Aug  4  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug  4  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 14:36 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1467,18 +1428,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users           4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users           4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users         493192 May 30 13:45 meanutprun_01.nii
--rw-r--r--. 3 tehsheng umhs_users     37498 Jun 28  2017 realign.dat
--rw-r--r--. 3 tehsheng umhs_users 249377392 Jul  7  2017 run_01.nii
--rw-r--r--. 3 tehsheng users      249377392 May 30 13:45 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users           4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users           4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users         972352 May 30 13:53 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng umhs_users     42838 Jul  7  2017 realign.dat
+-rw-r--r--. 2 tehsheng umhs_users 554040352 Jul  7  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users      554040352 May 30 13:53 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1501,18 +1462,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 13:55 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     36236 Aug  4  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug  4  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 13:55 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 14:01 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41966 Aug  4  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug  4  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 14:01 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1534,22 +1495,21 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1371_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01371_05133/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01371_05133/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01371_05133/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01371_05133/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01371_05133/func/restingabcd/run_01/utprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01371_05133/func/restingabcd/run_01/meanutprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01371_05133/func/restingabcd/run_01/realign.dat’: No such file or directory
 chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 554636
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users 565704352 Jun 15 12:23 run_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1572,18 +1532,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 15:33 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     36753 Aug  3  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug  3  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 15:33 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 15:58 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41332 Aug  3  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug  3  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 15:59 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1604,22 +1564,20 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1374_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01374_03638/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01374_03638/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01374_03638/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01374_03638/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
-chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 16:00 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41099 Aug 10  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug 10  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 16:01 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1642,18 +1600,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 20:21 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37312 Oct 23  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 23  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 20:21 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 20:45 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41863 Oct 23  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 23  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 20:45 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1676,18 +1634,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 14:16 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37737 Aug  4  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug  4  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 14:16 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 14:18 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42320 Aug  4  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug  4  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 14:19 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1710,18 +1668,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 14:24 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37550 Aug  3  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug  3  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 14:24 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 14:50 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42194 Aug  3  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug  3  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 14:50 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1744,18 +1702,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 14:24 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37730 Aug  4  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug  4  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 14:24 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 14:47 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41592 Aug  4  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug  4  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 14:48 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1778,18 +1736,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 15:45 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37778 Aug 25  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug 25  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 15:45 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 16:10 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41856 Aug 25  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug 25  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 16:11 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1812,18 +1770,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 15:07 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38121 Aug  3  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug  3  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 15:07 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 15:34 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41126 Aug  4  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug  4  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 15:34 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1844,22 +1802,20 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1387_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01387_03659/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01387_03659/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01387_03659/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01387_03659/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
-chmod: cannot access ‘*.dat’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01387_03659/func/restingabcd/run_01/utprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01387_03659/func/restingabcd/run_01/meanutprun_01.nii’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 543248
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users     41363 Aug 25  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug 25  2017 run_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1882,18 +1838,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 16:16 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     36543 Aug 23  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug 23  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 16:16 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 16:42 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41941 Aug 23  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug 23  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 16:42 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1916,18 +1872,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 16:57 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37763 Aug 25  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug 25  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 16:57 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 17:23 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42000 Aug 25  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug 25  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 17:23 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1950,18 +1906,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 21:01 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38131 Oct 25  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 25  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 21:02 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 21:27 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42850 Oct 25  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 25  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 21:27 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -1984,18 +1940,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 21:18 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37348 Oct 26  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 26  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 21:18 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 21:44 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42399 Oct 26  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 26  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 21:44 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2018,18 +1974,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 15:08 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37805 Aug  3  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug  3  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 15:08 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 15:34 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     43171 Aug  4  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug  4  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 15:34 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2052,18 +2008,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 16:41 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38053 Aug 25  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug 25  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 16:42 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 17:06 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42338 Aug 25  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug 25  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 17:06 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2086,18 +2042,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc13
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 17:23 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     36284 Aug 30  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Aug 30  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 17:24 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 17:48 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42906 Aug 30  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Aug 30  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 17:49 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2118,22 +2074,20 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1399_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01399_03758/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01399_03758/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01399_03758/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01399_03758/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
-chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 1087392
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 11:49 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     40058 Sep 15  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Sep 15  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 11:49 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2156,18 +2110,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 17:39 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37896 Sep 28  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Sep 28  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 17:39 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 18:03 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41850 Sep 28  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Sep 28  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 18:03 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2190,18 +2144,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 17:48 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37980 Sep 15  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Sep 15  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 17:48 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 18:12 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41941 Sep 15  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Sep 15  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 18:12 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2224,18 +2178,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 19:12 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38180 Oct 11  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 11  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 19:12 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 19:37 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     43114 Oct 11  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 11  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 19:37 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2258,18 +2212,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 19:29 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     35944 Oct 11  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 11  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 19:29 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 19:54 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41558 Oct 11  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 11  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 19:55 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2293,18 +2247,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 18:05 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38555 Sep 15  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Sep 15  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 18:05 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 18:32 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     43372 Sep 15  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Sep 15  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 18:32 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2327,18 +2281,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 19:31 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37675 Oct 11  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 11  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 19:31 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 19:56 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42488 Oct 11  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 11  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 19:57 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2361,18 +2315,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 19:40 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37218 Oct 12  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 12  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 19:40 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 20:05 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41931 Oct 12  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 12  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 20:05 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2395,18 +2349,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 20:12 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37730 Oct 20  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 20  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 20:12 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 20:38 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41167 Oct 20  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 20  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 20:39 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2429,18 +2383,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 20:12 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38149 Oct 20  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 20  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 20:13 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 20:40 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42394 Oct 20  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 20  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 20:40 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2463,18 +2417,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 10:06 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37025 May 18  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 May 18  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 10:06 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 10:28 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42629 May 18  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 May 18  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 10:28 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2497,18 +2451,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 18:46 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37227 Sep 27  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Sep 27  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 18:46 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 19:12 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42097 Sep 27  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Sep 27  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 19:13 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2531,18 +2485,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 23:10 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37035 Nov 15  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Nov 15  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 23:10 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 23:34 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41506 Nov 15  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Nov 15  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 23:34 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2565,18 +2519,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 00:55 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     36733 Jan 13  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Jan 13  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 00:55 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 01:21 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     40961 Jan 13  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Jan 13  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 01:22 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2597,22 +2551,20 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1418_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01418_04115/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01418_04115/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01418_04115/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01418_04115/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
-chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 23:55 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41068 Dec  6  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Dec  6  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 23:56 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2635,18 +2587,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 08:56 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37621 May  6  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 May  6  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 08:57 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 09:22 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42458 May  6  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 May  6  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 09:22 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2669,18 +2621,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 01:37 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37528 Apr  5  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Apr  5  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 01:37 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 02:03 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41762 Apr  5  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Apr  5  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 02:04 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2701,22 +2653,20 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1421_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01421_03975/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01421_03975/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01421_03975/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01421_03975/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
-chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 21:47 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41783 Oct 26  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 26  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 21:47 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2739,18 +2689,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 21:36 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38213 Oct 26  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Oct 26  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 21:36 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 22:02 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42274 Oct 26  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 26  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 22:02 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2771,22 +2721,20 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1423_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01423_04015/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01423_04015/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01423_04015/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01423_04015/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
-chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 22:28 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42201 Nov  3  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Nov  3  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 22:28 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2809,18 +2757,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 22:04 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37335 Nov  3  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Nov  3  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 22:04 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 22:30 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41529 Nov  3  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Nov  3  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 22:30 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2843,18 +2791,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 29 21:45 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38790 Nov  1  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Nov  1  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 29 21:45 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 22:09 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     43521 Nov  1  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Nov  1  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 22:10 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2877,18 +2825,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 00:08 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38172 Dec  6  2017 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Dec  6  2017 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 00:08 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 00:34 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42739 Dec  6  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Dec  6  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 00:35 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2911,18 +2859,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 02:18 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37341 Feb  4  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Feb  4  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 02:18 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 02:44 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41023 Feb  4  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Feb  4  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 02:45 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2943,22 +2891,20 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1432_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01432_04976/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01432_04976/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01432_04976/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01432_04976/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
-chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 10:00 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42187 May 21  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 May 21  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 10:00 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -2981,18 +2927,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 00:54 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37424 Jan 14  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Jan 14  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 00:54 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 01:20 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41678 Jan 14  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Jan 14  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 01:20 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3015,18 +2961,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 01:32 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     36782 Jan 14  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Jan 14  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 01:32 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 01:59 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42365 Jan 14  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Jan 14  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 01:59 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3049,18 +2995,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 01:37 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38499 Jan 23  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Jan 23  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 01:38 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 02:02 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42784 Jan 23  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Jan 23  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 02:03 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3083,18 +3029,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 05:42 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38061 Mar 27  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Mar 27  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 05:42 utprun_01.nii
+total 1087392
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 06:07 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     40890 Mar 27  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Mar 27  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 06:07 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3117,18 +3063,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 03:01 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37245 Feb 27  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Feb 27  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 03:01 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 03:26 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42270 Feb 27  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Feb 27  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 03:26 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3151,18 +3097,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 05:00 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     35741 Mar 20  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Mar 20  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 05:00 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 05:26 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42193 Mar 20  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Mar 20  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 05:26 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3185,18 +3131,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 07:35 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38304 Apr 18  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Apr 18  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 07:35 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 07:59 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42267 Apr 18  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Apr 18  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 08:00 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3219,18 +3165,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 04:19 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37073 Mar 16  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Mar 16  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 04:19 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 04:44 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42138 Mar 16  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Mar 16  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 04:44 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3253,18 +3199,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 03:42 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37382 Mar  1  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Mar  1  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 03:42 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 04:02 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41398 Mar  1  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Mar  1  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 04:02 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3287,18 +3233,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 03:38 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     35992 Feb 27  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Feb 27  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 03:38 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 04:02 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     43357 Feb 27  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Feb 27  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 04:03 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3321,18 +3267,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 02:55 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37155 Feb 15  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Feb 15  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 02:55 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 03:22 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41898 Feb 15  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Feb 15  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 03:22 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3355,18 +3301,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 03:00 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37587 Feb 15  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Feb 15  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 03:00 utprun_01.nii
+total 1087392
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 03:26 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     40828 Feb 15  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Feb 15  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 03:26 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3389,18 +3335,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 05:00 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37639 Mar 20  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Mar 20  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 05:00 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 05:27 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     43531 Mar 20  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Mar 20  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 05:27 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3423,18 +3369,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 05:05 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38341 Mar 27  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Mar 27  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 05:05 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 05:31 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42432 Mar 27  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Mar 27  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 05:31 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3457,18 +3403,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 04:24 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38435 Mar 17  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Mar 17  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 04:24 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 04:49 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42210 Mar 17  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Mar 17  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 04:49 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3491,18 +3437,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 04:17 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37863 Mar  8  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Mar  8  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 04:18 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 04:43 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     43268 Mar  8  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Mar  8  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 04:44 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3525,18 +3471,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 06:23 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38234 Apr  5  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Apr  5  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 06:23 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 06:48 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41072 Apr  5  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Apr  5  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 06:48 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3559,18 +3505,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 08:27 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37766 Apr 26  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Apr 26  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 08:27 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 08:53 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42442 Apr 26  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Apr 26  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 08:53 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3593,18 +3539,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 03:43 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38822 Mar  2  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Mar  2  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 03:43 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 04:08 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42655 Mar  2  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Mar  2  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 04:08 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3627,18 +3573,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 08:28 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37491 Apr 26  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Apr 26  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 08:28 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 08:54 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41264 Apr 26  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Apr 26  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 08:54 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3661,18 +3607,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 08:16 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38132 Apr 22  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Apr 22  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 08:16 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 08:40 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42286 Apr 22  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Apr 22  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 08:41 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3695,18 +3641,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 05:47 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37900 Mar 28  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Mar 28  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 05:47 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 06:12 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41767 Mar 28  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Mar 28  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 06:13 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3729,18 +3675,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 06:54 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38167 Apr  6  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Apr  6  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 06:54 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 07:18 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42144 Apr  6  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Apr  6  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 07:18 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3763,18 +3709,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 05:43 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37893 Mar 30  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Mar 30  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 05:43 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 06:08 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42269 Mar 30  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Mar 30  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 06:08 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3796,22 +3742,21 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1483_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01483_05200/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01483_05200/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01483_05200/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01483_05200/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01483_05200/func/restingabcd/run_01/utprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01483_05200/func/restingabcd/run_01/meanutprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01483_05200/func/restingabcd/run_01/realign.dat’: No such file or directory
 chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 554636
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users 565704352 Jun 29 11:57 run_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3834,18 +3779,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 09:27 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38353 May 11  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 May 11  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 09:27 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 09:51 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42357 May 11  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 May 11  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 09:52 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3868,18 +3813,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 06:24 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37507 Apr  6  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Apr  6  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 06:24 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 06:49 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42213 Apr  6  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Apr  6  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 06:50 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3902,18 +3847,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 09:37 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     36625 May 17  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 May 17  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 09:37 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 10:03 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42256 May 17  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 May 17  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 10:04 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3935,22 +3880,21 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1492_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01492_05182/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01492_05182/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01492_05182/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01492_05182/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01492_05182/func/restingabcd/run_01/utprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01492_05182/func/restingabcd/run_01/meanutprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01492_05182/func/restingabcd/run_01/realign.dat’: No such file or directory
 chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 554636
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users 565704352 Jul  5 12:30 run_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -3973,18 +3917,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 07:05 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     38857 Apr 19  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 Apr 19  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 07:06 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 07:31 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42373 Apr 19  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Apr 19  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 07:31 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -4008,18 +3952,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc14
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489528
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 2 tehsheng users    493192 May 29 10:39 meanutprun_01.nii
--rw-r--r--. 2 tehsheng users     36716 May 24 14:06 realign.dat
--rw-r--r--. 2 tehsheng users 249377392 May 24 13:57 run_01.nii
--rw-r--r--. 2 tehsheng users 249377392 May 29 10:40 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 11:02 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42063 May 24 13:49 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 May 24 13:38 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 11:02 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -4041,22 +3985,21 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1500_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01500_05193/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01500_05193/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01500_05193/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01500_05193/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01500_05193/func/restingabcd/run_01/utprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01500_05193/func/restingabcd/run_01/meanutprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01500_05193/func/restingabcd/run_01/realign.dat’: No such file or directory
 chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 554636
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users 565704352 Jun 28 11:38 run_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -4077,22 +4020,20 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1501_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01501_04922/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01501_04922/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01501_04922/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01501_04922/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
-chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 09:19 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     40988 May 12  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 May 12  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 09:19 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -4115,18 +4056,18 @@ Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc15
 
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489532
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 3 tehsheng users    493192 May 30 09:36 meanutprun_01.nii
--rw-r--r--. 3 tehsheng users     37216 May 17  2018 realign.dat
--rw-r--r--. 3 tehsheng users 249377392 May 17  2018 run_01.nii
--rw-r--r--. 3 tehsheng users 249377392 May 30 09:36 utprun_01.nii
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 May 30 10:02 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     43472 May 17  2018 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 May 17  2018 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 30 10:02 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -4148,21 +4089,21 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1508_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01508_05049/func/resting/run_01/realign.dat’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01508_05049/func/restingabcd/run_01/realign.dat’: No such file or directory
 chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 489488
-drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:30 ..
--rw-r--r--. 2 tehsheng users    493192 Jun  2 12:40 meanutprun_01.nii
--rw-r--r--. 2 tehsheng users 249377392 Jun  2 12:29 run_01.nii
--rw-r--r--. 2 tehsheng users 249377392 Jun  2 12:40 utprun_01.nii
+total 1087348
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users    972352 Jun  2 12:20 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 Jun  2 12:00 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 Jun  2 12:21 utprun_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -4184,22 +4125,21 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1532_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01532_05160/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01532_05160/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01532_05160/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01532_05160/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01532_05160/func/restingabcd/run_01/utprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01532_05160/func/restingabcd/run_01/meanutprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01532_05160/func/restingabcd/run_01/realign.dat’: No such file or directory
 chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 554636
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users 565704352 Jun 22 12:37 run_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -4221,22 +4161,21 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1539_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01539_05154/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01539_05154/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01539_05154/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01539_05154/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01539_05154/func/restingabcd/run_01/utprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01539_05154/func/restingabcd/run_01/meanutprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01539_05154/func/restingabcd/run_01/realign.dat’: No such file or directory
 chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 554636
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users 565704352 Jun 21 13:04 run_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -4258,22 +4197,21 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1543_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01543_05181/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01543_05181/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01543_05181/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01543_05181/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01543_05181/func/restingabcd/run_01/utprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01543_05181/func/restingabcd/run_01/meanutprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01543_05181/func/restingabcd/run_01/realign.dat’: No such file or directory
 chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 554636
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users 565704352 Jul  5 11:18 run_01.nii
 
  =========================================================
               Copy complete, next subject
@@ -4295,22 +4233,21 @@ Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, re
 
 Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1549_scan1/func
 
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01549_05224/func/resting/run_01/utprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01549_05224/func/resting/run_01/meanutprun_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01549_05224/func/resting/run_01/run_01.nii’: No such file or directory
-cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01549_05224/func/resting/run_01/realign.dat’: No such file or directory
-chmod: cannot access ‘*.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01549_05224/func/restingabcd/run_01/utprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01549_05224/func/restingabcd/run_01/meanutprun_01.nii’: No such file or directory
+cp: cannot stat ‘/nfs/fmri/RAW_nopreprocess/hlp17umm01549_05224/func/restingabcd/run_01/realign.dat’: No such file or directory
 chmod: cannot access ‘*.dat’: No such file or directory
 .:
 total 12
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:30 ..
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 run_01
+drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:40 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 21 09:40 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:40 run_01
 
 ./run_01:
-total 8
-drwxr-xr-x. 2 tehsheng users 4096 Nov 21 09:30 .
-drwxr-xr-x. 3 tehsheng users 4096 Nov 21 09:30 ..
+total 554636
+drwxr-xr-x. 2 tehsheng users      4096 Nov 21 09:40 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 21 09:40 ..
+-rw-r--r--. 2 tehsheng users 565704352 Jul 12 12:19 run_01.nii
 
  =========================================================
               Copy complete, next subject
