@@ -112,7 +112,8 @@ do
     echo
   fi
 
-done < MADC_ABCDResting_1stbatch_Nov21_2018.csv
+done < MADC_ABCDResting_1stbatch_Nov21_2018_REDO.csv
+# done < MADC_ABCDResting_1stbatch_Nov21_2018.csv
 
 ## ==== addressing specific subject issues ====
 #
