@@ -1,0 +1,170 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015b (8.6.0.267246) 64-bit (glnxa64)
+                              August 20, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+>> >> >> >> Coregistation Script Created on 181121_15_51_51_740
+>> >> >> >> >> >> [Warning: Name is nonexistent or not a directory:
+/Users/rcwelsh/matlabScripts/WELLES/mfiles] 
+[> In path (line 109)
+  In addpath (line 86)] 
+>> >> >> >> >> 
+UMBatchJobName =
+
+vbm8HiRes_181121_15_51_51_740_tehsheng_madcbrai
+
+>> 
+UMBatchProcessName =
+
+vbm8HiRes
+
+>> >> Initializing the job manager in SPM8
+
+Warping images using UMBatchVBM8
+Looping on the subjects now
+
+Working on madc1174_scan1
+
+ans =
+
+     1
+
+Entering UMBatchVBM8 V2.0 SPM8 Compatible
+
+
+------------------------------------------------------------------------
+Running job #1
+------------------------------------------------------------------------
+Running 'VBM8: Estimate & Write'
+Initial Coarse Affine Registration..
+Fine Affine Registration..
+VBM8 r435: /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1174_scan1/func/coReg/vbm8/t1mprage.nii
+NLM-Filter with multi-threading
+Using 8 processors
+Skull-stripping using graph-cut
+Amap with Kmeans
+Nu correction
+iters:  1 error:  102.99iters:  2 error:  102.53iters:  3 error:  102.32iters:  4 error:  102.07iters:  5 error:  101.61iters:  6 error:  101.41
+Nu correction
+iters:  1 error:  168.79iters:  2 error:  168.42
+MRF priors: alpha 0.184 0.440 0.376 	 beta 1.088
+iters:  1 log-likelihood: 2.94439iters:  2 log-likelihood: 2.94209iters:  3 log-likelihood: 2.94141
+Final Mean*Std: 321.315*96.213  650.907*81.883  949.339*66.843  
+Weighted MRF beta 0.163
+ICM: 1 relative change: 14.0627ICM: 2 relative change: 3.3513ICM: 3 relative change: 1.2014ICM: 4 relative change: 0.5107ICM: 5 relative change: 0.2257ICM: 6 relative change: 0.1124ICM: 7 relative change: 0.0614
+Final masking
+Dartel normalization...
+1 	456976	0	456976	246.695
+2 	382327	19307.4	401635	110.25
+3 	369079	25984.1	395063	40.8159
+4 	365771	13899.2	379670	96.2292
+5 	346416	27079.3	373495	35.477
+6 	344862	28219.7	373082	23.4138
+7 	344862	14389.6	359252	77.7893
+8 	328032	25945.4	353978	28.09
+9 	326943	26698.9	353642	18.511
+10 	327012	13646.9	340659	67.6942
+11 	309782	25499.8	335281	24.2237
+12 	308603	26239.2	334842	15.5838
+13 	316848	13527.1	330375	69.2862
+14 	297183	26405.4	323589	28.0581
+15 	295979	26853.3	322832	17.1597
+16 	366506	28133.3	394639	81.3
+17 	350961	37165.9	388127	46.3478
+18 	353274	33790.3	387064	34.9093
+.......................................................................................................................
+Done    'VBM8: Estimate & Write'
+Done
+
+Entering UMBatchWarpVBM8 V2.0 SPM8 Compatible
+Using deformation field 
+    /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1174_scan1/func/coReg/vbm8/y_rt1mprage.nii
+Warping 7 images like /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1174_scan1/func/coReg/vbm8/t1mprage.nii,1 to space of /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8/spm8_with_R6313/templates/r3mm_avg152T1.nii,1
+
+
+------------------------------------------------------------------------
+Running job #1
+------------------------------------------------------------------------
+Running 'Deformations'
+Done    'Deformations'
+Done
+
+Deformation applied and finished in 10.630528 seconds
+Deformation finished in 980.742884 seconds
+
+All done with warpingVBM8 processing of High Resolution image.
+>> 
+Initializing spm8 Batch
+
+Checking for erodeMask.options ...not present.
+Parsing commands:
+
+
+Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
+
+
+ erodeMask
+
+  Will set up erodeMask batch jobs using the following parameters
+
+ directory to vbm8                         : func/coReg/vbm8/
+ hiresolution name to look for             : t1mprage/
+ prepending name                           : eroMask_
+ WM and CSF Erosion iteration factors      : 2 1
+ Erosion Last flag                         : 1
+
+ functional images path    : func/
+ Subject directory         : ../../Subjects_ABCDResting
+
+ Back(1)/fore(0)ground     : 0
+
+ spm8 is located in        : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8/spm8_with_R6313
+ spm8Batch is located in   : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch
+ spm8 patch is located in  : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/matlabScripts
+ auxiliary matlab path     : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/spm8_patch
+ matlab options file       : 
+
+ User                      : tehsheng
+ MATLAB                    : /opt/bin/matlab
+
+ SANDBOXHOST               : madcbrain
+ SANDBOX                   : /madcbrain/sandbox/
+ SANDBOXPID                : 
+
+ UMSTREAM_STATUS_FILE      : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/madc1174_scan1_validation_umstream_status_file
+
+ Copyright Robert C. Welsh, 2005-2018, Version 1.1/2012-12-21
+
+
+
+  And will perform erodeMask on the following subjects:
+
+      madc1174_scan1
+
+
+WM erosion factor  :  -ero -ero
+
+CSF erosion factor :  -ero
+
+Eroding the final segments.
+Working on subject madc1174_scan1
+    WM vbm8_w3mm_p2t1mprage
+    CSF vbm8_w3mm_p3t1mprage
+
+
+No sandbox specified
+
+
+
+Start   : Wed Nov 21 15:51:55 EST 2018
+Finish  : Wed Nov 21 16:09:19 EST 2018
+
+

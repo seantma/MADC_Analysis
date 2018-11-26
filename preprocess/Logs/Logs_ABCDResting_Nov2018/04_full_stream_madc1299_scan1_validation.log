@@ -1,0 +1,18 @@
+
+Initializing spm8 Batch
+
+Checking for smoothfMRI.options ...not present.
+Parsing commands:
+
+
+Parameter number 3 with a value of madc1299_scan1 is not a valid number
+Buggering out
+
+An error was found in your data and/or parameter specification, so we can not proceed. Going to now
+gently remove any script files partially written.
+
+Aborted command : smoothfMRI, that was attempted at : 181121_22_09_44_031
+
+
+Clean up finished, now exiting.
+

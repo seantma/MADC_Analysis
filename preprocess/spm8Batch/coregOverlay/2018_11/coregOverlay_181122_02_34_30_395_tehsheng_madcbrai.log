@@ -1,0 +1,113 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015b (8.6.0.267246) 64-bit (glnxa64)
+                              August 20, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+>> >> >> >> Coregistation Script Created on 181122_02_34_30_395
+>> >> >> >> >> >> [Warning: Name is nonexistent or not a directory:
+/Users/rcwelsh/matlabScripts/WELLES/mfiles] 
+[> In path (line 109)
+  In addpath (line 86)] 
+>> >> >> >> >> 
+UMBatchJobName =
+
+coregOverlay_181122_02_34_30_395_tehsheng_madcbrai
+
+>> 
+UMBatchProcessName =
+
+coregOverlay
+
+>> >> Initializing the job manager in SPM8
+
+UMReSlice =
+
+     0
+
+
+
+Calling UMBatchCoReg with:
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/../../Subjects_ABCDResting/madc1461_scan1/func//run_01/utprun_01.nii
+/nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1461_scan1/func/coReg/t1mprage.nii
+UMReSlice:0
+Entering UMBatchCoReg V2.0 for SPM8
+Coreging /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1461_scan1/func/coReg/t1mprage.nii to
+         /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/../../Subjects_ABCDResting/madc1461_scan1/func//run_01/utprun_01.nii
+
+
+------------------------------------------------------------------------
+Running job #1
+------------------------------------------------------------------------
+Running 'Coregister: Estimate'
+iteration 1...
+-0.8063  0        0        0        0        0        | -1.0437
+-0.8063  1.064    0        0        0        0        | -1.044
+-0.8063  1.064    2.252    0        0        0        | -1.0446
+-0.8063  1.064    2.252    0        0        0        | -1.0446
+-0.8063  1.064    2.252    0        0        0        | -1.0446
+-0.8063  1.064    2.252    0        0        0.02782  | -1.0449
+iteration 2...
+-1.226   1.064    2.252    0        0        0.02782  | -1.0449
+-1.226   1.107    2.252    0        0        0.02782  | -1.0449
+-1.226   1.107    2.187    0        0        0.02782  | -1.0449
+-1.226   1.107    2.187    0.001325 0        0.02782  | -1.0449
+-1.226   1.107    2.187    0.001325 0        0.02782  | -1.0449
+-1.226   1.107    2.187    0.001325 0        0.02782  | -1.0449
+iteration 3...
+-1.226   1.107    2.187    0.001325 0        0.02782  | -1.0449
+-1.226   1.107    2.187    0.001325 0        0.02782  | -1.0449
+-1.226   1.107    2.157    0.001325 0        0.02782  | -1.0449
+-1.226   1.107    2.157    0.001325 0        0.02782  | -1.0449
+-1.226   1.107    2.157    0.001325 0        0.02782  | -1.0449
+-1.226   1.107    2.157    0.001325 0        0.02782  | -1.0449
+iteration 4...
+-1.226   1.107    2.157    0.001325 0        0.02782  | -1.0449
+-1.226   1.107    2.157    0.001325 0        0.02782  | -1.0449
+-1.226   1.107    2.157    0.001325 0        0.02782  | -1.0449
+-1.226   1.107    2.157    0.001325 0        0.02782  | -1.0449
+-1.226   1.107    2.157    0.001325 0        0.02782  | -1.0449
+-1.226   1.107    2.157    0.001325 0        0.02782  | -1.0449
+iteration 1...
+-1.064   1.107    2.157    0.001325 0        0.02782  | -1.0447
+-1.064   1.136    2.157    0.001325 0        0.02782  | -1.0447
+-1.064   1.136    2.216    0.001325 0        0.02782  | -1.0447
+-1.064   1.136    2.216    0.01112  0        0.02782  | -1.0448
+-1.064   1.136    2.216    0.01112  0.004168 0.02782  | -1.0448
+-1.064   1.136    2.216    0.01112  0.004168 0.02782  | -1.0448
+iteration 2...
+-1.092   1.136    2.216    0.01112  0.004168 0.02782  | -1.0448
+-1.092   0.9771   2.216    0.01112  0.004168 0.02782  | -1.0448
+-1.092   0.9771   2.068    0.01112  0.004168 0.02782  | -1.0448
+-1.092   0.9771   2.068    0.01295  0.004168 0.02782  | -1.0448
+-1.092   0.9771   2.068    0.01295  0.004168 0.02782  | -1.0448
+-1.092   0.9771   2.068    0.01295  0.004168 0.02782  | -1.0448
+iteration 3...
+-1.092   0.9771   2.068    0.01295  0.004168 0.02782  | -1.0448
+-1.092   0.9716   2.068    0.01295  0.004168 0.02782  | -1.0448
+-1.092   0.9716   2.051    0.01295  0.004168 0.02782  | -1.0448
+-1.092   0.9716   2.051    0.01295  0.004168 0.02782  | -1.0448
+-1.092   0.9716   2.051    0.01295  0.004168 0.02782  | -1.0448
+-1.092   0.9716   2.051    0.01295  0.004168 0.02782  | -1.0448
+Done    'Coregister: Estimate'
+Done
+
+CoReg Done in 21.469615 seconds
+
+All done with coregistration.
+>> >> 
+No sandbox specified
+
+
+
+Start   : Thu Nov 22 02:34:32 EST 2018
+Finish  : Thu Nov 22 02:35:25 EST 2018
+
+

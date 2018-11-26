@@ -1,0 +1,61 @@
+
+No sandbox specified
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015b (8.6.0.267246) 64-bit (glnxa64)
+                              August 20, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+>> >> >> >> Coregistation Script Created on 181121_19_31_31_348
+>> >> >> >> >> >> [Warning: Name is nonexistent or not a directory:
+/Users/rcwelsh/matlabScripts/WELLES/mfiles] 
+[> In path (line 109)
+  In addpath (line 86)] 
+>> >> >> >> >> 
+UMBatchJobName =
+
+warpfMRI_181121_19_31_31_348_tehsheng_madcbrai
+
+>> 
+UMBatchProcessName =
+
+warpfMRI
+
+>> >> Initializing the job manager in SPM8
+Looping on the subjects now
+
+Working on madc1430_scan1
+Sandbox is not preen and I can not preen it, thus turning it off
+Normalizing a total of 570 utprun_'s
+Entering UMBatchWarp V2.0 SPM8 Compatible
+Entering UMBatchWarpVBM8 V2.0 SPM8 Compatible
+Using deformation field 
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/../../Subjects_ABCDResting/madc1430_scan1/func/coReg/vbm8/y_rt1mprage.nii
+Warping 570 images like /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1430_scan1/func/run_01/utprun_01.nii,1 to space of /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8/spm8_with_R6313/templates/r3mm_avg152T1.nii,1
+
+
+------------------------------------------------------------------------
+Running job #1
+------------------------------------------------------------------------
+Running 'Deformations'
+Done    'Deformations'
+Done
+
+Deformation applied and finished in 328.017058 seconds
+No need to try to move out of sandbox, it is presently disabled.
+
+All done with warping of fMRIs to template using HiResolution data.
+>> >> 
+
+Start   : Wed Nov 21 19:31:34 EST 2018
+Finish  : Wed Nov 21 19:37:43 EST 2018
+
+

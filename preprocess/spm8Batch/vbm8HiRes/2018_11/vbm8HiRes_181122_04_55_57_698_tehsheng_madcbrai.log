@@ -1,0 +1,170 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015b (8.6.0.267246) 64-bit (glnxa64)
+                              August 20, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+>> >> >> >> Coregistation Script Created on 181122_04_55_57_698
+>> >> >> >> >> >> [Warning: Name is nonexistent or not a directory:
+/Users/rcwelsh/matlabScripts/WELLES/mfiles] 
+[> In path (line 109)
+  In addpath (line 86)] 
+>> >> >> >> >> 
+UMBatchJobName =
+
+vbm8HiRes_181122_04_55_57_698_tehsheng_madcbrai
+
+>> 
+UMBatchProcessName =
+
+vbm8HiRes
+
+>> >> Initializing the job manager in SPM8
+
+Warping images using UMBatchVBM8
+Looping on the subjects now
+
+Working on madc1484_scan1
+
+ans =
+
+     1
+
+Entering UMBatchVBM8 V2.0 SPM8 Compatible
+
+
+------------------------------------------------------------------------
+Running job #1
+------------------------------------------------------------------------
+Running 'VBM8: Estimate & Write'
+Initial Coarse Affine Registration..
+Fine Affine Registration..
+VBM8 r435: /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1484_scan1/func/coReg/vbm8/t1mprage.nii
+NLM-Filter with multi-threading
+Using 8 processors
+Skull-stripping using graph-cut
+Amap with Kmeans
+Nu correction
+iters:  1 error:  139.38iters:  2 error:  137.80iters:  3 error:  137.24iters:  4 error:  136.76iters:  5 error:  136.16iters:  6 error:  135.95iters:  7 error:  135.69iters:  8 error:  135.14iters:  9 error:  134.97
+Nu correction
+iters:  1 error:  237.51iters:  2 error:  237.12iters:  3 error:  237.16
+MRF priors: alpha 0.204 0.422 0.374 	 beta 1.056
+iters:  1 log-likelihood: 2.84683iters:  2 log-likelihood: 2.84335iters:  3 log-likelihood: 2.84202iters:  4 log-likelihood: 2.84148
+Final Mean*Std: 291.281*111.745  651.072*82.928  956.689*81.282  
+Weighted MRF beta 0.158
+ICM: 1 relative change: 13.9527ICM: 2 relative change: 3.2862ICM: 3 relative change: 1.1588ICM: 4 relative change: 0.4855ICM: 5 relative change: 0.2228ICM: 6 relative change: 0.1088ICM: 7 relative change: 0.0545
+Final masking
+Dartel normalization...
+1 	440161	0	440161	231.693
+2 	378681	16828.6	395510	93.3293
+3 	370196	21449.6	391645	35.2362
+4 	367394	11308.5	378703	93.1406
+5 	350286	22997.1	373283	35.3918
+6 	348709	24181	372890	22.1837
+7 	348130	12344.8	360475	74.4587
+8 	332311	23286.1	355597	23.39
+9 	331132	24123.7	355256	12.5937
+10 	330461	12352.8	342814	66.2754
+11 	313663	23970.9	337634	22.1896
+12 	312474	24711	337185	12.5671
+13 	318500	12782	331282	68.1405
+14 	299174	25549.1	324723	27.6609
+15 	298027	25869.1	323896	16.0093
+16 	364001	27223.9	391225	80.6135
+17 	348809	35929.3	384739	45.6506
+18 	351158	32518.6	383677	33.6127
+.......................................................................................................................
+Done    'VBM8: Estimate & Write'
+Done
+
+Entering UMBatchWarpVBM8 V2.0 SPM8 Compatible
+Using deformation field 
+    /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1484_scan1/func/coReg/vbm8/y_rt1mprage.nii
+Warping 7 images like /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1484_scan1/func/coReg/vbm8/t1mprage.nii,1 to space of /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8/spm8_with_R6313/templates/r3mm_avg152T1.nii,1
+
+
+------------------------------------------------------------------------
+Running job #1
+------------------------------------------------------------------------
+Running 'Deformations'
+Done    'Deformations'
+Done
+
+Deformation applied and finished in 7.439060 seconds
+Deformation finished in 830.489279 seconds
+
+All done with warpingVBM8 processing of High Resolution image.
+>> 
+Initializing spm8 Batch
+
+Checking for erodeMask.options ...not present.
+Parsing commands:
+
+
+Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
+
+
+ erodeMask
+
+  Will set up erodeMask batch jobs using the following parameters
+
+ directory to vbm8                         : func/coReg/vbm8/
+ hiresolution name to look for             : t1mprage/
+ prepending name                           : eroMask_
+ WM and CSF Erosion iteration factors      : 2 1
+ Erosion Last flag                         : 1
+
+ functional images path    : func/
+ Subject directory         : ../../Subjects_ABCDResting
+
+ Back(1)/fore(0)ground     : 0
+
+ spm8 is located in        : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8/spm8_with_R6313
+ spm8Batch is located in   : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch
+ spm8 patch is located in  : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/matlabScripts
+ auxiliary matlab path     : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/spm8_patch
+ matlab options file       : 
+
+ User                      : tehsheng
+ MATLAB                    : /opt/bin/matlab
+
+ SANDBOXHOST               : madcbrain
+ SANDBOX                   : /madcbrain/sandbox/
+ SANDBOXPID                : 
+
+ UMSTREAM_STATUS_FILE      : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/madc1484_scan1_validation_umstream_status_file
+
+ Copyright Robert C. Welsh, 2005-2018, Version 1.1/2012-12-21
+
+
+
+  And will perform erodeMask on the following subjects:
+
+      madc1484_scan1
+
+
+WM erosion factor  :  -ero -ero
+
+CSF erosion factor :  -ero
+
+Eroding the final segments.
+Working on subject madc1484_scan1
+    WM vbm8_w3mm_p2t1mprage
+    CSF vbm8_w3mm_p3t1mprage
+
+
+No sandbox specified
+
+
+
+Start   : Thu Nov 22 04:55:59 EST 2018
+Finish  : Thu Nov 22 05:10:30 EST 2018
+
+

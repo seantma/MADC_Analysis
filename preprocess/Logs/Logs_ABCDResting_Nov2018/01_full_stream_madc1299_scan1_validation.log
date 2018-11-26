@@ -1,0 +1,169 @@
+
+Initializing spm8 Batch
+
+Checking for coregOverlay.options ...not present.
+Parsing commands:
+
+
+
+I don't know what you mean by the command line argument: madc1299_scan1
+
+
+Initializing spm8 Batch
+
+Checking for coregOverlay.options ...not present.
+
+ A command line command to drive batch processing to coregister the 'overlay'
+ to fmri analyze image.
+
+
+ The 'coregOverlay' command builds a script in the directory:
+
+      matlabScripts/spm8Batch/coregOverlay/YYYY_MM directory
+
+ directly below the current directory and will launch this script in
+ background. The names of the matlab (if matlab based command) and shell 
+ scripts will be in the format of :
+
+          coregOverlay_yymmdd_HH_MM_[USER]_[COMPUTER].m   and
+          coregOverlay_yymmdd_HH_MM_[USER]_[COMPUTER].sh
+
+ where yymmdd is the date and HH_MM is the time.
+
+ This script is expecting to find the necessary components in the
+ directory scruture of :
+
+     yymmddLF/                           (subject directory)
+            anatomy/
+            func/
+               coReg/
+               Physio/
+               run_XX/
+
+ Usage: 
+
+     coregOverlay [OPTIONS] [subject_1] [subject_2] ... [subject_N]
+
+
+ Options
+
+
+   Number of allowed options : 15
+
+   Key Parameter         Description
+   --- ---------------   ----------------------------------------------------
+
+    -a sub-directory     set relative path for anatomy directory,
+                         default=anatomy
+
+    -B                   run in the foreground, need for daisy chaining jobs.
+
+    -D                   enable super debug flag.
+
+    -d                   enable debug flag.
+
+    -f sub-directory     set relative path functional directory,
+                         default=func
+
+    -M SUBJECTMASTER     set the directory to scan for subjects, 
+                         default is Subjects/
+
+    -n PrependName       name to add to output file name, 
+                         default is none.
+
+    -O OtherName         coregOverlay/HiRes : name of other file to process,
+                         you can specify relative path or absolute path,
+                         the path can also have generic with subject name
+                         substitute wherever [S] is in filename/path.
+                         If relative path, then assume to look in the
+                         anatomy [or coReg for warpHiRes] directory.
+                         default is none.
+    -o OverlayName       name of overlay file, 
+                         default is 'eht1overlay'
+
+    -r                   set reslice flag to 1, reslice also
+                         default 0, mutually exclusive with '-R'
+
+    -s SUB-DIRECTORY     set sub-directory name under 'run_XX', 
+                         default is none.
+
+    -t                   enable testing flag, script will be built
+                         but not run.
+
+    -U user-email        set the user name for email notification, 
+                         default is "tehsheng" of present shell.
+
+    -v volume-wild       set the volume/Pfile/vbm8 name wild-card, 
+                         default "raprun".
+
+    -w sub-directory     set registration path (for coreg, warp, tarBET etc)
+                         default=coReg/
+
+                         This flag has many uses:
+
+                         coregOverlay  : directory to run the registration of 't1overlay'
+                         coregHiRes    : directory to run the registation of 't1spgr'
+                         warpHiRes     : directory to run the warping of HiRes ('t1spgr')
+                         vbm8HiRes     : directory to place the VBM8 produced files
+                         newSeg        : directory to place the New Segment produced files
+                         warpfMRI      : location to find the warping instructions
+                         pcafMRI       : location to find WM and CSF masks, typically 
+                                         the directory from vbm8HiRes or newSeg
+
+
+ e.g. 
+
+   To coregister the 'het1overlay.img' to the first 'raprun' found in
+   the first 'run' (e.g. run_1, or run_01) of the experiment. 
+   The run directory is expected to live in the 'func/' directory.
+
+     coregOverlay -f func/MSIT 050126zz
+
+   or optionaly look for the first avol image in the func/MSIT/run_01/ra_img
+
+     coregOverlay -w coReg8 -f func/MSIT -v arun -s ra_img 050126zz
+
+
+ Current command default configuration is:
+
+ anatomy path             : anatomy/
+ directory to coreg       : func//coReg//
+ functional sub-dir       : 
+ functional images        : raprun
+ name of overlay image    : ht1overlay
+ reslice option           : 0
+ prepending name          : 
+ Other images             : 0
+
+
+ functional images path    : func/
+ Subject directory         : Subjects/
+
+ Back(1)/fore(0)ground     : 1
+
+ spm8 is located in        : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8/spm8_with_R6313
+ spm8Batch is located in   : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch
+ spm8 patch is located in  : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/matlabScripts
+ auxiliary matlab path     : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/spm8_patch
+ matlab options file       : 
+
+ User                      : tehsheng
+ MATLAB                    : /opt/bin/matlab
+
+ SANDBOXHOST               : madcbrain
+ SANDBOX                   : /madcbrain/sandbox/
+ SANDBOXPID                : 
+
+ UMSTREAM_STATUS_FILE      : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/madc1299_scan1_validation_umstream_status_file
+
+ Copyright Robert C. Welsh, 2005-2018, Version 2.1/2011-07-29
+
+
+An error was found in your data and/or parameter specification, so we can not proceed. Going to now
+gently remove any script files partially written.
+
+Aborted command : coregOverlay, that was attempted at : 181121_22_09_36_059
+
+
+Clean up finished, now exiting.
+
