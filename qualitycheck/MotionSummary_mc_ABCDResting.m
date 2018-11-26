@@ -11,7 +11,7 @@ clear;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Experiment Directory. This can be used later as a template value.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Exp = '/nfs/fmri/Analysis';
+Exp = '/nfs/fmri/Analysis/Sean_Working';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% The list of subjects
@@ -181,7 +181,7 @@ MotionPathTemplate = '[Exp]/Subjects_ABCDResting/[Subject]/func/[Run]/realign.da
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Name and path for the output CSV files (leave off the .csv)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-OutputPathTemplate = '[Exp]/Sean_Working/Git_MADC/qualitycheck/[Model]_MotionSummary_FD_[num2str(FDcriteria)]';
+OutputPathTemplate = '[Exp]/Git_MADC/qualitycheck/[Model]_MotionSummary_FD_[num2str(FDcriteria)]';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Name and path for the output censor vectors
