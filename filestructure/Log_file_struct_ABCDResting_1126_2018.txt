@@ -1,0 +1,139 @@
+* * * * * * * * * * * * * * * * * * * * * * * * * * *
+*** Script Resting state file structure purpose!! ***
+* * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1228_scan1
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1mprage.nii for Resting state
+
+
+Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, realign.dat
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1228_scan1/func
+
+.:
+total 12
+drwxr-xr-x. 3 tehsheng users 4096 Nov 26 15:44 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 26 15:44 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 26 15:44 run_01
+
+./run_01:
+total 1087392
+drwxr-xr-x. 2 tehsheng users      4096 Nov 26 15:44 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 26 15:44 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 21:22 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     40374 Oct 25  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 25  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 21:22 utprun_01.nii
+
+ =========================================================
+              Copy complete, next subject
+ =========================================================
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1299_scan1
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1mprage.nii for Resting state
+
+
+Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, realign.dat
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1299_scan1/func
+
+.:
+total 12
+drwxr-xr-x. 3 tehsheng users 4096 Nov 26 15:44 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 26 15:44 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 26 15:44 run_01
+
+./run_01:
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 26 15:44 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 26 15:44 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 18:44 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41752 Sep 18  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Sep 18  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 18:45 utprun_01.nii
+
+ =========================================================
+              Copy complete, next subject
+ =========================================================
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1307_scan1
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1mprage.nii for Resting state
+
+
+Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, realign.dat
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1307_scan1/func
+
+.:
+total 12
+drwxr-xr-x. 3 tehsheng users 4096 Nov 26 15:44 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 26 15:44 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 26 15:44 run_01
+
+./run_01:
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 26 15:44 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 26 15:44 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 22:28 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     41701 Nov  1  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Nov  1  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 22:28 utprun_01.nii
+
+ =========================================================
+              Copy complete, next subject
+ =========================================================
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1422_scan1
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1mprage.nii for Resting state
+
+
+Now copying Resting func files: utprun_01.nii, meanutprun_01.nii, run_01.nii, realign.dat
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ABCDResting/madc1422_scan1/func
+
+.:
+total 12
+drwxr-xr-x. 3 tehsheng users 4096 Nov 26 15:44 .
+drwxr-xr-x. 4 tehsheng users 4096 Nov 26 15:44 ..
+drwxr-xr-x. 2 tehsheng users 4096 Nov 26 15:44 run_01
+
+./run_01:
+total 1087396
+drwxr-xr-x. 2 tehsheng users      4096 Nov 26 15:44 .
+drwxr-xr-x. 3 tehsheng users      4096 Nov 26 15:44 ..
+-rw-r--r--. 2 tehsheng users    972352 May 29 22:02 meanutprun_01.nii
+-rw-r--r--. 2 tehsheng users     42274 Oct 26  2017 realign.dat
+-rw-r--r--. 2 tehsheng users 554040352 Oct 26  2017 run_01.nii
+-rw-r--r--. 2 tehsheng users 554040352 May 29 22:02 utprun_01.nii
+
+ =========================================================
+              Copy complete, next subject
+ =========================================================
+
