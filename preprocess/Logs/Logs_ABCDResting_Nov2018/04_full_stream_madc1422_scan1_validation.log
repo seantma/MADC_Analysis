@@ -52,16 +52,21 @@ Parsing commands:
     2) building in first part of matlab script
     3) building list of subjects
        --> madc1422_scan1
+    4) finalizing matlab scripts
+    5) building shell script
 
- * * * * *  NO images to process with smoothfMRI * * * * * 
+ Script name(s):
 
 
-An error was found in your data and/or parameter specification, so we can not proceed. Going to now
-gently remove any script files partially written.
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_11/smoothfMRI_181126_17_54_59_875_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_11/smoothfMRI_181126_17_54_59_875_tehsheng_madcbrai.sh
 
-Aborted command : smoothfMRI, that was attempted at : 181121_17_34_13_930
 
-Found '/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_11/smoothfMRI_181121_17_34_13_930_tehsheng_madcbrai.m', removing....
+   Launching script into foreground.
 
-Clean up finished, now exiting.
+
+   smoothfMRI Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_11/smoothfMRI_181126_17_54_59_875_tehsheng_madcbrai.sh is finished
+   smoothfMRI Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_11/smoothfMRI_181126_17_54_59_875_tehsheng_madcbrai.log
+
+
 

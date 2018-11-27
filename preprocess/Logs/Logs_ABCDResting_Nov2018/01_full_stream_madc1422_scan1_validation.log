@@ -67,15 +67,15 @@ Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
  Script name(s):
 
 
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_11/coregOverlay_181121_17_32_25_524_tehsheng_madcbrai.m
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_11/coregOverlay_181121_17_32_25_524_tehsheng_madcbrai.sh
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_11/coregOverlay_181126_17_35_08_920_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_11/coregOverlay_181126_17_35_08_920_tehsheng_madcbrai.sh
 
 
    Launching script into foreground.
 
 
-   coregOverlay Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_11/coregOverlay_181121_17_32_25_524_tehsheng_madcbrai.sh is finished
-   coregOverlay Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_11/coregOverlay_181121_17_32_25_524_tehsheng_madcbrai.log
+   coregOverlay Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_11/coregOverlay_181126_17_35_08_920_tehsheng_madcbrai.sh is finished
+   coregOverlay Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_11/coregOverlay_181126_17_35_08_920_tehsheng_madcbrai.log
 
 
 

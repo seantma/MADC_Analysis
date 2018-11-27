@@ -67,20 +67,20 @@ Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
 
 Calling erodeMask with :
 
-erodeMask -E 2 1 -w func/coReg/vbm8  -v vbm8_w3mm_ -h t1mprage -m "-s 5 -sub 0.333" -M ../../Subjects_ABCDResting -n eroMask_    [list of subjects] (see shell script file: /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_11/vbm8HiRes_181121_17_33_56_276_tehsheng_madcbrai.sh)
+erodeMask -E 2 1 -w func/coReg/vbm8  -v vbm8_w3mm_ -h t1mprage -m "-s 5 -sub 0.333" -M ../../Subjects_ABCDResting -n eroMask_    [list of subjects] (see shell script file: /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_11/vbm8HiRes_181126_17_36_22_917_tehsheng_madcbrai.sh)
 
  Script name(s):
 
 
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_11/vbm8HiRes_181121_17_33_56_276_tehsheng_madcbrai.m
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_11/vbm8HiRes_181121_17_33_56_276_tehsheng_madcbrai.sh
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_11/vbm8HiRes_181126_17_36_22_917_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_11/vbm8HiRes_181126_17_36_22_917_tehsheng_madcbrai.sh
 
 
    Launching script into foreground.
 
 
-   vbm8HiRes Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_11/vbm8HiRes_181121_17_33_56_276_tehsheng_madcbrai.sh is finished
-   vbm8HiRes Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_11/vbm8HiRes_181121_17_33_56_276_tehsheng_madcbrai.log
+   vbm8HiRes Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_11/vbm8HiRes_181126_17_36_22_917_tehsheng_madcbrai.sh is finished
+   vbm8HiRes Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_11/vbm8HiRes_181126_17_36_22_917_tehsheng_madcbrai.log
 
 
 
