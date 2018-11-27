@@ -233,7 +233,7 @@ OutputMode = 1;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Path where your logfiles will be stored
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-LogTemplate = '[Exp]/Sean_Working/Git_MADC/qualitycheck/MotionSummary_Logs';
+LogTemplate = '[Exp]/Git_MADC/qualitycheck/MotionSummary_Logs';
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Other frames to exclude.
@@ -295,7 +295,7 @@ for iSubject = 1:size(SubjDir,1)
     % setting up subject and subject file path
     Subject = SubjDir{iSubject, 1};
     out_path = mc_GenPath(OutputPlotPath);
-    dest_path = mc_GenPath('[Exp]/Sean_Working/Git_MADC/qualitycheck');
+    dest_path = mc_GenPath('[Exp]/Git_MADC/qualitycheck');
 
     % setting up destination file path
     out_filepath = fullfile(out_path, strcat(OutputPlotFile, '.pdf'));
