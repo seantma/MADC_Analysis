@@ -14,40 +14,41 @@ Exp = '/nfs/fmri/Analysis/Sean_Working';
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 SubjDir = {
   % === ABCD Resting 1st batch Nov21 as of 11/21/2018, 12:00:34 PM
-  'madc0732_scan1',1,[1];
-  'madc0768_scan1',1,[1];
-  % 'madc0773_scan1',1,[1];  # !!fs ERROR see fs script
-  'madc0775_scan1',1,[1];
-  'madc0833_scan1',1,[1];
-  'madc0960_scan1',1,[1];
-  'madc1053_scan1',1,[1];
-  'madc1066_scan1',1,[1];
-  'madc1143_scan1',1,[1];
-  % 'madc1151_scan1',1,[1];  % !!fs ERROR see fs script
-  'madc1174_scan1',1,[1];
-  'madc1179_scan1',1,[1];
-  'madc1220_scan1',1,[1];
-  'madc1227_scan1',1,[1];
-  'madc1228_scan1',1,[1];
-  'madc1241_scan1',1,[1];
-  'madc1243_scan1',1,[1];
-  % 'madc1246_scan1',1,[1];  % !!fs ERROR see fs script
-  'madc1250_scan1',1,[1];
-  % 'madc1252_scan1',1,[1];  % !!fs ERROR see fs script
-  'madc1254_scan1',1,[1];
-  'madc1259_scan1',1,[1];
-  'madc1260_scan1',1,[1];
-  'madc1263_scan1',1,[1];
-  'madc1268_scan1',1,[1];
-  'madc1271_scan1',1,[1];
-  'madc1276_scan1',1,[1];
-  'madc1294_scan1',1,[1];
-  'madc1299_scan1',1,[1];
-  'madc1307_scan1',1,[1];
-  'madc1314_scan1',1,[1];
-  'madc1315_scan1',1,[1];
-  'madc1340_scan1',1,[1];
-  % 'madc1346_scan1',1,[1];  % !!fs ERROR see fs script
+  % 'madc0732_scan1',1,[1];
+  % 'madc0768_scan1',1,[1];
+  % % 'madc0773_scan1',1,[1];  # !!fs ERROR see fs script
+  % 'madc0775_scan1',1,[1];
+  % 'madc0833_scan1',1,[1];
+  % 'madc0960_scan1',1,[1];
+  % 'madc1053_scan1',1,[1];
+  % 'madc1066_scan1',1,[1];
+  % 'madc1143_scan1',1,[1];
+  % % 'madc1151_scan1',1,[1];  % !!fs ERROR see fs script
+  % 'madc1174_scan1',1,[1];
+  % 'madc1179_scan1',1,[1];
+  % 'madc1220_scan1',1,[1];
+  % 'madc1227_scan1',1,[1];
+  % 'madc1228_scan1',1,[1];
+  % 'madc1241_scan1',1,[1];
+  % 'madc1243_scan1',1,[1];
+  % % 'madc1246_scan1',1,[1];  % !!fs ERROR see fs script
+  % 'madc1250_scan1',1,[1];
+  % % 'madc1252_scan1',1,[1];  % !!fs ERROR see fs script
+  % 'madc1254_scan1',1,[1];
+  % 'madc1259_scan1',1,[1];
+  % 'madc1260_scan1',1,[1];
+  % 'madc1263_scan1',1,[1];
+  % 'madc1268_scan1',1,[1];
+  % 'madc1271_scan1',1,[1];
+  % 'madc1276_scan1',1,[1];
+  % 'madc1294_scan1',1,[1];
+  % 'madc1299_scan1',1,[1];
+  % 'madc1307_scan1',1,[1];
+  % 'madc1314_scan1',1,[1];
+  % 'madc1315_scan1',1,[1];
+  % 'madc1340_scan1',1,[1];
+  % % 'madc1346_scan1',1,[1];  % !!fs ERROR see fs script
+  %% BATCH 2
   'madc1348_scan1',1,[1];
   'madc1353_scan1',1,[1];
   'madc1356_scan1',1,[1];
@@ -79,65 +80,65 @@ SubjDir = {
   'madc1402_scan1',1,[1];
   'madc1403_scan1',1,[1];
   'madc1404_scan1',1,[1];
-  % 'madc1405_scan1',1,[1];  % !!fs ERROR see fs script
-  'madc1407_scan1',1,[1];
-  'madc1408_scan1',1,[1];
-  'madc1409_scan1',1,[1];
-  'madc1410_scan1',1,[1];
-  'madc1411_scan1',1,[1];
-  'madc1412_scan1',1,[1];
-  'madc1413_scan1',1,[1];
-  'madc1415_scan1',1,[1];
-  'madc1418_scan1',1,[1];
-  'madc1419_scan1',1,[1];
-  'madc1420_scan1',1,[1];
-  'madc1421_scan1',1,[1];
-  'madc1422_scan1',1,[1];
-  'madc1423_scan1',1,[1];
-  'madc1424_scan1',1,[1];
-  'madc1425_scan1',1,[1];
-  'madc1426_scan1',1,[1];
-  'madc1430_scan1',1,[1];
-  'madc1432_scan1',1,[1];
-  'madc1434_scan1',1,[1];
-  'madc1437_scan1',1,[1];
-  'madc1438_scan1',1,[1];
-  'madc1439_scan1',1,[1];
-  'madc1440_scan1',1,[1];
-  'madc1442_scan1',1,[1];
-  'madc1444_scan1',1,[1];
-  'madc1445_scan1',1,[1];
-  'madc1446_scan1',1,[1];
-  'madc1447_scan1',1,[1];
-  'madc1448_scan1',1,[1];
-  'madc1449_scan1',1,[1];
-  'madc1453_scan1',1,[1];
-  'madc1454_scan1',1,[1];
-  'madc1457_scan1',1,[1];
-  'madc1458_scan1',1,[1];
-  'madc1459_scan1',1,[1];
-  'madc1461_scan1',1,[1];
-  'madc1462_scan1',1,[1];
-  'madc1463_scan1',1,[1];
-  'madc1473_scan1',1,[1];
-  'madc1479_scan1',1,[1];
-  'madc1480_scan1',1,[1];
-  'madc1482_scan1',1,[1];
-  % 'madc1483_scan1',1,[1];  % !!fs ERROR see fs script
-  'madc1484_scan1',1,[1];
-  'madc1487_scan1',1,[1];
-  'madc1489_scan1',1,[1];
-  % 'madc1492_scan1',1,[1];  % !!fs ERROR see fs script
-  'madc1493_scan1',1,[1];
-  'madc1494_scan1',1,[1];
-  % 'madc1500_scan1',1,[1];  % !!fs ERROR see fs script
-  'madc1501_scan1',1,[1];
-  'madc1507_scan1',1,[1];
-  % 'madc1508_scan1',1,[1];  % !!fs ERROR see fs script
-  % 'madc1532_scan1',1,[1];  % !!fs ERROR see fs script
-  % 'madc1539_scan1',1,[1];  % !!fs ERROR see fs script
-  % 'madc1543_scan1',1,[1];  % !!fs ERROR see fs script
-  % 'madc1549_scan1',1,[1];  % !!fs ERROR see fs script
+  % % 'madc1405_scan1',1,[1];  % !!fs ERROR see fs script
+  % 'madc1407_scan1',1,[1];
+  % 'madc1408_scan1',1,[1];
+  % 'madc1409_scan1',1,[1];
+  % 'madc1410_scan1',1,[1];
+  % 'madc1411_scan1',1,[1];
+  % 'madc1412_scan1',1,[1];
+  % 'madc1413_scan1',1,[1];
+  % 'madc1415_scan1',1,[1];
+  % 'madc1418_scan1',1,[1];
+  % 'madc1419_scan1',1,[1];
+  % 'madc1420_scan1',1,[1];
+  % 'madc1421_scan1',1,[1];
+  % 'madc1422_scan1',1,[1];
+  % 'madc1423_scan1',1,[1];
+  % 'madc1424_scan1',1,[1];
+  % 'madc1425_scan1',1,[1];
+  % 'madc1426_scan1',1,[1];
+  % 'madc1430_scan1',1,[1];
+  % 'madc1432_scan1',1,[1];
+  % 'madc1434_scan1',1,[1];
+  % 'madc1437_scan1',1,[1];
+  % 'madc1438_scan1',1,[1];
+  % 'madc1439_scan1',1,[1];
+  % 'madc1440_scan1',1,[1];
+  % 'madc1442_scan1',1,[1];
+  % 'madc1444_scan1',1,[1];
+  % 'madc1445_scan1',1,[1];
+  % 'madc1446_scan1',1,[1];
+  % 'madc1447_scan1',1,[1];
+  % 'madc1448_scan1',1,[1];
+  % 'madc1449_scan1',1,[1];
+  % 'madc1453_scan1',1,[1];
+  % 'madc1454_scan1',1,[1];
+  % 'madc1457_scan1',1,[1];
+  % 'madc1458_scan1',1,[1];
+  % 'madc1459_scan1',1,[1];
+  % 'madc1461_scan1',1,[1];
+  % 'madc1462_scan1',1,[1];
+  % 'madc1463_scan1',1,[1];
+  % 'madc1473_scan1',1,[1];
+  % 'madc1479_scan1',1,[1];
+  % 'madc1480_scan1',1,[1];
+  % 'madc1482_scan1',1,[1];
+  % % 'madc1483_scan1',1,[1];  % !!fs ERROR see fs script
+  % 'madc1484_scan1',1,[1];
+  % 'madc1487_scan1',1,[1];
+  % 'madc1489_scan1',1,[1];
+  % % 'madc1492_scan1',1,[1];  % !!fs ERROR see fs script
+  % 'madc1493_scan1',1,[1];
+  % 'madc1494_scan1',1,[1];
+  % % 'madc1500_scan1',1,[1];  % !!fs ERROR see fs script
+  % 'madc1501_scan1',1,[1];
+  % 'madc1507_scan1',1,[1];
+  % % 'madc1508_scan1',1,[1];  % !!fs ERROR see fs script
+  % % 'madc1532_scan1',1,[1];  % !!fs ERROR see fs script
+  % % 'madc1539_scan1',1,[1];  % !!fs ERROR see fs script
+  % % 'madc1543_scan1',1,[1];  % !!fs ERROR see fs script
+  % % 'madc1549_scan1',1,[1];  % !!fs ERROR see fs script
   };
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
