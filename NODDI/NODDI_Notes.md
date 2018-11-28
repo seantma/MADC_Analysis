@@ -7,6 +7,9 @@ Scripts adopted heavily from UCL MIG's **NODDI Toolbox** tutorial: http://mig.cs
 ### UMMAP Protocol
 There should be 96 volumes in the UMMAP NODDI DTI image. The bval/bvec values are posted below.
 
+### Resources
+_UMich-TAD-Lab_ has some great resources on how to train RAs to identify artifacts in DTI images: https://github.com/UMich-TAD-Lab/dti-qc-training
+
 ### Procedures
 1. Strip out initial redundant B0 volumes if existing (derived by `dcm2nii`)
     `fslroi run_01.nii run_01_noB0.nii 6 96`
