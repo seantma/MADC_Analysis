@@ -61,10 +61,9 @@ do
 
   # find which t1 folder to get anatomic file: /t1mprage_208 or /t1sag_208
   cd anatomy
+  echo "current dir: $(pwd)"
   T1_DIR=$(ls -d ${RAWDIR}/${oldfolder}/anatomy/* | grep -E 't1mprage|t1sag')
-  test=$(ls -d * | grep -E 't1mprage|t1sag')
-  echo "test to rm is ${test}"
-
+  echo "T1 dir: ${T1_DIR}"
   # checking if more than 1 file exists; report error if so
   N=$(ls -1 ${RAWDIR}/${oldfolder}/anatomy/${T1_DIR}/{t1mprage*,t1sag*} 2>/dev/null | wc -l)
 
@@ -74,16 +73,14 @@ do
     ls -1a ${RAWDIR}/${oldfolder}/anatomy/${T1_DIR}/{t1mprage*,t1sag*}
 
   else
-    cd ${T1_DIR}
-    echo ${T1_DIR}
-    T1_FILE=$(ls *.nii | grep -E '^t1mprage|^t1sag')
+    T1_FILE=$(ls ${T1_DIR}/*.nii | grep -E '^t1mprage|^t1sag')
     echo ${T1_FILE}
     # previously using cp -ip --> occupying too much space; using hardlinks instead
     # !!Note!! switching back to cp -ip for /anatomy files due to direct alterations
     # !!Note!! linking symbolic links first then do an actual cp -pL dereference copy
     # adding || as try/catch mechanism
     # ln -s ${T1_DIR}/${T1_FILE} ${T1_FILE}
-    cp -pL ${T1_DIR}/${T1_FILE} ${T1_DIR}/t1spgr.nii  || echo "Error!! Subject: ${newfolder} has no t1spgr.nii !!"
+    cp -pL ${T1_FILE} t1spgr.nii  || echo "Error!! Subject: ${newfolder} has no t1spgr.nii !!"
 
   fi
   N=0
