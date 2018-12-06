@@ -62,7 +62,7 @@ do
 
   # find which t1 folder to get anatomic file: /t1mprage_208 or /t1sag_208
   cd anatomy
-  echo "current dir: $(pwd)"
+  echo "Current folder: $(pwd)"
   T1_DIR=$(ls -d ${RAWDIR}/${oldfolder}/anatomy/* | grep -E 't1mprage|t1sag')
   echo "T1 dir: ${T1_DIR}"
   # checking if more than 1 file exists; report error if so
@@ -76,7 +76,7 @@ do
   else
     cd ${T1_DIR}
     T1_FILE=$(ls *.nii | grep -E '^t1mprage|^t1sag')
-    echo "T1 file is: ${T1_FILE}"
+    echo "T1 file: ${T1_FILE}"
     # previously using cp -ip --> occupying too much space; using hardlinks instead
     # !!Note!! switching back to cp -ip for /anatomy files due to direct alterations
     # !!Note!! linking symbolic links first then do an actual cp -pL dereference copy
@@ -114,8 +114,9 @@ do
     # previously using cp -ip --> occupying too much space; using hardlinks instead
     cp -ip ${RAWDIR}/${oldfolder}/${vfilepath}/vasc_3dasl.nii .
 
-    cd ..
-    ls -laR
+    cd ${SUBJ_DIR}
+    tree
+    
   fi
   N=0
 
