@@ -74,8 +74,7 @@ do
   else
     cd ${T1_DIR}
     echo ${T1_DIR}
-    echo ${PWD}
-    T1_FILE=$(ls *.nii | grep -E 't1mprage|t1sag')
+    T1_FILE=$(ls *.nii | grep -E '^t1mprage|^t1sag')
     echo ${T1_FILE}
     # previously using cp -ip --> occupying too much space; using hardlinks instead
     # !!Note!! switching back to cp -ip for /anatomy files due to direct alterations
