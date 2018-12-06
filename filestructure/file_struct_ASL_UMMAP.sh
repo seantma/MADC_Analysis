@@ -61,25 +61,25 @@ do
 
   # find which t1 folder to get anatomic file: /t1mprage_208 or /t1sag_208
   cd anatomy
-  t1_dir=$(ls -d * | grep -E 't1mprage|t1sag')
+  T1_DIR=$(ls -d ./* | grep -E 't1mprage|t1sag')
 
   # checking if more than 1 file exists; report error if so
-  N=$(ls -1 ${RAWDIR}/${oldfolder}/anatomy/${t1_dir}/{t1mprage*,t1sag*} 2>/dev/null | wc -l)
+  N=$(ls -1 ${RAWDIR}/${oldfolder}/anatomy/${T1_DIR}/{t1mprage*,t1sag*} 2>/dev/null | wc -l)
 
   if ((N >= 2)); then
     echo
     echo "****** !! Error !! Subject: ${newfolder} has multiple t1spgr in /anatomy !! ******"
-    ls -1a ${RAWDIR}/${oldfolder}/anatomy/${t1_dir}/{t1mprage*,t1sag*}
+    ls -1a ${RAWDIR}/${oldfolder}/anatomy/${T1_DIR}/{t1mprage*,t1sag*}
 
   else
-    cd ${t1_dir}
-    t1_file=$(ls *.nii | grep -E 't1mprage|t1sag')
+    cd ${T1_DIR}
+    T1_FILE=$(ls *.nii | grep -E 't1mprage|t1sag')
     # previously using cp -ip --> occupying too much space; using hardlinks instead
     # !!Note!! switching back to cp -ip for /anatomy files due to direct alterations
     # !!Note!! linking symbolic links first then do an actual cp -pL dereference copy
     # adding || as try/catch mechanism
-    ln -s ${RAWDIR}/${oldfolder}/anatomy/${t1_dir}/${t1_file} ${t1_file}
-    cp -pL ${t1_file} t1spgr.nii  || echo "Error!! Subject: ${newfolder} has no t1spgr.nii !!"
+    ln -s ${RAWDIR}/${oldfolder}/anatomy/${T1_DIR}/${T1_FILE} ${T1_FILE}
+    cp -pL ${T1_FILE} t1spgr.nii  || echo "Error!! Subject: ${newfolder} has no t1spgr.nii !!"
 
   fi
   N=0
@@ -90,7 +90,7 @@ do
   echo "Now copying vasc_3dasl functional files: vasc_3dasl.nii"
   echo
 
-  cd ../func
+  cd ${THISDIR}/${newfolder}/func
 
   echo
   echo "Currently at /func: " $(pwd)
@@ -103,12 +103,12 @@ do
   if ((N >= 2)); then
     echo
     echo "****** !! Error !! Subject: ${newfolder} has multiple vasc_3dasl.nii !! ******"
-    ls -1a ${RAWDIR}/${oldfolder}/anatomy/vasc_3dasl/vasc_3dasl*
+    ls -1a ${RAWDIR}/${oldfolder}/${vfilepath}/vasc_3dasl*
 
   else
     cd run_01
     # previously using cp -ip --> occupying too much space; using hardlinks instead
-    cp -ip ${RAWDIR}/${oldfolder}/anatomy/vasc_3dasl/vasc_3dasl.nii .
+    cp -ip ${RAWDIR}/${oldfolder}/${vfilepath}/vasc_3dasl.nii .
 
     cd ..
     ls -laR
