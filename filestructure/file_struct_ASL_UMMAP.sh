@@ -14,7 +14,7 @@
 # - integrate with Makefile for fault tolerance and parallelization
 #
 # - How to run:
-# sh file_struct_ASL_DrD_Ext.sh 2>&1 | tee file_struct_console_ASL_DrD_Ext_$(date +"%m%d_%Y").txt
+# sh file_struct_ASL_UMMAP.sh 2>&1 | tee file_struct_console_ASL_UMMAP_$(date +"%m%d_%Y").txt
 #
 # - How to check error:
 # grep -i 'no such file' file_struct_console_Task_1222_2016.txt
@@ -24,18 +24,18 @@
 #
 # !!TODO(Sean): 1. print out original file directory and file name of t1spgr_208
 
-THISDIR=/mnt/psych-bhampstelab/Patient_Centered_Neurorehab/Sean_Working/Subjects_ASL
-RAWDIR=/mnt/psych-bhampstelab/Patient_Centered_Neurorehab
+THISDIR=/nfs/fmri/Analysis/Sean_Working/Subjects_ASL
+RAWDIR=/nfs/fmri/RAW_nopreprocess
 
 echo
-echo "*** This script is for PCN ASL file structure purpose!! ***"
+echo "*** This script is for UMMAP ASL file structure purpose!! ***"
 echo
 
 # number of files index
 N=0
 
 # for loop to read from input .csv
-while IFS="," read -r oldfolder newfolder
+while IFS="," read -r oldfolder newfolder vfilepath
 do
   # making fmri analysis folder in /Subjects
   cd ${THISDIR}
@@ -59,22 +59,27 @@ do
   echo "Copying and linking t1spgr.nii for Task"
   echo
 
-  # checking if more than 1 file exists; report error if so
+  # find which t1 folder to get anatomic file: /t1mprage_208 or /t1sag_208
   cd anatomy
-  N=$(ls -1 ${RAWDIR}/${oldfolder}/anatomy/t1spgr_208sl/ht1spgr_208* 2>/dev/null | wc -l)
+  t1_dir=$(ls -d * | grep -E 't1mprage|t1sag')
+
+  # checking if more than 1 file exists; report error if so
+  N=$(ls -1 ${RAWDIR}/${oldfolder}/anatomy/${t1_dir}/{t1mprage*,t1sag*} 2>/dev/null | wc -l)
 
   if ((N >= 2)); then
     echo
     echo "****** !! Error !! Subject: ${newfolder} has multiple t1spgr in /anatomy !! ******"
-    ls -1a ${RAWDIR}/${oldfolder}/anatomy/t1spgr_208sl/ht1spgr_208*
+    ls -1a ${RAWDIR}/${oldfolder}/anatomy/${t1_dir}/{t1mprage*,t1sag*}
 
   else
+    cd ${t1_dir}
+    t1_file=$(ls *.nii | grep -E 't1mprage|t1sag')
     # previously using cp -ip --> occupying too much space; using hardlinks instead
     # !!Note!! switching back to cp -ip for /anatomy files due to direct alterations
     # !!Note!! linking symbolic links first then do an actual cp -pL dereference copy
     # adding || as try/catch mechanism
-    ln -s ${RAWDIR}/${oldfolder}/anatomy/t1spgr_208sl/ht1spgr_208sl.nii ht1spgr_208sl.nii
-    cp -pL ht1spgr_208sl.nii ht1spgr.nii  || echo "Error!! Subject: ${newfolder} has no ht1spgr.nii exists!!"
+    ln -s ${RAWDIR}/${oldfolder}/anatomy/${t1_dir}/${t1_file} ${t1_file}
+    cp -pL ${t1_file} t1spgr.nii  || echo "Error!! Subject: ${newfolder} has no t1spgr.nii !!"
 
   fi
   N=0
@@ -93,7 +98,7 @@ do
 
   # checking if more than 1 file exists using variable N; report error if so
   mkdir run_01
-  N=$(ls -1 ${RAWDIR}/${oldfolder}/anatomy/vasc_3dasl/vasc_3dasl* 2>/dev/null | wc -l)
+  N=$(ls -1 ${RAWDIR}/${oldfolder}/${vfilepath}/vasc_3dasl* 2>/dev/null | wc -l)
 
   if ((N >= 2)); then
     echo
@@ -116,9 +121,7 @@ do
   echo "----------------------------------------------"
   echo
 
-done < PCN_forshell_ASL_DrD_Ext.csv
-# bmh17ptre00002_05201,DrD_Ext_scan1
-# bmh17ptre20002_05472,DrD_Ext_scan2
+done < PCN_forshell_ASL_UMMAP.csv
 
 echo
 echo " ==========================================================="
