@@ -61,7 +61,7 @@ do
 
   # find which t1 folder to get anatomic file: /t1mprage_208 or /t1sag_208
   cd anatomy
-  T1_DIR=$(ls -d ./* | grep -E 't1mprage|t1sag')
+  T1_DIR=$(ls -d ${RAWDIR}/${oldfolder}/anatomy/* | grep -E 't1mprage|t1sag')
 
   # checking if more than 1 file exists; report error if so
   N=$(ls -1 ${RAWDIR}/${oldfolder}/anatomy/${T1_DIR}/{t1mprage*,t1sag*} 2>/dev/null | wc -l)
