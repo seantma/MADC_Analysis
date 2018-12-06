@@ -121,7 +121,7 @@ do
   echo "----------------------------------------------"
   echo
 
-done < PCN_forshell_ASL_UMMAP.csv
+done < UMMAP_forshell_ASL.csv
 
 echo
 echo " ==========================================================="
