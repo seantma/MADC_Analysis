@@ -73,7 +73,9 @@ do
 
   else
     cd ${T1_DIR}
+    echo ${T1_DIR}
     T1_FILE=$(ls ${RAWDIR}/${oldfolder}/anatomy/*.nii | grep -E 't1mprage|t1sag')
+    echo ${T1T1_FILE}
     # previously using cp -ip --> occupying too much space; using hardlinks instead
     # !!Note!! switching back to cp -ip for /anatomy files due to direct alterations
     # !!Note!! linking symbolic links first then do an actual cp -pL dereference copy
