@@ -41,9 +41,10 @@ do
   cd ${THISDIR}
   mkdir "${newfolder}"
   cd ${newfolder}
+  SUBJ_DIR=$(pwd)
 
   echo
-  echo "Current subject: " $(pwd)
+  echo "Current subject: " ${SUBJ_DIR}
   echo
 
   # setting up directories
@@ -80,7 +81,7 @@ do
     # !!Note!! linking symbolic links first then do an actual cp -pL dereference copy
     # adding || as try/catch mechanism
     # ln -s ${T1_DIR}/${T1_FILE} ${T1_FILE}
-    cp -pL ${T1_FILE} t1spgr.nii  || echo "Error!! Subject: ${newfolder} has no t1spgr.nii !!"
+    cp -pL ${T1_FILE} ${SUBJ_DIR}/t1spgr.nii  || echo "Error!! Could NOT copy t1spgr.nii for ${newfolder} !!"
 
   fi
   N=0
