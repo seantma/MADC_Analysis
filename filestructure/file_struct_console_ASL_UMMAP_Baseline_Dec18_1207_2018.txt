@@ -1,0 +1,1977 @@
+
+*** This script is for UMMAP ASL file structure purpose!! ***
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc0798_5794
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc0798_5794/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm00798_05794/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc0798_5794/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm00798_05794/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc0799_5795
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc0799_5795/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm00799_05795/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc0799_5795/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm00799_05795/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1040_5745
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1040_5745/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01040_05745/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1040_5745/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01040_05745/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1182_5506
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1182_5506/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01182_05506/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1182_5506/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01182_05506/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1220_3783
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1220_3783/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01220_03783/anatomy/t1mprage_208
+T1 file: t1mprage_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1220_3783/func
+
+.
+├── anatomy
+│   ├── t1mprage_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01220_03783/anatomy/t1mprage_208/t1mprage_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1243_4201
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1243_4201/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01243_04201/anatomy/t1mprage_208
+T1 file: t1mprage_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1243_4201/func
+
+.
+├── anatomy
+│   ├── t1mprage_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01243_04201/anatomy/t1mprage_208/t1mprage_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1246_5153
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1246_5153/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01246_05153/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1246_5153/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01246_05153/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1252_5187
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1252_5187/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01252_05187/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1252_5187/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01252_05187/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1263_3874
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1263_3874/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01263_03874/anatomy/t1mprage_208
+T1 file: t1mprage_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1263_3874/func
+
+.
+├── anatomy
+│   ├── t1mprage_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01263_03874/anatomy/t1mprage_208/t1mprage_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1276_3938
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1276_3938/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01276_03938/anatomy/t1mprage_208
+T1 file: t1mprage_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1276_3938/func
+
+.
+├── anatomy
+│   ├── t1mprage_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01276_03938/anatomy/t1mprage_208/t1mprage_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1299_5225
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1299_5225/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01299_05225/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1299_5225/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01299_05225/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1307_5883
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1307_5883/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01307_05883/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1307_5883/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01307_05883/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1320_5807
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1320_5807/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01320_05807/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1320_5807/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01320_05807/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1348_5194
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1348_5194/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01348_05194/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1348_5194/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01348_05194/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1350_5521
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1350_5521/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01350_05521/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1350_5521/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01350_05521/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1371_5133
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1371_5133/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01371_05133/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1371_5133/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01371_05133/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1373_5314
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1373_5314/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01373_05314/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1373_5314/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01373_05314/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1384_5358
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1384_5358/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01384_05358/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1384_5358/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01384_05358/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1387_5556
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1387_5556/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01387_05556/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1387_5556/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01387_05556/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1389_3696
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1389_3696/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01389_03696/anatomy/t1mprage_208
+T1 file: t1mprage_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1389_3696/func
+
+.
+├── anatomy
+│   ├── t1mprage_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01389_03696/anatomy/t1mprage_208/t1mprage_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1395_5848
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1395_5848/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01395_05848/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1395_5848/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01395_05848/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1416_5640
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1416_5640/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01416_05640/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1416_5640/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01416_05640/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1417_5641
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1417_5641/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01417_05641/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1417_5641/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01417_05641/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1435_5392
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1435_5392/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01435_05392/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1435_5392/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01435_05392/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1446_4476
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1446_4476/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01446_04476/anatomy/t1mprage_208
+/nfs/fmri/RAW_nopreprocess/hlp17umm01446_04476/anatomy/t1sag_208
+T1 file: t1mprage_208.nii
+ln: target ‘/nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1446_4476/anatomy/t1mprage_208.nii’ is not a directory
+cp: cannot stat ‘/nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1446_4476/anatomy/t1mprage_208.nii’: No such file or directory
+Error!! Could NOT copy t1spgr.nii for madc1446_4476 !!
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1446_4476/func
+
+.
+├── anatomy
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 1 file
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1447_4475
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1447_4475/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01447_04475/anatomy/t1mprage_208
+/nfs/fmri/RAW_nopreprocess/hlp17umm01447_04475/anatomy/t1sag_208
+T1 file: t1mprage_208.nii
+ln: target ‘/nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1447_4475/anatomy/t1mprage_208.nii’ is not a directory
+cp: cannot stat ‘/nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1447_4475/anatomy/t1mprage_208.nii’: No such file or directory
+Error!! Could NOT copy t1spgr.nii for madc1447_4475 !!
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1447_4475/func
+
+.
+├── anatomy
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 1 file
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1458_4524
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1458_4524/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01458_04524/anatomy/t1mprage_208
+/nfs/fmri/RAW_nopreprocess/hlp17umm01458_04524/anatomy/t1sag_208
+T1 file: t1mprage_208.nii
+ln: target ‘/nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1458_4524/anatomy/t1mprage_208.nii’ is not a directory
+cp: cannot stat ‘/nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1458_4524/anatomy/t1mprage_208.nii’: No such file or directory
+Error!! Could NOT copy t1spgr.nii for madc1458_4524 !!
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1458_4524/func
+
+.
+├── anatomy
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 1 file
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1462_4510
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1462_4510/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01462_04510/anatomy/t1mprage_208
+/nfs/fmri/RAW_nopreprocess/hlp17umm01462_04510/anatomy/t1sag_208
+T1 file: t1mprage_208.nii
+ln: target ‘/nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1462_4510/anatomy/t1mprage_208.nii’ is not a directory
+cp: cannot stat ‘/nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1462_4510/anatomy/t1mprage_208.nii’: No such file or directory
+Error!! Could NOT copy t1spgr.nii for madc1462_4510 !!
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1462_4510/func
+
+.
+├── anatomy
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 1 file
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1476_5633
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1476_5633/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01476_05633/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1476_5633/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01476_05633/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1477_5635
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1477_5635/anatomy
+T1 dir: 
+ls: cannot access *.nii: No such file or directory
+T1 file: 
+ln: failed to create symbolic link ‘/nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1477_5635/anatomy/’: File exists
+cp: omitting directory ‘/nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1477_5635/anatomy/’
+Error!! Could NOT copy t1spgr.nii for madc1477_5635 !!
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1477_5635/func
+
+.
+├── anatomy
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 1 file
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1483_5200
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1483_5200/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01483_05200/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1483_5200/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01483_05200/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1487_4682
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1487_4682/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01487_04682/anatomy/t1mprage_208
+T1 file: t1mprage_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1487_4682/func
+
+.
+├── anatomy
+│   ├── t1mprage_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01487_04682/anatomy/t1mprage_208/t1mprage_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1492_5182
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1492_5182/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01492_05182/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1492_5182/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01492_05182/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1500_5193
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1500_5193/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01500_05193/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1500_5193/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01500_05193/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1508_5049
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1508_5049/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01508_05049/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1508_5049/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01508_05049/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1511_5424
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1511_5424/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01511_05424/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1511_5424/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01511_05424/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1513_5315
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1513_5315/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01513_05315/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1513_5315/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01513_05315/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1519_5232
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1519_5232/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01519_05232/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1519_5232/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01519_05232/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1530_5703
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1530_5703/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01530_05703/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1530_5703/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01530_05703/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1531_5159
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1531_5159/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01531_05159/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1531_5159/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01531_05159/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1532_5160
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1532_5160/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01532_05160/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1532_5160/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01532_05160/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1535_5853
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1535_5853/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01535_05853/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1535_5853/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01535_05853/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1537_5308
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1537_5308/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01537_05308/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1537_5308/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01537_05308/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1539_5154
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1539_5154/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01539_05154/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1539_5154/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01539_05154/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1543_5181
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1543_5181/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01543_05181/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1543_5181/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01543_05181/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1544_5549
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1544_5549/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01544_05549/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1544_5549/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01544_05549/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1545_5550
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1545_5550/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01545_05550/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1545_5550/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01545_05550/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1546_5697
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1546_5697/anatomy
+T1 dir: 
+ls: cannot access *.nii: No such file or directory
+T1 file: 
+ln: failed to create symbolic link ‘/nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1546_5697/anatomy/’: File exists
+cp: omitting directory ‘/nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1546_5697/anatomy/’
+Error!! Could NOT copy t1spgr.nii for madc1546_5697 !!
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1546_5697/func
+
+.
+├── anatomy
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 1 file
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1549_5224
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1549_5224/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01549_05224/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1549_5224/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01549_05224/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1550_5702
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1550_5702/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01550_05702/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1550_5702/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01550_05702/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1550_5786
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1550_5786/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01550_05786/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1550_5786/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01550_05786/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1555_5471
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1555_5471/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01555_05471/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1555_5471/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01555_05471/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1556_5503
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1556_5503/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01556_05503/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1556_5503/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01556_05503/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1557_5890
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1557_5890/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01557_05890/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1557_5890/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01557_05890/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1561_5696
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1561_5696/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01561_05696/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1561_5696/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01561_05696/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1564_5806
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1564_5806/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01564_05806/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1564_5806/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01564_05806/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1565_5522
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1565_5522/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01565_05522/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1565_5522/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01565_05522/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1572_5785
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1572_5785/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01572_05785/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1572_5785/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01572_05785/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1575_5746
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1575_5746/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01575_05746/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1575_5746/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01575_05746/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1588_5891
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1588_5891/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01588_05891/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1588_5891/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01588_05891/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+Current subject:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1595_5847
+
+
+Making anatomy and func directories
+
+
+Copying and linking t1spgr.nii for Task
+
+Current folder: /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1595_5847/anatomy
+T1 dir: /nfs/fmri/RAW_nopreprocess/hlp17umm01595_05847/anatomy/t1sag_208
+T1 file: t1sag_208.nii
+
+Now copying vasc_3dasl functional files: vasc_3dasl.nii
+
+
+Currently at /func:  /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1595_5847/func
+
+.
+├── anatomy
+│   ├── t1sag_208.nii -> /nfs/fmri/RAW_nopreprocess/hlp17umm01595_05847/anatomy/t1sag_208/t1sag_208.nii
+│   └── t1spgr.nii
+└── func
+    └── run_01
+        └── vasc_3dasl.nii
+
+3 directories, 3 files
+
+----------------------------------------------
+      Subject copy complete, next subject     
+----------------------------------------------
+
+
+ ===========================================================
+      ALL Done !!  Processing special subject issues!!      
+ ===========================================================
+
+
+ ===================
+      COMPLETE!!    
+ ===================
+
