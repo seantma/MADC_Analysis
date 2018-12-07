@@ -135,14 +135,14 @@ echo "      ALL Done !!  Processing special subject issues!!      "
 echo " ==========================================================="
 echo
 
-## ==== addressing specific subject issues ====
+## ==== addressing subject specific issues ====
 # [tehsheng@madcbrain filestructure]$ grep 'Error' file_struct_console_ASL_UMMAP_1207_2018.txt
-# Error!! Could NOT copy t1spgr.nii for madc1446_4476 !!
-# Error!! Could NOT copy t1spgr.nii for madc1447_4475 !!
-# Error!! Could NOT copy t1spgr.nii for madc1458_4524 !!
-# Error!! Could NOT copy t1spgr.nii for madc1462_4510 !!
-# Error!! Could NOT copy t1spgr.nii for madc1477_5635 !!
-# Error!! Could NOT copy t1spgr.nii for madc1546_5697 !!
+# Error!! Could NOT copy t1spgr.nii for madc1446_4476 !! ==> FIXED; manually linked t1spgr.nii
+# Error!! Could NOT copy t1spgr.nii for madc1447_4475 !! ==> FIXED; manually linked t1spgr.nii
+# Error!! Could NOT copy t1spgr.nii for madc1458_4524 !! ==> FIXED; manually linked t1spgr.nii
+# Error!! Could NOT copy t1spgr.nii for madc1462_4510 !! ==> FIXED; manually linked t1spgr.nii
+# Error!! Could NOT copy t1spgr.nii for madc1477_5635 !! ==> no t1 folder!!
+# Error!! Could NOT copy t1spgr.nii for madc1546_5697 !! ==> no t1 folder!!
 
 echo
 echo " ==================="
