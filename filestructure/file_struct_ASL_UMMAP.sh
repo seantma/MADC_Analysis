@@ -136,14 +136,13 @@ echo " ==========================================================="
 echo
 
 ## ==== addressing specific subject issues ====
-# !! since PCN only gets 1 anatomical scan as there are repeated treatments !!
-# [tehsheng@bhampste-fmri DARTEL]$ grep -i 'Error' file_struct_console_DARTEL_0728_2017.txt
-
-# cd ${THISDIR}/Fease_scan2/anatomy
-# rm t1spgr*.nii
-# ln -s ${RAWDIR}/bmh16ptrf00048_03838/anatomy/t1spgr_208/t1spgr_208.nii t1spgr_208.nii
-# cp -pL t1spgr_208.nii t1spgr.nii
-
+# [tehsheng@madcbrain filestructure]$ grep 'Error' file_struct_console_ASL_UMMAP_1207_2018.txt
+# Error!! Could NOT copy t1spgr.nii for madc1446_4476 !!
+# Error!! Could NOT copy t1spgr.nii for madc1447_4475 !!
+# Error!! Could NOT copy t1spgr.nii for madc1458_4524 !!
+# Error!! Could NOT copy t1spgr.nii for madc1462_4510 !!
+# Error!! Could NOT copy t1spgr.nii for madc1477_5635 !!
+# Error!! Could NOT copy t1spgr.nii for madc1546_5697 !!
 
 echo
 echo " ==================="
