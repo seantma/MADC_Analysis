@@ -17,7 +17,7 @@
 # 12/22/2016, added loop for multi subjects
 #
 # How to run:
-# sh ./preprocessing_DrD_Ext_ASL.sh
+# sh ./preprocessing_UMMAP_ASL.sh
 # How to check error:
 #
 # --------------------------------------------------
