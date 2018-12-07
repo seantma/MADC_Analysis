@@ -18,6 +18,13 @@ This question was asked by Ben on how different source of T1 and coregistering w
     - `for dir in */; do cp -p $dir/t1mprage_208.nii $dir/t1mprage_208.nii.bakup; done`
 3. Coregistration: _vasc_3dasl as reference image, anatomy as target_
     - `Batch_CoReg.m`
+    - % write out CBF to nii - 3 files:
+        1. calibrated CBF map,
+        2. brain-masked calibrated CBF map
+        3. mean scaled to 100, brain-masked calibrated CBF map
+        `write_nii(strcat('cbfmap_', asl_filename), cbfmap, h2, 0)`
+        `write_nii(strcat('cbfmap_anat_', asl_filename), cbfmap_anat, h2, 0)`
+        `write_nii(strcat('cbfmap_anat_mean100_', asl_filename), cbfmap_anat100, h2, 0)`
 4. Generate skull-strip BET mask **!!This needs to happen AFTER CoRegistration!!**
     - `for dir in */; do bet2 $dir/t1mprage_208.nii $dir/bet_t1mprage_208 -m; done`
     - `for dir in */; do gunzip $dir/bet_t1mprage_208_mask.nii.gz; done`
