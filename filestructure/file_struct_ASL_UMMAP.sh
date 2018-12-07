@@ -127,7 +127,7 @@ do
   echo "----------------------------------------------"
   echo
 
-done < UMMAP_forshell_ASL.csv
+done < UMMAP_forshell_ASL_Baseline_Dec18.csv  # 61 subjects; the rest awaiting Krisanne to reconstruct
 
 echo
 echo " ==========================================================="
