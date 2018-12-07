@@ -81,9 +81,10 @@ do
     # !!Note!! switching back to cp -ip for /anatomy files due to direct alterations
     # !!Note!! linking symbolic links first then do an actual cp -pL dereference copy
     # adding || as try/catch mechanism
-    # ln -s ${T1_DIR}/${T1_FILE} ${T1_FILE}
     cd ${SUBJ_DIR}
-    cp -pL ${T1_DIR}/${T1_FILE} ${SUBJ_DIR}/anatomy/t1spgr.nii  || echo "Error!! Could NOT copy t1spgr.nii for ${newfolder} !!"
+    ln -s ${T1_DIR}/${T1_FILE} ${SUBJ_DIR}/anatomy/${T1_FILE}
+    # cp -pL ${T1_DIR}/${T1_FILE} ${SUBJ_DIR}/anatomy/t1spgr.nii  || echo "Error!! Could NOT copy t1spgr.nii for ${newfolder} !!"
+    cp -pL ${SUBJ_DIR}/anatomy/${T1_FILE} ${SUBJ_DIR}/anatomy/t1spgr.nii  || echo "Error!! Could NOT copy t1spgr.nii for ${newfolder} !!"
 
   fi
   N=0
