@@ -102,12 +102,12 @@ do
 
   # checking if more than 1 file exists using variable N; report error if so
   mkdir run_01
-  N=$(ls -1 ${RAWDIR}/${oldfolder}/${vfilepath}/vasc_3dasl* 2>/dev/null | wc -l)
+  N=$(ls -1 ${RAWDIR}/${oldfolder}/${vfilepath}/vasc_3dasl*.nii 2>/dev/null | wc -l)
 
   if ((N >= 2)); then
     echo
     echo "****** !! Error !! Subject: ${newfolder} has multiple vasc_3dasl.nii !! ******"
-    ls -1a ${RAWDIR}/${oldfolder}/${vfilepath}/vasc_3dasl*
+    ls -1a ${RAWDIR}/${oldfolder}/${vfilepath}/vasc_3dasl*.nii
 
   else
     cd run_01
@@ -116,7 +116,7 @@ do
 
     cd ${SUBJ_DIR}
     tree
-    
+
   fi
   N=0
 
