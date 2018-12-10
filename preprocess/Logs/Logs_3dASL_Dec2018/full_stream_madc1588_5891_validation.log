@@ -1,0 +1,322 @@
+
+Initializing spm8 Batch
+
+Checking for coregOverlay.options ...not present.
+Parsing commands:
+
+
+Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
+
+
+ coregOverlay
+
+  Will set up coregOverlay batch jobs using the following parameters
+
+ anatomy path             : anatomy/
+ directory to coreg       : func//coReg//
+ functional sub-dir       : 
+ functional images        : vasc_3dasl
+ name of overlay image    : t1spgr
+ reslice option           : 0
+ prepending name          : 
+ Other images             : 0
+
+
+ functional images path    : func/
+ Subject directory         : ../../Subjects_ASL
+
+ Back(1)/fore(0)ground     : 0
+
+ spm8 is located in        : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8/spm8_with_R6313
+ spm8Batch is located in   : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch
+ spm8 patch is located in  : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/matlabScripts
+ auxiliary matlab path     : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/spm8_patch
+ matlab options file       : 
+
+ User                      : NOMAIL
+ MATLAB                    : /opt/bin/matlab
+
+ SANDBOXHOST               : madcbrain
+ SANDBOX                   : /madcbrain/sandbox/
+ SANDBOXPID                : 
+
+ UMSTREAM_STATUS_FILE      : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/madc1588_5891_validation_umstream_status_file
+
+ Copyright Robert C. Welsh, 2005-2018, Version 2.1/2011-07-29
+
+
+     Images will NOT BE resliced.
+
+  And will perform coregOverlay on the following subjects:
+
+      madc1588_5891
+
+
+ Building scripts...
+
+  UMBatchMaster=/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess
+
+   Script will live in : spm8Batch/coregOverlay/2018_12
+
+    2) building in first part of matlab script
+    3) building list of subjects
+    4) finalizing matlab scripts
+    5) building shell script
+
+
+ Script name(s):
+
+
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181208_04_07_44_368_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181208_04_07_44_368_tehsheng_madcbrai.sh
+
+
+   Launching script into foreground.
+
+
+   coregOverlay Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181208_04_07_44_368_tehsheng_madcbrai.sh is finished
+   coregOverlay Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181208_04_07_44_368_tehsheng_madcbrai.log
+
+
+
+
+Initializing spm8 Batch
+
+Checking for vbm8HiRes.options ...not present.
+Parsing commands:
+
+
+Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
+
+
+Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
+
+
+ vbm8HiRes
+
+  Will set up vbm8HiRes batch jobs using the following parameters
+
+ anatomy path             : func/coReg
+ name of hisres image     : t1spgr
+ directory to vbm8        : func/coReg/vbm8/
+ all(1) or biasfield(0)   : 1
+ prepending name          : vbm8_w2mm_
+ Erosion Last flag        : 1
+
+
+ functional images path    : ./
+ Subject directory         : ../../Subjects_ASL
+
+ Back(1)/fore(0)ground     : 0
+
+ spm8 is located in        : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8/spm8_with_R6313
+ spm8Batch is located in   : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch
+ spm8 patch is located in  : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/matlabScripts
+ auxiliary matlab path     : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/spm8_patch
+ matlab options file       : 
+
+ User                      : NOMAIL
+ MATLAB                    : /opt/bin/matlab
+
+ SANDBOXHOST               : madcbrain
+ SANDBOX                   : /madcbrain/sandbox/
+ SANDBOXPID                : 
+
+ UMSTREAM_STATUS_FILE      : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/madc1588_5891_validation_umstream_status_file
+
+ Copyright Robert C. Welsh, 2005-2018, Version 1.0/2012-03-05
+
+
+
+  And will perform vbm8HiRes on the following subjects:
+
+      madc1588_5891
+
+
+ Building scripts...
+
+  UMBatchMaster=/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess
+
+   Script will live in : spm8Batch/vbm8HiRes/2018_12
+
+    2) building in first part of matlab script
+    3) building list of subjects
+
+    4) finalizing matlab scripts
+    5) building shell script
+
+
+Calling erodeMask with :
+
+erodeMask -E 2 1 -w func/coReg/vbm8  -v vbm8_w2mm_ -h t1spgr -m "-s 5 -sub 0.333" -M ../../Subjects_ASL -n eroMask_    [list of subjects] (see shell script file: /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181208_04_09_02_294_tehsheng_madcbrai.sh)
+
+ Script name(s):
+
+
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181208_04_09_02_294_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181208_04_09_02_294_tehsheng_madcbrai.sh
+
+
+   Launching script into foreground.
+
+
+   vbm8HiRes Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181208_04_09_02_294_tehsheng_madcbrai.sh is finished
+   vbm8HiRes Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181208_04_09_02_294_tehsheng_madcbrai.log
+
+
+
+
+Initializing spm8 Batch
+
+Checking for warpfMRI.options ...not present.
+Parsing commands:
+
+
+Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
+
+
+Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
+
+
+ warpfMRI
+
+  Will set up warpfMRI batch jobs using the following parameters
+
+ directory to coreg       : func//coReg/vbm8/
+ name of the high res     : t1spgr
+ Warping Method (1=VBM8)  : 1
+ template image dir/name  : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8/spm8_with_R6313/templates//T1.nii
+ prepending name          : vbm8_w2mm_
+ Voxel dimension (0=spm)  : 0
+ volumeWILD               : vasc_3dasl
+ functional sub-dir       : 
+
+
+ functional images path    : func/
+ Subject directory         : ../../Subjects_ASL
+
+ Back(1)/fore(0)ground     : 0
+
+ spm8 is located in        : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8/spm8_with_R6313
+ spm8Batch is located in   : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch
+ spm8 patch is located in  : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/matlabScripts
+ auxiliary matlab path     : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/spm8_patch
+ matlab options file       : 
+
+ User                      : NOMAIL
+ MATLAB                    : /opt/bin/matlab
+
+ SANDBOXHOST               : madcbrain
+ SANDBOX                   : /madcbrain/sandbox/
+ SANDBOXPID                : 
+
+ UMSTREAM_STATUS_FILE      : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/madc1588_5891_validation_umstream_status_file
+
+ Copyright Robert C. Welsh, 2005-2018, Version 2.1/2011-07-30
+
+
+
+  And will perform warpfMRI on the following subjects:
+
+      madc1588_5891
+
+
+ Building scripts...
+
+  UMBatchMaster=/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess
+
+   Script will live in : spm8Batch/warpfMRI/2018_12
+
+    2) building in first part of matlab script
+    3) building list of subjects
+       --> madc1588_5891
+    4) finalizing matlab scripts
+    5) building shell script
+
+ Script name(s):
+
+
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181208_04_27_16_386_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181208_04_27_16_386_tehsheng_madcbrai.sh
+
+
+   Launching script into foreground.
+
+
+   warpfMRI Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181208_04_27_16_386_tehsheng_madcbrai.sh is finished
+   warpfMRI Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181208_04_27_16_386_tehsheng_madcbrai.log
+
+
+
+
+Initializing spm8 Batch
+
+Checking for smoothfMRI.options ...not present.
+Parsing commands:
+
+
+ smoothfMRI
+
+  Will set up smoothfMRI batch jobs using the following parameters
+
+ images will be smoothed  : 5 5 5
+ volumes to be smoothed   : vbm8_w2mm_vasc_3dasl
+ prepending name          : s5
+
+
+ functional images path    : func/
+ Subject directory         : ../../Subjects_ASL
+
+ Back(1)/fore(0)ground     : 0
+
+ spm8 is located in        : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8/spm8_with_R6313
+ spm8Batch is located in   : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch
+ spm8 patch is located in  : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/matlabScripts
+ auxiliary matlab path     : /nfs/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/spm8Batch/spm8_patch
+ matlab options file       : 
+
+ User                      : NOMAIL
+ MATLAB                    : /opt/bin/matlab
+
+ SANDBOXHOST               : madcbrain
+ SANDBOX                   : /madcbrain/sandbox/
+ SANDBOXPID                : 
+
+ UMSTREAM_STATUS_FILE      : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/madc1588_5891_validation_umstream_status_file
+
+ Copyright Robert C. Welsh, 2005-2018, Version 2.1/2011-07-30
+
+
+
+  And will perform smoothfMRI on the following subjects:
+
+      madc1588_5891
+
+
+ Building scripts...
+
+  UMBatchMaster=/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess
+
+   Script will live in : spm8Batch/smoothfMRI/2018_12
+
+    2) building in first part of matlab script
+    3) building list of subjects
+       --> madc1588_5891
+    4) finalizing matlab scripts
+    5) building shell script
+
+ Script name(s):
+
+
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181208_04_27_55_254_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181208_04_27_55_254_tehsheng_madcbrai.sh
+
+
+   Launching script into foreground.
+
+
+   smoothfMRI Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181208_04_27_55_254_tehsheng_madcbrai.sh is finished
+   smoothfMRI Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181208_04_27_55_254_tehsheng_madcbrai.log
+
+
+

@@ -1,0 +1,88 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015b (8.6.0.267246) 64-bit (glnxa64)
+                              August 20, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+    ----------------------------------------------------
+	Your MATLAB license will expire in 53 days.
+	Please contact your system administrator or
+	MathWorks to renew this license.
+    ----------------------------------------------------
+
+	Academic License
+
+>> >> >> >>  /opt/bin/matlab -nodisplay <<EOF 
+ |
+{Error: Unexpected MATLAB operator.
+} 
+>> >> >> Coregistation Script Created on 181207_16_34_24_007
+>> >> >> >> >> Coregistation Script Created on 181207_16_34_24_007
+>> >> >> >> >> >> >> [Warning: Name is nonexistent or not a directory:
+/Users/rcwelsh/matlabScripts/WELLES/mfiles] 
+[> In path (line 109)
+  In addpath (line 86)] 
+>> >> >> >> >> [Warning: Name is nonexistent or not a directory:
+/Users/rcwelsh/matlabScripts/WELLES/mfiles] 
+[> In path (line 109)
+  In addpath (line 86)] 
+>> >> >> >> >> 
+UMBatchJobName =
+
+vbm8HiRes_181207_16_34_24_007_tehsheng_madcbrai
+
+>> >> 
+UMBatchProcessName =
+
+vbm8HiRes
+
+>> >> >> 
+UMBatchJobName =
+
+vbm8HiRes_181207_16_34_24_007_tehsheng_madcbrai
+
+>> {Error: File:
+/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181207_16_34_24_007_tehsheng_madcbrai.m
+Line: 102 Column: 16
+The expression to the left of the equals sign is not a valid target for an
+assignment.
+} 
+>> 
+UMBatchProcessName =
+
+vbm8HiRes
+
+>> >> >> com.mathworks.util.ShutdownRuntimeException: Java is shutting down
+	at com.mathworks.services.Prefs.nativeGetPreferencesDirectory(Native Method)
+	at com.mathworks.services.Prefs.getPropertyDirectory(Prefs.java:198)
+	at com.mathworks.services.binding.MatlabKeyBindingPreferenceUtils.resolveToPrefDir(MatlabKeyBindingPreferenceUtils.java:112)
+	at com.mathworks.services.binding.MatlabKeyBindingPreferences.getModifiedDefaultFile(MatlabKeyBindingPreferences.java:213)
+	at com.mathworks.services.binding.MatlabKeyBindingPreferences.resolveModifiedDefaultFilesFromPrefs(MatlabKeyBindingPreferences.java:116)
+	at com.mathworks.services.binding.MatlabKeyBindings.initializeFromPrefs(MatlabKeyBindings.java:717)
+	at com.mathworks.services.binding.MatlabKeyBindings.<clinit>(MatlabKeyBindings.java:590)
+	at com.mathworks.widgets.debug.DebuggerManager$ActionShell.<init>(DebuggerManager.java:194)
+	at com.mathworks.widgets.debug.DebuggerManager$ActionShell.<init>(DebuggerManager.java:190)
+	at com.mathworks.widgets.debug.DebuggerManager$DebuggerShellActions$1.<init>(DebuggerManager.java:97)
+	at com.mathworks.widgets.debug.DebuggerManager$DebuggerShellActions.<clinit>(DebuggerManager.java:97)
+	at com.mathworks.widgets.debug.DebuggerManager.getContinueAction(DebuggerManager.java:292)
+	at com.mathworks.matlabserver.worker.service.breakpoint.impl13b.DebuggerInstaller.<init>(DebuggerInstaller.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at com.mathworks.matlabserver.a.b.R(Unknown Source)
+	at com.mathworks.matlabserver.a.b.<init>(Unknown Source)
+	at com.mathworks.matlabserver.a.b.<init>(Unknown Source)
+	at com.mathworks.matlabserver.a.f.initialized(Unknown Source)
+	at com.mathworks.matlabserver.connectorcommon.b.b.run(Unknown Source)
+	at com.mathworks.matlabserver.connectorcommon.util.g.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)

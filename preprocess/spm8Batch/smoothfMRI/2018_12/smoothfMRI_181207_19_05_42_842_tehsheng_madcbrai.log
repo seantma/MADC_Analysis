@@ -1,0 +1,61 @@
+
+No sandbox specified
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015b (8.6.0.267246) 64-bit (glnxa64)
+                              August 20, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+    ----------------------------------------------------
+	Your MATLAB license will expire in 53 days.
+	Please contact your system administrator or
+	MathWorks to renew this license.
+    ----------------------------------------------------
+
+	Academic License
+
+>> >> >> >> Coregistation Script Created on 181207_19_05_42_842
+>> >> >> >> >> >> [Warning: Name is nonexistent or not a directory:
+/Users/rcwelsh/matlabScripts/WELLES/mfiles] 
+[> In path (line 109)
+  In addpath (line 86)] 
+>> >> >> >> >> 
+UMBatchJobName =
+
+smoothfMRI_181207_19_05_42_842_tehsheng_madcbrai
+
+>> 
+UMBatchProcessName =
+
+smoothfMRI
+
+>> >> Initializing the job manager in SPM8
+Sandbox is not preen and I can not preen it, thus turning it off
+Smoothing 2 "vbm8_w2mm_vasc_3dasl" images in /nfs/fmri/Analysis/Sean_Working/Subjects_ASL/madc1556_5503/func/run_01 with 5.0 5.0 5.0
+Entering UMBatchSmooth V1.1
+
+
+------------------------------------------------------------------------
+Running job #1
+------------------------------------------------------------------------
+Running 'Smooth'
+Done    'Smooth'
+Done
+
+Smoothing done in 3.613335 seconds.
+
+
+No need to try to move out of sandbox, it is presently disabled.
+
+All done with smoothing images.
+>> >> 
+
+Start   : Fri Dec  7 19:05:44 EST 2018
+Finish  : Fri Dec  7 19:06:29 EST 2018
+
+
