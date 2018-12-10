@@ -8,10 +8,10 @@
 % 2. create skull-stripped mask
 
 % Working directory
-WorkDir = '/mnt/psych-bhampstelab/Patient_Centered_Neurorehab/Sean_Working/Subjects_ASL';
+WorkDir = 'Soterix_Hampsted_SPiRE_T1_RAS';
 
 % Reporting directory
-ReportDir = '/mnt/psych-bhampstelab/Patient_Centered_Neurorehab/Sean_Working/Git_PCN';
+ReportDir = '/nfs/fmri/Analysis/Sean_Working/Git_MADC';
 
 % Work on subject folders under Working directory
 d = dir(WorkDir);
@@ -20,19 +20,18 @@ SubjDir = {d(idir).name}';
 SubjDir(ismember(SubjDir,{'.','..'})) = [];   % removing . & ..
 
 % Use regex to match pattern folder
-subj_pattern='DrD_Ext_ASL_scan[1-2]'
+subj_pattern='madc(\d+)_(\d+)'    %madc1513_5315
 index = find(~cellfun('isempty', regexp(SubjDir, subj_pattern))); %regex matching 'spi00012_scan1'
 SubjDir = SubjDir(index)
 
 % setting up global path for MethodsCore
 global mcRoot
-mcRoot = '/mnt/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore';
+mcRoot = '/opt/apps/MCore2';
 addpath(fullfile(mcRoot,'SPM','SPM8','spm8_with_R6313'))
 
-% addpath for spm & ASL scripts
+% addpath for spm & ASL scripts (including subfolders)
 % addpath /mnt/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8
-addpath /mnt/psych-bhampstelab/Patient_Centered_Neurorehab/Sean_Working/Git_PCN/3d_ASL
-addpath /mnt/psych-bhampstelab/Patient_Centered_Neurorehab/Sean_Working/Git_PCN/3d_ASL/mfiles
+addpath(genpath('/nfs/fmri/Analysis/Sean_Working/Git_MADC/3d_ASL');
 
 % Logging diary
 diary('Batch_cbf_calc_console_Log.txt')
