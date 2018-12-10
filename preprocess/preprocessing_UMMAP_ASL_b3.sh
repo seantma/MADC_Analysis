@@ -19,7 +19,8 @@
 # How to run:
 # sh ./preprocessing_UMMAP_ASL.sh
 # How to check error:
-#
+# grep -c 'aborted' madc*_validation_*
+# grep -c 'SUCCESS' madc*_validation_*
 # --------------------------------------------------
 
 # Subject list based off of `file_struct.sh` output: `file_struct_out_1222_2016.txt`
