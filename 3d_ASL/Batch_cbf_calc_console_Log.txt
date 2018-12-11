@@ -1,0 +1,658 @@
+
+
+======== Starting session!! ==========  11-Dec-2018 12:06:36  ==================
+
+========================================
+  # of subject folders to process: 59 
+========================================
+
+
+=====================================
+  NEW Subject: madc0798_5794 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc0798_5794 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc0799_5795 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc0799_5795 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1040_5745 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1040_5745 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1182_5506 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1182_5506 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1220_3783 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1220_3783 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1243_4201 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1243_4201 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1246_5153 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1246_5153 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1252_5187 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1252_5187 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1263_3874 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1263_3874 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1276_3938 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1276_3938 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1299_5225 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1299_5225 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1307_5883 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1307_5883 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1320_5807 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1320_5807 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1348_5194 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1348_5194 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1350_5521 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1350_5521 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1371_5133 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1371_5133 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1373_5314 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1373_5314 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1384_5358 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1384_5358 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1387_5556 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1387_5556 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1389_3696 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1389_3696 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1395_5848 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1395_5848 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1416_5640 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1416_5640 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1417_5641 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1417_5641 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1435_5392 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1435_5392 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1446_4476 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1446_4476 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1447_4475 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1447_4475 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1458_4524 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1458_4524 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1462_4510 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1462_4510 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1476_5633 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1476_5633 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1483_5200 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1483_5200 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1487_4682 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1487_4682 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1492_5182 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1492_5182 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1500_5193 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1500_5193 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1508_5049 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1508_5049 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1511_5424 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1511_5424 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1513_5315 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1513_5315 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1519_5232 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1519_5232 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1530_5703 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1530_5703 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1531_5159 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1531_5159 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1532_5160 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1532_5160 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1535_5853 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1535_5853 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1537_5308 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1537_5308 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1539_5154 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1539_5154 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1543_5181 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1543_5181 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1544_5549 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1544_5549 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1545_5550 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1545_5550 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1549_5224 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1549_5224 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1550_5702 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1550_5702 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1550_5786 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1550_5786 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1555_5471 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1555_5471 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1556_5503 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1556_5503 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1557_5890 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1557_5890 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1561_5696 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1561_5696 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1564_5806 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1564_5806 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1565_5522 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1565_5522 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1572_5785 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1572_5785 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1575_5746 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1575_5746 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1588_5891 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1588_5891 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+
+=====================================
+  NEW Subject: madc1595_5847 
+=====================================
+
+--- Working on Skull-Strip ---
+Skull-strip for subject: madc1595_5847 
+
+--- Calibrating CBF map ---
+
+--- Saving 4 CBF maps ---
+======== Session ENDED!! ==========  11-Dec-2018 12:10:22  ==================
