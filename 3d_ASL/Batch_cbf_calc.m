@@ -66,7 +66,7 @@ for iSubjDir = 1:size(SubjDir)
       disp('\n*** subject /vbm8 folder non-existing !! ***\n')
     end
 
-    betCommand = ['bet2 vbm8_w2mm_t1spgr.nii bet_vbm8_w2mm_ht1spgr -m'];
+    betCommand = ['bet2 vbm8_w2mm_t1spgr.nii bet_vbm8_w2mm_t1spgr -m'];
     unzipCommand = ['gunzip bet_vbm8_w2mm_t1spgr_mask.nii.gz'];
     fprintf('Skull-strip for subject: %s \n', SubjDir{iSubjDir})
 
