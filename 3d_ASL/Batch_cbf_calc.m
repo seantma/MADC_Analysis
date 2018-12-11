@@ -20,7 +20,7 @@ SubjDir = {d(idir).name}';
 SubjDir(ismember(SubjDir,{'.','..'})) = [];   % removing . & ..
 
 % Use regex to match pattern folder
-subj_pattern='madc*_*'    %madc1513_5315, didn't work: 'madc(\d+)_(\d+)'
+subj_pattern='^madc*_*'    %madc1513_5315, didn't work: 'madc(\d+)_(\d+)'
 index = find(~cellfun('isempty', regexp(SubjDir, subj_pattern))); %regex matching 'spi00012_scan1'
 SubjDir = SubjDir(index)
 
