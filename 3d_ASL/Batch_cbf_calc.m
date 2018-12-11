@@ -6,6 +6,8 @@
 % This script can do:
 % 1. Batch CBF map calibration
 % 2. create skull-stripped mask
+%
+% !!NOTE!! be sure to change PLD to 1.525 for UMMAP study (exam_no before 5883 (not including 5883))
 
 % Working directory
 WorkDir = '/nfs/fmri/Analysis/Sean_Working/Subjects_ASL';
