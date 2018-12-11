@@ -45,8 +45,8 @@ SF = 32;        %scaling factor
 NEX = 3;
 
 % post labelling delay
-% PLD = 1.525;    %for UMMAP protocol
-PLD = 2.025;    %for PTR protocol
+PLD = 1.525;    %for UMMAP protocol
+% PLD = 2.025;    %for PTR protocol
 
 %% equation definitions
 eqnum = (1 - exp(-ST/T1t)) * exp(PLD/T1b);
