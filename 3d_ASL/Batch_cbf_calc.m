@@ -61,13 +61,19 @@ for iSubjDir = 1:size(SubjDir)
     fprintf('  Working on Skull-Strip  \n')
     fprintf('==========================\n')
 
-    % change to VBM8 directory
+    % change to VBM8 directory & run system command
     cd(fullfile(SubjDirPath, 'func', 'coReg', 'vbm8'))
     betCommand = ['bet2 vbm8_w2mm_ht1spgr.nii bet_vbm8_w2mm_ht1spgr -m'];
     unzipCommand = ['gunzip bet_vbm8_w2mm_ht1spgr_mask.nii.gz'];
     fprintf('Skull-strip for subject: %s \n', SubjDir{iSubjDir})
-    system(betCommand);
-    system(unzipCommand);
+
+    try
+      system(betCommand);
+      system(unzipCommand);
+    catch
+      disp('*** skull-strip error !! ***')
+    end
+
 
     % ----- CBF calibration section -----
     fprintf('\n')
@@ -76,9 +82,14 @@ for iSubjDir = 1:size(SubjDir)
     fprintf('=======================\n')
 
     % running Scott's CBF calibration code
-    cbf_calc(fullfile(SubjDirPath, 'func', 'run_01', 's5vbm8_w2mm_vasc_3dasl.nii'),...
-              fullfile(SubjDirPath, 'func','coReg','vbm8','bet_vbm8_w2mm_ht1spgr_mask.nii'),...
-              SubjDirPath);
+    try
+      cbf_calc(fullfile(SubjDirPath, 'func', 'run_01', 's5vbm8_w2mm_vasc_3dasl.nii'),...
+                fullfile(SubjDirPath, 'func','coReg','vbm8','bet_vbm8_w2mm_ht1spgr_mask.nii'),...
+                SubjDirPath);
+    catch
+      disp('*** cbf calculation error !! ***')
+    end
+
 
     % ----- CBF maps writeout -----
     fprintf('\n')
