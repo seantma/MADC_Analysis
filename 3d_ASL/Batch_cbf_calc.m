@@ -8,7 +8,7 @@
 % 2. create skull-stripped mask
 
 % Working directory
-WorkDir = 'Soterix_Hampsted_SPiRE_T1_RAS';
+WorkDir = '/nfs/fmri/Analysis/Sean_Working/Subjects_ASL';
 
 % Reporting directory
 ReportDir = '/nfs/fmri/Analysis/Sean_Working/Git_MADC';
@@ -31,7 +31,7 @@ addpath(fullfile(mcRoot,'SPM','SPM8','spm8_with_R6313'))
 
 % addpath for spm & ASL scripts (including subfolders)
 % addpath /mnt/psych-bhampstelab/VA_SPiRE_2015/fMRI_Working/MCore/SPM/SPM8
-addpath(genpath('/nfs/fmri/Analysis/Sean_Working/Git_MADC/3d_ASL');
+addpath(genpath('/nfs/fmri/Analysis/Sean_Working/Git_MADC/3d_ASL'));
 
 % Logging diary
 diary('Batch_cbf_calc_console_Log.txt')
