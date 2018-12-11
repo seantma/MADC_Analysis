@@ -67,15 +67,15 @@ Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
  Script name(s):
 
 
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181207_21_01_45_631_tehsheng_madcbrai.m
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181207_21_01_45_631_tehsheng_madcbrai.sh
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181210_16_57_54_191_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181210_16_57_54_191_tehsheng_madcbrai.sh
 
 
    Launching script into foreground.
 
 
-   coregOverlay Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181207_21_01_45_631_tehsheng_madcbrai.sh is finished
-   coregOverlay Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181207_21_01_45_631_tehsheng_madcbrai.log
+   coregOverlay Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181210_16_57_54_191_tehsheng_madcbrai.sh is finished
+   coregOverlay Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181210_16_57_54_191_tehsheng_madcbrai.log
 
 
 
@@ -148,20 +148,20 @@ Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
 
 Calling erodeMask with :
 
-erodeMask -E 2 1 -w func/coReg/vbm8  -v vbm8_w2mm_ -h t1spgr -m "-s 5 -sub 0.333" -M ../../Subjects_ASL -n eroMask_    [list of subjects] (see shell script file: /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181207_21_02_56_227_tehsheng_madcbrai.sh)
+erodeMask -E 2 1 -w func/coReg/vbm8  -v vbm8_w2mm_ -h t1spgr -m "-s 5 -sub 0.333" -M ../../Subjects_ASL -n eroMask_    [list of subjects] (see shell script file: /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181210_16_58_55_978_tehsheng_madcbrai.sh)
 
  Script name(s):
 
 
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181207_21_02_56_227_tehsheng_madcbrai.m
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181207_21_02_56_227_tehsheng_madcbrai.sh
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181210_16_58_55_978_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181210_16_58_55_978_tehsheng_madcbrai.sh
 
 
    Launching script into foreground.
 
 
-   vbm8HiRes Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181207_21_02_56_227_tehsheng_madcbrai.sh is finished
-   vbm8HiRes Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181207_21_02_56_227_tehsheng_madcbrai.log
+   vbm8HiRes Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181210_16_58_55_978_tehsheng_madcbrai.sh is finished
+   vbm8HiRes Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181210_16_58_55_978_tehsheng_madcbrai.log
 
 
 
@@ -236,15 +236,15 @@ Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
  Script name(s):
 
 
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181207_21_22_26_686_tehsheng_madcbrai.m
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181207_21_22_26_686_tehsheng_madcbrai.sh
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181210_17_17_06_890_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181210_17_17_06_890_tehsheng_madcbrai.sh
 
 
    Launching script into foreground.
 
 
-   warpfMRI Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181207_21_22_26_686_tehsheng_madcbrai.sh is finished
-   warpfMRI Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181207_21_22_26_686_tehsheng_madcbrai.log
+   warpfMRI Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181210_17_17_06_890_tehsheng_madcbrai.sh is finished
+   warpfMRI Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181210_17_17_06_890_tehsheng_madcbrai.log
 
 
 
@@ -308,15 +308,15 @@ Parsing commands:
  Script name(s):
 
 
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181207_21_23_25_712_tehsheng_madcbrai.m
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181207_21_23_25_712_tehsheng_madcbrai.sh
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181210_17_17_46_992_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181210_17_17_46_992_tehsheng_madcbrai.sh
 
 
    Launching script into foreground.
 
 
-   smoothfMRI Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181207_21_23_25_712_tehsheng_madcbrai.sh is finished
-   smoothfMRI Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181207_21_23_25_712_tehsheng_madcbrai.log
+   smoothfMRI Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181210_17_17_46_992_tehsheng_madcbrai.sh is finished
+   smoothfMRI Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181210_17_17_46_992_tehsheng_madcbrai.log
 
 
 

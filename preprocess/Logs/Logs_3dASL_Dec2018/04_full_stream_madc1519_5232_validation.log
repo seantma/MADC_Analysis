@@ -58,15 +58,15 @@ Parsing commands:
  Script name(s):
 
 
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181207_21_23_25_712_tehsheng_madcbrai.m
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181207_21_23_25_712_tehsheng_madcbrai.sh
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181210_17_17_46_992_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181210_17_17_46_992_tehsheng_madcbrai.sh
 
 
    Launching script into foreground.
 
 
-   smoothfMRI Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181207_21_23_25_712_tehsheng_madcbrai.sh is finished
-   smoothfMRI Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181207_21_23_25_712_tehsheng_madcbrai.log
+   smoothfMRI Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181210_17_17_46_992_tehsheng_madcbrai.sh is finished
+   smoothfMRI Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181210_17_17_46_992_tehsheng_madcbrai.log
 
 
 

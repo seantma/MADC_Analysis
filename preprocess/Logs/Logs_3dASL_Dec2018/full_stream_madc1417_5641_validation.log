@@ -67,15 +67,15 @@ Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
  Script name(s):
 
 
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181207_16_32_44_668_tehsheng_madcbrai.m
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181207_16_32_44_668_tehsheng_madcbrai.sh
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181210_16_17_58_155_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181210_16_17_58_155_tehsheng_madcbrai.sh
 
 
    Launching script into foreground.
 
 
-   coregOverlay Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181207_16_32_44_668_tehsheng_madcbrai.sh is finished
-   coregOverlay Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181207_16_32_44_668_tehsheng_madcbrai.log
+   coregOverlay Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181210_16_17_58_155_tehsheng_madcbrai.sh is finished
+   coregOverlay Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181210_16_17_58_155_tehsheng_madcbrai.log
 
 
 
@@ -148,20 +148,20 @@ Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
 
 Calling erodeMask with :
 
-erodeMask -E 2 1 -w func/coReg/vbm8  -v vbm8_w2mm_ -h t1spgr -m "-s 5 -sub 0.333" -M ../../Subjects_ASL -n eroMask_    [list of subjects] (see shell script file: /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181207_16_34_24_007_tehsheng_madcbrai.sh)
+erodeMask -E 2 1 -w func/coReg/vbm8  -v vbm8_w2mm_ -h t1spgr -m "-s 5 -sub 0.333" -M ../../Subjects_ASL -n eroMask_    [list of subjects] (see shell script file: /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181210_16_19_26_815_tehsheng_madcbrai.sh)
 
  Script name(s):
 
 
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181207_16_34_24_007_tehsheng_madcbrai.m
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181207_16_34_24_007_tehsheng_madcbrai.sh
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181210_16_19_26_815_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181210_16_19_26_815_tehsheng_madcbrai.sh
 
 
    Launching script into foreground.
 
 
-   vbm8HiRes Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181207_16_34_24_007_tehsheng_madcbrai.sh is finished
-   vbm8HiRes Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181207_16_34_24_007_tehsheng_madcbrai.log
+   vbm8HiRes Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181210_16_19_26_815_tehsheng_madcbrai.sh is finished
+   vbm8HiRes Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/vbm8HiRes/2018_12/vbm8HiRes_181210_16_19_26_815_tehsheng_madcbrai.log
 
 
 
@@ -230,18 +230,23 @@ Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
     2) building in first part of matlab script
     3) building list of subjects
        --> madc1417_5641
+    4) finalizing matlab scripts
+    5) building shell script
 
-MISSING warping instuctions /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/../../Subjects_ASL/madc1417_5641/func//coReg/vbm8/y_rt1spgr.nii for madc1417_5641
+ Script name(s):
 
 
-An error was found in your data and/or parameter specification, so we can not proceed. Going to now
-gently remove any script files partially written.
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181210_16_37_26_818_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181210_16_37_26_818_tehsheng_madcbrai.sh
 
-Aborted command : warpfMRI, that was attempted at : 181207_16_34_39_997
 
-Found '/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181207_16_34_39_997_tehsheng_madcbrai.m', removing....
+   Launching script into foreground.
 
-Clean up finished, now exiting.
+
+   warpfMRI Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181210_16_37_26_818_tehsheng_madcbrai.sh is finished
+   warpfMRI Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181210_16_37_26_818_tehsheng_madcbrai.log
+
+
 
 
 Initializing spm8 Batch
@@ -297,16 +302,21 @@ Parsing commands:
     2) building in first part of matlab script
     3) building list of subjects
        --> madc1417_5641
+    4) finalizing matlab scripts
+    5) building shell script
 
- * * * * *  NO images to process with smoothfMRI * * * * * 
+ Script name(s):
 
 
-An error was found in your data and/or parameter specification, so we can not proceed. Going to now
-gently remove any script files partially written.
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181210_16_38_10_433_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181210_16_38_10_433_tehsheng_madcbrai.sh
 
-Aborted command : smoothfMRI, that was attempted at : 181207_16_34_42_383
 
-Found '/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181207_16_34_42_383_tehsheng_madcbrai.m', removing....
+   Launching script into foreground.
 
-Clean up finished, now exiting.
+
+   smoothfMRI Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181210_16_38_10_433_tehsheng_madcbrai.sh is finished
+   smoothfMRI Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/smoothfMRI/2018_12/smoothfMRI_181210_16_38_10_433_tehsheng_madcbrai.log
+
+
 
