@@ -65,7 +65,8 @@ for iSubjDir = 1:size(SubjDir)
     try
       cd(fullfile(SubjDirPath, 'func', 'coReg', 'vbm8'))
     catch
-      disp('\n*** subject /vbm8 folder non-existing !! ***\n')
+      fprintf('\n')
+      fprintf('*** subject /vbm8 folder non-existing !! ***\n')
     end
 
     betCommand = ['bet2 vbm8_w2mm_t1spgr.nii bet_vbm8_w2mm_t1spgr -m'];
@@ -76,7 +77,8 @@ for iSubjDir = 1:size(SubjDir)
       system(betCommand);
       system(unzipCommand);
     catch
-      disp('\n*** skull-strip error !! ***\n')
+      fprintf('\n')
+      fprintf('*** skull-strip error !! ***\n')
     end
 
 
@@ -87,10 +89,11 @@ for iSubjDir = 1:size(SubjDir)
     % running Scott's CBF calibration code
     try
       cbf_calc(fullfile(SubjDirPath, 'func', 'run_01', 's5vbm8_w2mm_vasc_3dasl.nii'),...
-                fullfile(SubjDirPath, 'func','coReg','vbm8','bet_vbm8_w2mm_ht1spgr_mask.nii'),...
+                fullfile(SubjDirPath, 'func','coReg','vbm8','bet_vbm8_w2mm_t1spgr_mask.nii'),...
                 SubjDirPath);
     catch
-      disp('\n*** cbf calculation error !! ***\n')
+      fprintf('\n')
+      fprintf('*** cbf calculation error !! ***\n')
     end
 
 
