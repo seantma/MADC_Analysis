@@ -63,8 +63,8 @@ for iSubjDir = 1:size(SubjDir)
 
     % change to VBM8 directory & run system command
     cd(fullfile(SubjDirPath, 'func', 'coReg', 'vbm8'))
-    betCommand = ['bet2 vbm8_w2mm_ht1spgr.nii bet_vbm8_w2mm_ht1spgr -m'];
-    unzipCommand = ['gunzip bet_vbm8_w2mm_ht1spgr_mask.nii.gz'];
+    betCommand = ['bet2 vbm8_w2mm_t1spgr.nii bet_vbm8_w2mm_ht1spgr -m'];
+    unzipCommand = ['gunzip bet_vbm8_w2mm_t1spgr_mask.nii.gz'];
     fprintf('Skull-strip for subject: %s \n', SubjDir{iSubjDir})
 
     try
