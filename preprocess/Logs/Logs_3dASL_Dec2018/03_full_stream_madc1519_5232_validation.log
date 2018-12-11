@@ -69,15 +69,15 @@ Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
  Script name(s):
 
 
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181207_21_22_26_686_tehsheng_madcbrai.m
-    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181207_21_22_26_686_tehsheng_madcbrai.sh
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181210_17_17_06_890_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181210_17_17_06_890_tehsheng_madcbrai.sh
 
 
    Launching script into foreground.
 
 
-   warpfMRI Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181207_21_22_26_686_tehsheng_madcbrai.sh is finished
-   warpfMRI Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181207_21_22_26_686_tehsheng_madcbrai.log
+   warpfMRI Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181210_17_17_06_890_tehsheng_madcbrai.sh is finished
+   warpfMRI Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/warpfMRI/2018_12/warpfMRI_181210_17_17_06_890_tehsheng_madcbrai.log
 
 
 

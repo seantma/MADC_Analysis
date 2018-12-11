@@ -1,3 +1,4 @@
-coregOverlay SUCCESS, attempted at : 181207_16_32_44_668
-warpfMRI aborted, attempted at : 181207_16_34_39_997
-smoothfMRI aborted, attempted at : 181207_16_34_42_383
+coregOverlay SUCCESS, attempted at : 181210_16_17_58_155
+vbm8HiRes SUCCESS, attempted at : 181210_16_19_26_815
+warpfMRI SUCCESS, attempted at : 181210_16_37_26_818
+smoothfMRI SUCCESS, attempted at : 181210_16_38_10_433

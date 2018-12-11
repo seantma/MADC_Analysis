@@ -60,18 +60,22 @@ Will assume .nii (1st) or .nii.gz (2nd) extension for FILE image type.
 
     2) building in first part of matlab script
     3) building list of subjects
-
-Scanning for source image : t1spgr for subject : madc1458_4524 returned no result.
-
-ABORTING
+    4) finalizing matlab scripts
+    5) building shell script
 
 
-An error was found in your data and/or parameter specification, so we can not proceed. Going to now
-gently remove any script files partially written.
+ Script name(s):
 
-Aborted command : coregOverlay, that was attempted at : 181207_17_39_25_232
 
-Found '/nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181207_17_39_25_232_tehsheng_madcbrai.m', removing....
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181210_16_38_50_357_tehsheng_madcbrai.m
+    /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181210_16_38_50_357_tehsheng_madcbrai.sh
 
-Clean up finished, now exiting.
+
+   Launching script into foreground.
+
+
+   coregOverlay Script /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181210_16_38_50_357_tehsheng_madcbrai.sh is finished
+   coregOverlay Script LOGFILE is : /nfs/fmri/Analysis/Sean_Working/Git_MADC/preprocess/spm8Batch/coregOverlay/2018_12/coregOverlay_181210_16_38_50_357_tehsheng_madcbrai.log
+
+
 
