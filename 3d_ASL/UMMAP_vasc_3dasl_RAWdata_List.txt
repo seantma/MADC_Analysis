@@ -1,3 +1,5 @@
+grep 'vasc_3dasl' {bmh*,hlp*}/raw/raw_data_cross_reference.dat
+
 bmh17umm01241_03276/raw/raw_data_cross_reference.dat:s00012 bmh17umm01241 12 vasc_3dasl 20170417_121428 X X X X
 hlp17umm00732_03796/raw/raw_data_cross_reference.dat:s00013 hlp17umm00732 13 vasc_3dasl 20170915_143238 X X X X
 hlp17umm00768_04114/raw/raw_data_cross_reference.dat:s00013 hlp17umm00768 13 vasc_3dasl 20171128_110941 X X X X

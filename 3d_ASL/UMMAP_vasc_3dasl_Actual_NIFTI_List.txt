@@ -1,4 +1,5 @@
 [tehsheng@madcbrain RAW_nopreprocess]$ find ./{bmh*,hlp*} -type f -name 'vasc_3dasl.nii'
+
 ./hlp17umm00798_05794/anatomy/vasc_3dasl/vasc_3dasl.nii
 ./hlp17umm00799_05795/anatomy/vasc_3dasl/vasc_3dasl.nii
 ./hlp17umm01040_05745/anatomy/vasc_3dasl/vasc_3dasl.nii
