@@ -1,5 +1,7 @@
 ## 3dasl Notes
 10/10/2018, 4:36:05 PM
+Sean Ma
+NOTE:: this note captures some of my preliminary thoughts on how to tackle ASL analysis as it was my first encounter for such problems. Please see `UMMAP_3dasl_Notes.md` for the most updated version.
 
 ### Question 1 - how to preprocess 3d asl?
 It seems to take fMRI Lab a fair amount of time to process the correct CBF from the 3d asl images. In the midst of this, I've also encounter how to create difference maps between Scan1 & Scan2 of the **DrD_Extension** study. Although the 2 asl images were co-registered to the same T1 anatomy image, _their affine seems to differ which is causing the error_ (see error notes in code `NODDI_3dasl_Extraction.py`).
