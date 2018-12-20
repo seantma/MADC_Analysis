@@ -60,4 +60,9 @@ Sean Ma
             └── wvasc_3dasl.mat
 
 3. **CBF map calculation**
-    `/3d_ASL/Batch_cbf_calc.m` which calls `/3d_ASL/cbf_calc.m` for the actual calculation of CBF maps. Adopted from `cbf_calc_SeanUpdate.m` where I modified Scott's original code `cbf_calc_Scott.m`.
+    - `/3d_ASL/Batch_cbf_calc.m` which calls `/3d_ASL/cbf_calc.m` for the actual calculation of CBF maps. Adopted from `cbf_calc_SeanUpdate.m` where I modified Scott's original code `cbf_calc_Scott.m`.
+    - 4 files are generated and described below:
+        - cbfmap_anat_mean100_s5vbm8_w2mm_vasc_3dasl.nii: calibrated CBF map, mean scaled to 100, with subject's anatomy mask
+        - cbfmap_anat_s5vbm8_w2mm_vasc_3dasl.nii: calibrated CBF map, with subject's anatomy mask
+        - cbfmap_mean100_s5vbm8_w2mm_vasc_3dasl.nii: calibrated CBF map, mean scaled to 100
+        - cbfmap_s5vbm8_w2mm_vasc_3dasl.nii: calibrated CBF map
